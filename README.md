@@ -48,6 +48,18 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 
 ---
 
+### 🤝 Volunteering & Leadership
+
+* **Head of Investment Committees – Investment Club**
+    * *Majmaah University*
+    * Taught students technical analysis and financial markets, simplified complex concepts, and provided practical skills for making informed investment decisions.
+
+* **Head of the Financial Analysis Committee – Investment Club**
+    * *Majmaah University*
+    * Led a team of student analysts to research investment opportunities, prepared financial reports, and organized financial modeling workshops.
+
+---
+
 ### 🏆 Featured Contributions
 
 * **NAMAA-Space (Contributor):**
