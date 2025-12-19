@@ -25,7 +25,7 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 
 **Artificial Intelligence**
 * **Frameworks:** PyTorch, Hugging Face Transformers
-* **Architectures:** State Space Models (Mamba), RAG Systems
+* **Architectures:** RAG Systems
 * **Specialization:** Arabic NLP, Custom Financial Agents
 
 ---
