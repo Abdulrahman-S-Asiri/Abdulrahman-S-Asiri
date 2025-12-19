@@ -12,7 +12,7 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 
 * **Financial Data Science:** Applying statistical methods to analyze financial datasets and economic trends.
 * **Technical Analysis:** Currently pursuing the **Chartered Market Technician (CMT)** designation to deepen expertise in market behavior.
-* **AI Engineering:** Fine-tuning Large Language Models (LLMs) like Mamba and Llama to understand complex Arabic financial texts.
+* **AI Engineering:** Optimizing Large Language Models (e.g., Mamba, Llama) to accurately interpret Arabic financial reports and market data.
 
 ---
 
