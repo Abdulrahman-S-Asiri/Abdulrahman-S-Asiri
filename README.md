@@ -64,7 +64,19 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 
 * **NAMAA-Space (Contributor):**
     * **SAFIR-Leaderboard:** Contributed to benchmarking and evaluating Saudi Arabic Large Language Models.
+---
+### 📊 Project & Career Dashboard
 
+| Project / Goal | Category | Status | Details |
+| :--- | :--- | :--- | :--- |
+| **Bachelor's in CS** | 🎓 Education | ✅ **Finished** | Majmaah University |
+| **Tuwaiq Bootcamp** | 🎓 Education | ✅ **Finished** | Data Science & AI |
+| **SAFIR Leaderboard** | 🤖 AI / NLP | ✅ **Finished** | Contribution to NAMAA-Space |
+| **Sentiment Analysis** | 📊 Data Science | ✅ **Finished** | Final Project |
+| **CMT Certification** | 📈 Finance | 🔄 **Continuing** | Preparing for Level I Exam |
+| **Saudi Mamba AI** | 🤖 AI / NLP | 🔄 **Continuing** | Fine-tuning for Saudi Dialect |
+| **Financial Agents** | 🤖 AI / Agentic | 🔄 **Continuing** | Building Autonomous Market Analyzers |
+| **Cyber Awareness** | 💻 Web Dev | ⏸️ **Stopped** | Archived Project |
 ---
 
 ### 📫 Connect with Me
