@@ -65,8 +65,14 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 * **NAMAA-Space (Contributor):**
     * **SAFIR-Leaderboard:** Contributed to benchmarking and evaluating Saudi Arabic Large Language Models.
 ---
+* **LinkedIn:** [linkedin.com/in/abdulrahman-saad-asiri-573ba1200](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
+* **X (Twitter):** [@D7oomyStay](https://x.com/D7oomyStay)
+---
+
+
 ### 🗺️ Strategic Roadmap & Project Status
 
+```mermaid
 gantt
     title 🚀 Strategic Roadmap (2024 - 2026)
     dateFormat  YYYY-MM-DD
@@ -80,9 +86,4 @@ gantt
     section 📈 Finance
     CMT Certification (L1)       :active,  des6, 2024-11-01, 2025-06-01
     Algorithmic Trading Bot      :crit,    des7, 2025-06-01, 2026-01-01
----
 
-### 📫 Connect with Me
-
-* **LinkedIn:** [linkedin.com/in/abdulrahman-saad-asiri-573ba1200](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
-* **X (Twitter):** [@D7oomyStay](https://x.com/D7oomyStay)
