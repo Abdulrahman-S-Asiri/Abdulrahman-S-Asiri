@@ -78,8 +78,8 @@ gantt
     axisFormat  %Q%y
     
     section 🎓 Foundation
-    Bachelor's Degree (CS)       :done,    des1, 2020-01-01, 2024-01-01
-    Tuwaiq AI Bootcamp           :done,    des2, 2024-06-01, 2024-09-01
+    Bachelor's Degree (CS)       :done,    des1, 2019-01-01, 2025-08-24
+    Tuwaiq AI Bootcamp           :done,    des2, 2025-10-12, 2025-12-18
     
     section ⚡ Active Ops
     Saudi Mamba AI (NLP)         :active,  des3, 2024-11-01, 2025-05-01
