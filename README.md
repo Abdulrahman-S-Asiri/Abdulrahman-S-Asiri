@@ -81,12 +81,9 @@ gantt
     Bachelor's Degree (CS)       :done,    des1, 2019-01-01, 2025-08-24
     Tuwaiq AI Bootcamp           :done,    des2, 2025-10-12, 2025-12-18
     
-    section ⚡ Active Ops
-    Saudi Mamba AI (NLP)         :active,  des3, 2024-11-01, 2025-05-01
-    CMT Certification (L1)       :active,  des4, 2024-11-01, 2025-06-01
-    Financial AI Agents          :active,  des5, 2025-01-01, 2025-06-01
+    section ⚡ Projects
+    Sentiment analysis by text       :done,    des3, 2025-01-01, 2025-05-24
     
     section 🔮 Future Pipeline
-    TASI Algo-Trading Bot        :crit,    des6, 2025-06-01, 2026-01-01
-    Auto-Financial Analyst       :         des7, 2025-08-01, 2026-03-01
+
 
