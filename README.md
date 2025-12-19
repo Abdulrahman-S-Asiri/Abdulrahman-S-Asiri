@@ -67,7 +67,6 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 ---
 ### 🗺️ Strategic Roadmap & Project Status
 
-```mermaid
 gantt
     title 🚀 Strategic Roadmap (2024 - 2026)
     dateFormat  YYYY-MM-DD
