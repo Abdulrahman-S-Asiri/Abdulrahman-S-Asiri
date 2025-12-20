@@ -69,7 +69,7 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 * **X (Twitter):** [@D7oomyStay](https://x.com/D7oomyStay)
 ---
 
-```mermaid
+%%{init: {'theme': 'base'}}%%
 gantt
     title 🗺️ Master Career Roadmap (2019 - 2026+)
     dateFormat  YYYY-MM-DD
