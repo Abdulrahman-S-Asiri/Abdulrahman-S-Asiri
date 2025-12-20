@@ -70,7 +70,6 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 ---
 
 ```mermaid
-%%{init: {'theme': 'base'}}%%
 gantt
     title 🗺️ Master Career Roadmap (2019 - 2026+)
     dateFormat  YYYY-MM-DD
@@ -88,4 +87,3 @@ gantt
     section 🚀 Strategic Vision
     Advanced AI Agents (Planned)   :         future1, 2026-06-01, 90d
     TASI Algo-Trading (Goal)       :crit,    future2, 2026-09-01, 120d
-
