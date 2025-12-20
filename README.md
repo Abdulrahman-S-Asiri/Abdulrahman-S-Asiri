@@ -69,22 +69,22 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 * **X (Twitter):** [@D7oomyStay](https://x.com/D7oomyStay)
 ---
 
-### 🗺️ Master Plan & Trajectory
-
-```mermaid
 gantt
-    title 🚀 Strategic Roadmap (2024 - 2026)
+    title 🗺️ Master Career Roadmap (2019 - 2026+)
     dateFormat  YYYY-MM-DD
+    axisFormat  %Q-%Y
     
+    section 🎓 Academic Foundation
+    Bachelor's Degree (CS)         :done,    edu1, 2019-01-01, 2025-08-24
+    Tuwaiq AI Bootcamp             :done,    edu2, 2025-10-12, 2025-12-18
     
-    section 🎓 Foundation
-    Bachelor's Degree (CS)       :done,    des1, 2019-01-01, 2025-08-24
-    Tuwaiq AI Bootcamp           :done,    des2, 2025-10-12, 2025-12-18
+    section 🛠️ R&D Operations
+    Sentiment Analysis (NLP)       :done,    proj1, 2025-01-01, 2025-05-24
+    Cyber-Awareness Platform       :done,    proj2, 2025-10-01, 2025-10-04
+    Bidaya Project (Current Focus) :active,  proj3, 2025-12-07, 2026-05-24
     
-    section ⚡ Projects
-    Sentiment analysis by text   :done,    des3, 2025-01-01, 2025-05-24
-    Cyber-Awareness              :done,    des4, 2025-10-01, 2025-10-04
-    Bidaya                       :active,  des5, 2025-12-07, 2026-05-24
-    section 🔮 Future Pipeline
+    section 🚀 Strategic Vision
+    Advanced AI Agents (Planned)   :         future1, 2026-06-01, 90d
+    TASI Algo-Trading (Goal)       :crit,    future2, 2026-09-01, 120d
 
 
