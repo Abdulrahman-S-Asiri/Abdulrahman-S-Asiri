@@ -83,8 +83,8 @@ gantt
     
     section ⚡ Projects
     Sentiment analysis by text   :done,    des3, 2025-01-01, 2025-05-24
-    Bidaya                       :active,  des4, 2025-12-07, 2026-05-24
-
+    Cyber-Awareness              :done,    des4, 2025-10-01, 2025-10-04
+    Bidaya                       :active,  des5, 2025-12-07, 2026-05-24
     section 🔮 Future Pipeline
 
 
