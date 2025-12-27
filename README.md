@@ -56,6 +56,36 @@ I am a Data Scientist in the financial sector, dedicated to constantly keeping p
 
 ---
 
+### 🎓 Education
+
+* **Bachelor's Degree, Computer Science**
+  * *Majmaah University*
+* **Data Science & AI Bootcamp**
+  * *Tuwaiq Academy*
+
+---
+
+### 📜 Certifications
+
+* **CMT Association:** Chartered Market Technician (Candidate)
+* **DataCamp:** Data Scientist Associate
+* **NVIDIA:** Getting Started with Deep Learning
+* **Udemy:** Machine Learning A-Z: AI, Python
+
+---
+
+### 🤝 Volunteering & Leadership
+
+* **Head of Investment Committees – Investment Club**
+  * *Majmaah University*
+  * Taught students technical analysis and financial markets, simplified complex concepts, and provided practical skills for making informed investment decisions.
+
+* **Head of the Financial Analysis Committee – Investment Club**
+  * *Majmaah University*
+  * Led a team of student analysts to research investment opportunities, prepared financial reports, and organized financial modeling workshops.
+
+---
+
 ### 🗺️ Master Career Roadmap (2019 - 2026+)
 
 ```mermaid
