@@ -10,7 +10,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter)](https://x.com/D7oomyStay)
-[![Gmail](https://img.shields.io/badge/Email-Contact_Me-c14438?style=for-the-badge&logo=gmail)](mailto:abdulrahman.s.alasiri@gmail.com)
+[![Gmail](https://img.shields.io/badge/Email-Contact_Me-c14438?style=for-the-badge&logo=gmail)](mailto:YOUR_EMAIL_HERE)
 
 </div>
 
@@ -43,11 +43,16 @@ I am a Data Scientist in the financial sector, dedicated to constantly keeping p
 
 ### 🏆 Open Source Contributions
 
-#### 🇸🇦 [NAMAA-Space](https://github.com/NAMAA-Space)
-> **[SA-Retrieval-Embeddings-0.2B](https://lnkd.in/gSUhV_JP)**
-> * Co-developed a semantic embedding model specialized for **Retrieval-Augmented Generation (RAG)** systems in the **Saudi Dialect**.
+#### 🤖 Omartificial Intelligence Space
+> **[SA-Retrieval-Embeddings-0.2B](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)**
+> * *Co-developed a semantic embedding model specialized for **RAG systems** in the **Saudi Dialect**.*
 > * Optimized for high-precision semantic search, achieving advanced performance in *Top-1 Retrieval* and *MRR* metrics.
-> * **Focus:** Bridging the gap between understanding meaning and accurate information retrieval for Arabic content.
+> * Focus: Bridging the gap between understanding meaning and accurate information retrieval for Arabic content.
+
+#### 🇸🇦 NAMAA Space
+> **[SAFIR-Leaderboard](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)**
+> * *A comprehensive benchmark for evaluating Saudi Arabic LLMs.*
+> * Contributed to the evaluation framework to standardize the performance metrics of Large Language Models in the region.
 
 ---
 
