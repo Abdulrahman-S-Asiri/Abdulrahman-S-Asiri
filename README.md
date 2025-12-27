@@ -60,10 +60,16 @@ My work relies on employing Machine Learning algorithms and Natural Language Pro
 
 ---
 
-### 🏆 Featured Contributions
+## 🏆 Open Source Contributions
 
-* **NAMAA-Space (Contributor):**
-    * **SAFIR-Leaderboard:** Contributed to benchmarking and evaluating Saudi Arabic Large Language Models.
+### 🇸🇦 NAMAA-Space
+* **[SA-Retrieval-Embeddings-0.2B](https://lnkd.in/gSUhV_JP)**
+    * Co-developed a semantic embedding model specialized for **Retrieval-Augmented Generation (RAG)** systems in the **Saudi Dialect**.
+    * Optimized for high-precision semantic search, achieving advanced performance in *Top-1 Retrieval* and *MRR* metrics.
+    * Focus: Bridging the gap between understanding meaning and accurate information retrieval for Arabic content.
+
+* **SAFIR-Leaderboard**
+    * Contributed to benchmarking and evaluating Saudi Arabic Large Language Models (LLMs).
 ---
 * **LinkedIn:** [linkedin.com/in/abdulrahman-saad-asiri-573ba1200](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
 * **X (Twitter):** [@D7oomyStay](https://x.com/D7oomyStay)
