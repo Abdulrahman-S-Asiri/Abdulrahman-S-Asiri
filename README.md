@@ -39,6 +39,15 @@ const abdulrahman = {
 
 <br/>
 
+<!-- GitHub Trophies -->
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=tokyonight&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 ## Featured Projects
 
 <div align="center">
@@ -79,6 +88,8 @@ Benchmark for evaluating Saudi Arabic LLMs with standardized metrics.
 
 <br/>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 ## Tech Stack
 
 <div align="center">
@@ -105,6 +116,8 @@ Benchmark for evaluating Saudi Arabic LLMs with standardized metrics.
 
 <br/>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 ## GitHub Analytics
 
 <div align="center">
@@ -129,6 +142,26 @@ Benchmark for evaluating Saudi Arabic LLMs with standardized metrics.
 </div>
 
 <br/>
+
+<!-- Activity Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&bg_color=0D1117&color=4FC3F7&line=4FC3F7&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" />
+</div>
+
+<br/>
+
+<!-- Contribution Snake Animation -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake.svg" />
+    <img alt="Snake animation" src="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake.svg" />
+  </picture>
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## Education & Credentials
 
@@ -190,6 +223,19 @@ gantt
 ```
 
 <br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<!-- Spotify Now Playing - Connect your account at https://spotify-github-profile.kittinanx.com/ -->
+<!--
+<div align="center">
+
+## Now Playing
+
+[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_USER_ID&cover_image=true&theme=novatorem&bar_color=4FC3F7&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_USER_ID&redirect=true)
+
+</div>
+-->
 
 <div align="center">
 
