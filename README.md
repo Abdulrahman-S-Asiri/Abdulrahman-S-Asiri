@@ -41,7 +41,9 @@ const abdulrahman = {
 
 <!-- GitHub Trophies -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=onestar&no_frame=true&no_bg=true&column=7&margin_w=5&margin_h=5" alt="GitHub Trophies" />
+  </a>
 </div>
 
 <br/>
