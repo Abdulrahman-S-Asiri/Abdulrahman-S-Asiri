@@ -17,7 +17,7 @@
 
 ## About Me
 
-```typescript
+```javascript
 const abdulrahman = {
     role: "Financial Data Scientist & AI Engineer",
     location: "Saudi Arabia",
@@ -41,7 +41,7 @@ const abdulrahman = {
 
 <!-- GitHub Trophies -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=tokyonight&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies" />
 </div>
 
 <br/>
