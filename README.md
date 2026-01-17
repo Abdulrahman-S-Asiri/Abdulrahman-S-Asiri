@@ -44,10 +44,10 @@ const abdulrahman = {
 <div align="center">
 
 <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=saudi-market-intelligence&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=saudi-market-intelligence&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&cache_seconds=86400" />
 </a>
 <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=Cyber-Awareness&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=Cyber-Awareness&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&cache_seconds=86400" />
 </a>
 
 </div>
@@ -108,16 +108,24 @@ Benchmark for evaluating Saudi Arabic LLMs with standardized metrics.
 ## GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&text_color=ffffff"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&text_color=ffffff"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&text_color=ffffff&cache_seconds=86400" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&text_color=ffffff&cache_seconds=86400" alt="GitHub Stats"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&text_color=ffffff&cache_seconds=86400" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=default&hide_border=true&cache_seconds=86400" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&text_color=ffffff&cache_seconds=86400" alt="Top Languages"/>
+  </picture>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&background=0D1117&ring=4FC3F7&fire=FF6B6B&currStreakLabel=4FC3F7" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&bg_color=0D1117&color=4FC3F7&line=4FC3F7&point=ffffff&area=true&hide_border=true" width="95%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&background=0D1117&ring=4FC3F7&fire=FF6B6B&currStreakLabel=4FC3F7" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&theme=default&hide_border=true" />
+    <img src="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&background=0D1117&ring=4FC3F7&fire=FF6B6B&currStreakLabel=4FC3F7" alt="GitHub Streak"/>
+  </picture>
 </div>
 
 <br/>
