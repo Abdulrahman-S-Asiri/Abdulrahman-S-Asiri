@@ -1,177 +1,204 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Abdulrahman%20Asiri&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Financial%20Data%20Scientist%20%7C%20AI%20Engineer%20%7C%20CMT%20Candidate&descSize=18&descAlignY=55"/>
+
 <div align="center">
 
-# Hi there, I'm Abdulrahman Saad Asiri
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4FC3F7&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Building+AI-Powered+Financial+Tools;Analyzing+the+Saudi+Market+(Tadawul);Bridging+Traditional+Analysis+%26+Machine+Learning)](https://git.io/typing-svg)
 
-### Financial Data Scientist | AI Engineer | CMT Candidate
+<br/>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=435&lines=Bridging+Market+Analysis+%26+AI;Building+Arabic+Financial+LLMs;Analyzing+the+Saudi+Market" alt="Typing SVG" />
-</p>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
-[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
-[![Hugging Face](https://img.shields.io/badge/Hugging_Face-Profile-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
+[![Profile Views](https://komarev.com/ghpvc/?username=Abdulrahman-S-Asiri&style=for-the-badge&color=0f3460)](https://github.com/Abdulrahman-S-Asiri)
 
 </div>
 
----
+<br/>
 
 ## About Me
 
-Data Scientist in the financial sector, dedicated to building smart financial tools and accurate predictive models with a specific focus on the **Saudi Market (Tadawul)**.
+```typescript
+const abdulrahman = {
+    role: "Financial Data Scientist & AI Engineer",
+    location: "Saudi Arabia",
+    focus: ["Saudi Market (Tadawul)", "Arabic Financial LLMs", "Algorithmic Trading"],
+    currentlyWorking: "Bidaya - AI Mock Interview Coach",
+    pursuing: "Chartered Market Technician (CMT)",
 
-- **Financial Data Science:** Applying statistical methods to analyze financial datasets and economic trends
-- **Technical Analysis:** Pursuing the **Chartered Market Technician (CMT)** designation
-- **AI Engineering:** Optimizing LLMs to interpret Arabic financial reports and market data
+    skills: {
+        ai_ml: ["PyTorch", "Transformers", "Scikit-Learn", "XGBoost", "LSTM"],
+        data: ["Pandas", "NumPy", "SQL", "Tableau", "yfinance"],
+        backend: ["FastAPI", "Python", "REST APIs"],
+        frontend: ["React", "JavaScript", "CSS"],
+        tools: ["Docker", "Git", "Linux", "Jupyter"]
+    },
 
----
+    mission: "Bridging traditional market analysis with cutting-edge AI"
+};
+```
+
+<br/>
 
 ## Featured Projects
 
+<div align="center">
+
+<a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=saudi-market-intelligence&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7" />
+</a>
+<a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=Cyber-Awareness&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7" />
+</a>
+
+</div>
+
+### AI & NLP Contributions
+
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### [Saudi Market Intelligence](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence)
-AI-powered stock analysis platform for Tadawul featuring LSTM neural networks, ensemble ML models, and real-time trading signals.
+**[SA-Retrieval-Embeddings-0.2B](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+Semantic embedding model for RAG systems in Saudi Dialect. Optimized for high-precision semantic search.
+
+![Downloads](https://img.shields.io/badge/HuggingFace-Model-FFD21E?style=flat&logo=huggingface&logoColor=black)
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### [SA-Retrieval-Embeddings](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)
-Semantic embedding model specialized for RAG systems in Saudi Dialect with high-precision semantic search.
+**[SAFIR Leaderboard](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)**
 
-![HuggingFace](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![Transformers](https://img.shields.io/badge/Transformers-FF6F00?style=flat&logo=pytorch&logoColor=white)
+Benchmark for evaluating Saudi Arabic LLMs with standardized metrics.
 
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### [SAFIR Leaderboard](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)
-Comprehensive benchmark for evaluating Saudi Arabic LLMs with standardized performance metrics.
-
-![HuggingFace](https://img.shields.io/badge/Spaces-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat&logoColor=white)
-
-</td>
-<td width="50%">
-
-### [Cyber Awareness](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness)
-Interactive cybersecurity awareness platform with educational resources for online safety.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Space](https://img.shields.io/badge/HuggingFace-Space-FFD21E?style=flat&logo=huggingface&logoColor=black)
 
 </td>
 </tr>
 </table>
 
----
+<br/>
 
 ## Tech Stack
 
 <div align="center">
 
-| **AI & ML** | **Data & Finance** | **Development** |
-|:---:|:---:|:---:|
-| ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) |
-| ![HuggingFace](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black) | ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) |
-| ![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) | ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![SQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+### AI & Machine Learning
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+### Data & Analytics
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### Development
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
----
+<br/>
 
-## Education & Certifications
+## GitHub Analytics
 
-<table>
-<tr>
-<td width="50%">
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&icon_color=4FC3F7&text_color=ffffff"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4FC3F7&text_color=ffffff"/>
+</div>
 
-### Education
-- **B.Sc. Computer Science** - Majmaah University
-- **Data Science & AI Bootcamp** - Tuwaiq Academy
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&background=0D1117&ring=4FC3F7&fire=FF6B6B&currStreakLabel=4FC3F7" alt="GitHub Streak"/>
+</div>
 
-</td>
-<td width="50%">
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&bg_color=0D1117&color=4FC3F7&line=4FC3F7&point=ffffff&area=true&hide_border=true" width="95%"/>
+</div>
 
-### Certifications
-- **CMT Association** - Chartered Market Technician (Candidate)
-- **DataCamp** - Data Scientist Associate
-- **NVIDIA** - Deep Learning Fundamentals
-- **Udemy** - Machine Learning A-Z
+<br/>
 
-</td>
-</tr>
-</table>
+## Education & Credentials
 
----
+<div align="center">
 
-## Leadership Experience
+| Education | Certifications |
+|:---:|:---:|
+| **B.Sc. Computer Science** | **CMT** - Chartered Market Technician (Candidate) |
+| Majmaah University | CMT Association |
+| **Data Science & AI Bootcamp** | **Data Scientist Associate** |
+| Tuwaiq Academy | DataCamp |
+| | **Deep Learning Fundamentals** - NVIDIA |
 
-**Head of Investment Committees** | *Majmaah University Investment Club*
-> Taught technical analysis and financial markets to students, providing practical skills for informed investment decisions.
+</div>
 
-**Head of Financial Analysis Committee** | *Majmaah University Investment Club*
-> Led a team analyzing investment opportunities, prepared financial reports, and organized modeling workshops.
+<br/>
 
----
+## Leadership
+
+<div align="center">
+
+| Role | Organization |
+|:---|:---|
+| **Head of Investment Committees** | Investment Club, Majmaah University |
+| **Head of Financial Analysis Committee** | Investment Club, Majmaah University |
+
+</div>
+
+> *Taught technical analysis to students and led teams analyzing investment opportunities*
+
+<br/>
 
 ## Career Roadmap
 
 ```mermaid
 %%{init: { 'theme': 'base', 'themeVariables': {
-    'primaryColor': '#BBDEFB',
-    'secondaryColor': '#FFF9C4',
-    'tertiaryColor': '#fff',
-    'titleColor': '#000000',
-    'textColor': '#000000',
-    'taskTextDarkColor': '#000000',
-    'taskTextLightColor': '#000000'
+    'primaryColor': '#4FC3F7',
+    'secondaryColor': '#0D1117',
+    'tertiaryColor': '#1a1a2e',
+    'primaryTextColor': '#ffffff',
+    'secondaryTextColor': '#4FC3F7',
+    'lineColor': '#4FC3F7'
 } } }%%
 gantt
-    title Strategic Vision & Development
-    dateFormat  YYYY-MM-DD
+    title My Journey
+    dateFormat YYYY-MM-DD
 
-    section Academic
-    Bachelor's Degree (CS)         :done,    edu1, 2019-01-01, 2025-08-24
-    Tuwaiq AI Bootcamp             :done,    edu2, 2025-10-12, 2025-12-18
+    section Education
+    B.Sc. Computer Science    :done, 2019-01-01, 2025-08-24
+    Tuwaiq AI Bootcamp        :done, 2025-10-12, 2025-12-18
 
     section Projects
-    Sentiment Analysis (NLP)       :done,    proj1, 2025-01-01, 2025-05-24
-    Saudi Market Intelligence      :done,    proj2, 2025-12-01, 2026-01-17
-    Bidaya Project                 :active,  proj3, 2025-12-07, 2026-05-24
+    Saudi Market Intelligence :done, 2025-12-01, 2026-01-17
+    Bidaya AI Coach           :active, 2025-12-07, 2026-05-24
 
-    section Vision
-    Advanced AI Agents             :         future1, 2026-06-01, 90d
-    TASI Algo-Trading System       :crit,    future2, 2026-09-01, 120d
+    section Future
+    AI Trading Agents         :2026-06-01, 90d
+    TASI Algo-Trading         :crit, 2026-09-01, 120d
 ```
 
----
+<br/>
 
 <div align="center">
 
-### GitHub Stats
-
-<img src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2196F3&icon_color=2196F3" alt="GitHub Stats" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&background=0D1117&ring=2196F3&fire=2196F3&currStreakLabel=2196F3" alt="GitHub Streak" />
-
-</div>
-
 ---
 
-<div align="center">
+### Let's Connect!
 
-*"Bridging traditional market analysis with cutting-edge AI to unlock insights in the Saudi financial market."*
+<a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">
+  <img src="https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<br/><br/>
+
+**"Transforming market data into actionable intelligence through AI"**
+
+<br/>
+
+![Wave](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=100&section=footer)
 
 </div>
