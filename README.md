@@ -213,9 +213,9 @@ I specialize in applying **machine learning and AI to financial markets**, with 
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-contribution-grid-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-contribution-grid-snake.svg"/>
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-contribution-grid-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake.svg"/>
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake-dark.svg"/>
   </picture>
 </div>
 
