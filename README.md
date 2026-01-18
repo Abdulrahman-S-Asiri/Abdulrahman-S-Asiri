@@ -34,7 +34,7 @@
 I specialize in applying **machine learning and AI to financial markets**, with a deep focus on the **Saudi market (Tadawul)**. My work bridges traditional financial analysis with cutting-edge AI to unlock insights in emerging markets.
 
 - :telescope: **Currently Working On:** AI-powered stock analysis tools for Tadawul
-- :seedling: **Currently Learning:** CMT Program & Advanced Arabic NLP
+- :seedling: **Currently Learning:** CMT Program &  NLP
 - :speech_balloon: **Ask Me About:** Financial AI, Saudi Market Analysis, Arabic NLP
 - :zap: **Fun Fact:** I build models that understand Saudi Arabic financial sentiment
 
