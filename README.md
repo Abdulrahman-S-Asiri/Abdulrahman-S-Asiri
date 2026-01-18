@@ -66,7 +66,7 @@ I specialize in applying **machine learning and AI to financial markets**, with 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge&logo=rest&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge&logo=postman&logoColor=white)
 
 ### Finance & Trading
 ![Trading](https://img.shields.io/badge/Algorithmic%20Trading-00C853?style=for-the-badge&logo=bitcoin&logoColor=white)
@@ -104,7 +104,7 @@ I specialize in applying **machine learning and AI to financial markets**, with 
 - :chart_with_upwards_trend: Real-time stock predictions using ensemble ML models
 - :robot: LSTM neural networks for time-series forecasting
 - :bar_chart: Interactive dashboard for market visualization
-- :saudi_arabia: Specialized for Saudi market dynamics
+- :globe_with_meridians: Specialized for Saudi market dynamics
 
 <div align="center">
 
@@ -169,7 +169,7 @@ I specialize in applying **machine learning and AI to financial markets**, with 
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Security](https://img.shields.io/badge/Cybersecurity-4CAF50?style=flat-square&logo=security&logoColor=white)
+![Security](https://img.shields.io/badge/Cybersecurity-4CAF50?style=flat-square&logo=owasp&logoColor=white)
 
 </div>
 
