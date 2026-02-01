@@ -31,7 +31,7 @@
 
 <img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=donut-vertical&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=C9D1D9"/>
 
-I specialize in applying **machine learning and AI to financial markets**, with a deep focus on the **Saudi market (Tadawul)**. My work bridges traditional financial analysis with cutting-edge AI to unlock insights in emerging markets.
+I am a **Data Engineer at stc** and specialize in applying **machine learning and AI to financial markets**, with a deep focus on the **Saudi market (Tadawul)**. My work bridges traditional financial analysis with cutting-edge AI to unlock insights in emerging markets.
 
 - :telescope: **Currently Working On:** AI-powered stock analysis tools for Tadawul
 - :seedling: **Currently Learning:** CMT Program &  NLP
@@ -255,6 +255,13 @@ I specialize in applying **machine learning and AI to financial markets**, with 
 ## :crown: Leadership & Experience
 
 <div align="center">
+
+### :building_construction: Data Engineer
+**stc (Saudi Telecom Company)**
+
+Building scalable data pipelines and AI systems for the region's leading digital enabler
+
+<br/>
 
 <table>
 <tr>
