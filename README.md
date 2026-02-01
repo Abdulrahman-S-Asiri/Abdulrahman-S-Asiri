@@ -27,7 +27,7 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> About Me
+## 👋 About Me
 
 <img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=donut-vertical&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=C9D1D9"/>
 
@@ -42,7 +42,7 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 ---
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> Tech Stack
+## 🛠️ Tech Stack
 
 <div align="center">
 
@@ -77,7 +77,7 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 ---
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> Featured Projects
+## 🚀 Featured Projects
 
 <div align="center">
 
@@ -186,7 +186,7 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 ---
 
-## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="28"> GitHub Statistics
+## 📊 GitHub Statistics
 
 <div align="center">
 
@@ -205,18 +205,6 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 <!-- Activity Graph -->
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&theme=github-compact&hide_border=true&bg_color=0d1117&color=58A6FF&line=8B5CF6&point=58A6FF&area=true&area_color=8B5CF6"/>
 
-</div>
-
----
-
-## :snake: Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake.svg"/>
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/output/github-snake-dark.svg"/>
-  </picture>
 </div>
 
 ---
