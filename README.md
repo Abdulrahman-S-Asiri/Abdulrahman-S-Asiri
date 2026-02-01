@@ -175,16 +175,6 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-
-[![GitHub Stats](https://img.shields.io/badge/View%20GitHub%20Stats-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri)
-
-</div>
-
----
-
 ## :mortar_board: Education & Certifications
 
 <div align="center">
