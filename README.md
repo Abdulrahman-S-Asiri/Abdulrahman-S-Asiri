@@ -145,7 +145,7 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 <div align="center">
 
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Bidaya)
+[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2)
 
 </div>
 
