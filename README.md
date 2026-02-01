@@ -29,8 +29,6 @@
 
 ## 👋 About Me
 
-<img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=donut-vertical&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=C9D1D9"/>
-
 I am a **Data Engineer at stc** and specialize in applying **machine learning and AI to financial markets**, with a deep focus on the **Saudi market (Tadawul)**. My work bridges traditional financial analysis with cutting-edge AI to unlock insights in emerging markets.
 
 - :telescope: **Currently Working On:** AI-powered stock analysis tools for Tadawul
@@ -78,15 +76,6 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 ---
 
 ## 🚀 Featured Projects
-
-<div align="center">
-
-<!-- Project 1: Saudi Market Intelligence -->
-<a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahman-S-Asiri&repo=saudi-market-intelligence&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=8B5CF6"/>
-</a>
-
-</div>
 
 ### :star2: Saudi Market Intelligence
 > **AI-powered stock analysis platform for Tadawul (Saudi Stock Exchange)**
@@ -190,20 +179,7 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 <div align="center">
 
-<!-- GitHub Trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=15"/>
-
-<br/><br/>
-
-<!-- Stats Cards Row -->
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=8B5CF6&text_color=C9D1D9&ring_color=8B5CF6"/>
-&nbsp;
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Abdulrahman-S-Asiri&theme=github-dark-blue&hide_border=true&background=0d1117&ring=8B5CF6&fire=58A6FF&currStreakLabel=58A6FF"/>
-
-<br/><br/>
-
-<!-- Activity Graph -->
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&theme=github-compact&hide_border=true&bg_color=0d1117&color=58A6FF&line=8B5CF6&point=58A6FF&area=true&area_color=8B5CF6"/>
+[![GitHub Stats](https://img.shields.io/badge/View%20GitHub%20Stats-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri)
 
 </div>
 
