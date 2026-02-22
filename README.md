@@ -6,7 +6,7 @@
 <!-- Typing SVG -->
 <div align="center">
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Data+Engineer+at+STC;Financial+Data+Scientist+%7C+AI+Engineer)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Data+Engineer+at+STC;Data+Scientist+%7C+AI+Engineer)](https://git.io/typing-svg)
 
 </div>
 
@@ -29,12 +29,12 @@
 
 ## 👋 About Me
 
-I am a **Data Engineer at stc** and specialize in applying **machine learning and AI to financial markets**, with a deep focus on the **Saudi market (Tadawul)**. My work bridges traditional financial analysis with cutting-edge AI to unlock insights in emerging markets.
+I am a **Data Engineer at STC** and a **learningholic** who never stops exploring new technologies. Currently working on building an **AI company** while specializing in **Arabic NLP**, **financial AI**, and **data engineering**.
 
-- :telescope: **Currently Working On:** AI-powered stock analysis tools for Tadawul
-- :seedling: **Currently Learning:** CMT Program &  NLP
-- :speech_balloon: **Ask Me About:** Financial AI, Saudi Market Analysis, Arabic NLP
-- :zap: **Fun Fact:** I build models that understand Saudi Arabic financial sentiment
+- :telescope: **Currently Working On:** Building an AI company
+- :seedling: **Currently Learning:** Everything AI — from LLMs to embeddings to production systems
+- :speech_balloon: **Ask Me About:** AI, Arabic NLP, Data Engineering, Saudi Market Analysis
+- :zap: **Fun Fact:** I have 39+ Arabic AI models on Hugging Face
 
 <br clear="right"/>
 
@@ -56,13 +56,16 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
-### Development
+### Development & DevOps
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge&logo=postman&logoColor=white)
 
@@ -75,101 +78,26 @@ I am a **Data Engineer at stc** and specialize in applying **machine learning an
 
 ---
 
-## 🚀 Featured Projects
-
-### :star2: Saudi Market Intelligence
-> **AI-powered stock analysis platform for Tadawul (Saudi Stock Exchange)**
+## 🚀 Projects
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![LSTM](https://img.shields.io/badge/LSTM-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-017CEE?style=flat-square&logo=xgboost&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+| | Project | Description | Status |
+|:---:|:---|:---|:---:|
+| :chart_with_upwards_trend: | [**Saudi Market Intelligence**](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence) | AI-powered stock analysis platform for Tadawul | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
+| :brain: | [**SA-Retrieval Embeddings**](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B) | Saudi Arabic embedding model for RAG systems (0.2B params) | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
+| :briefcase: | [**Bidaya**](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | AI-powered mock interview coach with voice AI | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
+| :shield: | [**Cyber-Awareness**](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness) | Interactive cybersecurity education platform | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
 
 </div>
 
-- :chart_with_upwards_trend: Real-time stock predictions using ensemble ML models
-- :robot: LSTM neural networks for time-series forecasting
-- :bar_chart: Interactive dashboard for market visualization
-- :globe_with_meridians: Specialized for Saudi market dynamics
+### :hugs: Hugging Face Models (39+)
 
 <div align="center">
 
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence)
+Building Arabic AI models — embeddings, LLMs, rerankers, and more.
 
-</div>
-
----
-
-### :brain: SA-Retrieval Embeddings
-> **Semantic embedding model optimized for Saudi Arabic RAG systems**
-
-<div align="center">
-
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-9C27B0?style=flat-square&logo=spacy&logoColor=white)
-
-</div>
-
-- :globe_with_meridians: 0.2B parameter embedding model
-- :speech_balloon: Optimized for Saudi Arabic dialect
-- :mag: High-performance semantic search
-- :books: Perfect for RAG (Retrieval-Augmented Generation) systems
-
-<div align="center">
-
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)
-
-</div>
-
----
-
-### :briefcase: Bidaya
-> **AI-powered mock interview coach for career preparation**
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-9C27B0?style=flat-square&logo=spacy&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-
-</div>
-
-- :microphone: Realistic interview simulations
-- :memo: AI-powered feedback and suggestions
-- :dart: Industry-specific question banks
-- :trophy: Track progress and improvement
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2)
-
-</div>
-
----
-
-### :shield: Cyber-Awareness
-> **Interactive cybersecurity education platform**
-
-<div align="center">
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Security](https://img.shields.io/badge/Cybersecurity-4CAF50?style=flat-square&logo=owasp&logoColor=white)
-
-</div>
-
-- :lock: Interactive security awareness training
-- :video_game: Gamified learning experience
-- :books: Comprehensive threat education
-- :shield: Real-world scenario simulations
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness)
+[![Hugging Face](https://img.shields.io/badge/View%20All%20Models-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
 
 </div>
 
@@ -246,7 +174,7 @@ Directing financial research and market analysis operations
 
 <div align="center">
 
-I'm always open to discussing **AI**, **financial markets**, and opportunities for **collaboration**.
+I'm always open to discussing **AI**, **data engineering**, and opportunities for **collaboration**.
 
 <br/>
 
@@ -262,7 +190,7 @@ I'm always open to discussing **AI**, **financial markets**, and opportunities f
 
 <br/>
 
-:mailbox: **Open to:** Collaborations | Research Partnerships | AI & Finance Projects
+:mailbox: **Open to:** Collaborations | Research Partnerships | AI Projects
 
 </div>
 
