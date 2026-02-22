@@ -19,7 +19,7 @@
   &nbsp;
   [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
   &nbsp;
-  [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
+  [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Abdulrahman-S-Asiri)
 
 </div>
 
@@ -29,12 +29,12 @@
 
 ## 👋 About Me
 
-I am a **Data Engineer at STC** and a **learningholic** who never stops exploring new technologies. Currently working on building an **AI company** while specializing in **Arabic NLP**, **financial AI**, and **data engineering**.
+I am a **Data Engineer at STC** and a **learningholic** who never stops exploring new technologies. Currently working on building an **AI company** while specializing in **AI**, **financial markets**, and **data engineering**.
 
 - :telescope: **Currently Working On:** Building an AI company
 - :seedling: **Currently Learning:** Everything AI — from LLMs to embeddings to production systems
-- :speech_balloon: **Ask Me About:** AI, Arabic NLP, Data Engineering, Saudi Market Analysis
-- :zap: **Fun Fact:** I have 39+ Arabic AI models on Hugging Face
+- :speech_balloon: **Ask Me About:** AI, Data Engineering, Stocks, Stock Market, Technical Analysis
+- :zap: **Fun Fact:** I'm a learningholic — if there's something new, I'm already studying it
 
 <br clear="right"/>
 
@@ -85,19 +85,8 @@ I am a **Data Engineer at STC** and a **learningholic** who never stops explorin
 | | Project | Description | Status |
 |:---:|:---|:---|:---:|
 | :chart_with_upwards_trend: | [**Saudi Market Intelligence**](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence) | AI-powered stock analysis platform for Tadawul | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
-| :brain: | [**SA-Retrieval Embeddings**](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B) | Saudi Arabic embedding model for RAG systems (0.2B params) | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
 | :briefcase: | [**Bidaya**](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | AI-powered mock interview coach with voice AI | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
 | :shield: | [**Cyber-Awareness**](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness) | Interactive cybersecurity education platform | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
-
-</div>
-
-### :hugs: Hugging Face Models (39+)
-
-<div align="center">
-
-Building Arabic AI models — embeddings, LLMs, rerankers, and more.
-
-[![Hugging Face](https://img.shields.io/badge/View%20All%20Models-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
 
 </div>
 
@@ -126,9 +115,6 @@ Building Arabic AI models — embeddings, LLMs, rerankers, and more.
 | Focus Area | Progress |
 |:---|:---:|
 | :chart_with_upwards_trend: **CMT Program** (Chartered Market Technician) | ![](https://geps.dev/progress/65) |
-| :speech_balloon: **Advanced Arabic NLP** | ![](https://geps.dev/progress/70) |
-| :moneybag: **Quantitative Trading Strategies** | ![](https://geps.dev/progress/50) |
-| :link: **LLM Fine-tuning & RAG** | ![](https://geps.dev/progress/75) |
 
 </div>
 
@@ -182,7 +168,7 @@ I'm always open to discussing **AI**, **data engineering**, and opportunities fo
 &nbsp;&nbsp;
 [![X](https://img.shields.io/badge/Follow%20on%20X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
 &nbsp;&nbsp;
-[![Hugging Face](https://img.shields.io/badge/Models%20on%20Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space)
+[![Hugging Face](https://img.shields.io/badge/Models%20on%20Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Abdulrahman-S-Asiri)
 
 <br/><br/>
 
