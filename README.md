@@ -156,6 +156,53 @@ I am a **Data Engineer at STC** and a **learningholic** who never stops explorin
 
 ---
 
+### :handshake: Open-Source Contributions
+
+#### :brain: SA-Retrieval Embeddings (0.2B)
+> **Retrieval-optimized embedding model for Saudi Arabic RAG systems**
+
+<div align="center">
+
+![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+</div>
+
+- :mag: 88% Top-1 Accuracy and 99.2% Recall@5 on Saudi Arabic retrieval
+- :speech_balloon: Optimized for Saudi dialect + Modern Standard Arabic
+- :link: Trained with hard negatives and triplet-based discrimination for RAG pipelines
+- :books: Built on MARBERTv2 → SA-BERT → SA-STS pipeline (768-dim embeddings)
+
+<div align="center">
+
+[![Hugging Face](https://img.shields.io/badge/View%20Model-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)
+
+</div>
+
+---
+
+#### :trophy: SAFIR Leaderboard
+> **Arabic AI Models Benchmark by NAMAA (Network for Advancing Modern Arabic NLP & AI)**
+
+<div align="center">
+
+![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+</div>
+
+- :bar_chart: Leaderboard ranking Arabic NLP & AI models across multiple benchmarks
+- :globe_with_meridians: Open-source platform for the Arabic AI research community
+- :busts_in_silhouette: Community-driven evaluation and collaboration
+
+<div align="center">
+
+[![View Leaderboard](https://img.shields.io/badge/View%20Leaderboard-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)
+
+</div>
+
+---
+
 ### :lock: Private Projects
 
 <div align="center">
