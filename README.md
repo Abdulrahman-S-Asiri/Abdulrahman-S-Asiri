@@ -80,13 +80,92 @@ I am a **Data Engineer at STC** and a **learningholic** who never stops explorin
 
 ## 🚀 Projects
 
+### :star2: Saudi Market Intelligence
+> **Institutional-Grade Market Intelligence for Tadawul (TASI)**
+
 <div align="center">
 
-| | Project | Description | Status |
-|:---:|:---|:---|:---:|
-| :chart_with_upwards_trend: | [**Saudi Market Intelligence**](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence) | AI-powered stock analysis platform for Tadawul | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
-| :briefcase: | [**Bidaya**](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | AI-powered mock interview coach with voice AI | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
-| :shield: | [**Cyber-Awareness**](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness) | Interactive cybersecurity education platform | ![](https://img.shields.io/badge/In%20Development-FFA500?style=flat-square) |
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+</div>
+
+- :brain: BiLSTM + Multi-Head Attention architecture trained on 40+ technical features
+- :dart: Monte Carlo Dropout for calibrated confidence scores (25-95%)
+- :chart_with_upwards_trend: Real-time stock scanner ranking 200+ Saudi stocks by signal strength
+- :briefcase: Full portfolio tracking with P/L, risk metrics, and trade execution
+
+<div align="center">
+
+[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence)
+
+</div>
+
+---
+
+### :briefcase: Bidaya (بداية)
+> **AI-Powered Interview Coach with Voice AI & Real-Time Feedback**
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+</div>
+
+- :microphone: Voice AI pipeline — Speech-to-Text, Text-to-Speech, live recording
+- :robot: Multi-AI support (GPT-4o, Grok, Llama 3.1, Gemini)
+- :dart: Smart interview modes (Behavioral, Technical, Mixed) with difficulty levels
+- :globe_with_meridians: Bilingual support (Arabic & English) with resume analysis
+- :bar_chart: Analytics dashboard with performance tracking and 7-day action plans
+
+<div align="center">
+
+[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2)
+
+</div>
+
+---
+
+### :shield: Cyber-Awareness
+> **Interactive Cybersecurity Awareness Training Platform**
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+</div>
+
+- :boom: Shock splash animation simulating a breach scenario for awareness training
+- :white_check_mark: Step-by-step incident response checklist (disconnect, passwords, 2FA, scan)
+- :books: Preventive tips in Arabic (RTL) with responsive dark UI and glitch effects
+- :arrows_counterclockwise: Replay control for demos and repeated training sessions
+
+<div align="center">
+
+[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness)
+
+</div>
+
+---
+
+### :lock: Private Projects
+
+<div align="center">
+
+| | Project | Description |
+|:---:|:---|:---|
+| :gear: | **CodeForge** | Full-stack development platform with Terraform infrastructure |
+| :chart_with_upwards_trend: | **Stock_101** | Stock market analysis tool built with Python |
+| :globe_with_meridians: | **Saudi Market Knowledge Graph** | Knowledge graph for Saudi market data with Jupyter analytics |
+| :speech_balloon: | **Sentiment Analysis** | Arabic sentiment analysis project |
 
 </div>
 
