@@ -156,6 +156,30 @@ I am a **Data Engineer at STC** and a **learningholic** who never stops explorin
 
 ---
 
+### :brain: Mindmaps Encyclopedia
+> **Comprehensive Collection of Interactive Deeply Detailed Tech Mindmaps**
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+
+</div>
+
+- :books: 30+ comprehensive interactive mindmaps covering major tech domains
+- :mag: Detailed references branch added to all mindmaps for deeper learning
+- :gear: Automated generation using Python, exported to HTML
+- :globe_with_meridians: Centralized portal dashboard for easy navigation
+
+<div align="center">
+
+[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Mindmaps)
+
+</div>
+
+---
+
 ### :handshake: Open-Source Contributions
 
 #### :brain: SA-Retrieval Embeddings (0.2B)
@@ -213,6 +237,7 @@ I am a **Data Engineer at STC** and a **learningholic** who never stops explorin
 | :chart_with_upwards_trend: | **Stock_101** | Stock market analysis tool built with Python |
 | :globe_with_meridians: | **Saudi Market Knowledge Graph** | Knowledge graph for Saudi market data with Jupyter analytics |
 | :speech_balloon: | **Sentiment Analysis** | Arabic sentiment analysis project |
+| :bar_chart: | **DataPulse-Analytics** | Advanced data analytics and processing platform |
 
 </div>
 
