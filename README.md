@@ -53,7 +53,7 @@
 
 <img align="right" alt="Coding" width="380" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif"/>
 
-I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, AI engineer, and self-described **learningholic** 🇸🇦. My work sits at the intersection of **artificial intelligence**, **financial markets**, and **large-scale data systems**.
+I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, AI engineer, and self-described **learningholic** 🇸🇦. My work sits at the intersection of **artificial intelligence**, **financial markets**.
 
 - 🔭 **Building:** An AI company — production-grade agents & ML systems
 - 🧠 **Focus Areas:** LLMs · Embeddings · Agentic Systems · Quant Finance · Arabic NLP
