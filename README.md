@@ -10,7 +10,7 @@
      ════════════════════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=Data+Engineer+at+STC+%F0%9F%87%B8%F0%9F%87%A6;Building+an+AI+Company+%F0%9F%9A%80;Data+Scientist+%7C+AI+Engineer+%7C+Trader;Arabic+NLP+%7C+Financial+Markets+%7C+LLMs)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=Data+Engineer+at+STC+%F0%9F%87%B8%F0%9F%87%A6;Data+Scientist+%7C+AI+Engineer+%7C+Trader)](https://git.io/typing-svg)
 
 </div>
 
