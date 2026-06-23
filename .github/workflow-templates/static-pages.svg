@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Static GitHub Pages workflow</title>
+  <rect width="48" height="48" rx="8" fill="#0969da"/>
+  <path fill="#ffffff" d="M13 14h22a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2Zm1 5v12h20V19H14Zm3 3h9v2h-9v-2Zm0 4h14v2H17v-2Z"/>
+</svg>

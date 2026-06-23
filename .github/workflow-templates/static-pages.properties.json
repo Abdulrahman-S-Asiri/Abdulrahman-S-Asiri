@@ -1,0 +1,15 @@
+{
+  "name": "Static GitHub Pages",
+  "description": "Publish a static website from the repository root with GitHub Pages.",
+  "iconName": "static-pages",
+  "categories": [
+    "HTML",
+    "Deployment",
+    "Pages"
+  ],
+  "filePatterns": [
+    "^index\\.html$",
+    "^README\\.md$",
+    "^package\\.json$"
+  ]
+}
