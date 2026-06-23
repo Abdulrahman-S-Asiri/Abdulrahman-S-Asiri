@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Abdulrahman Saad Asiri</title>
+  <desc id="desc">A visual GitHub profile hero for a data engineer and AI engineer in Riyadh focused on Arabic AI and financial markets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.52" stop-color="#0f2a33"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="380" rx="26" fill="url(#bg)"/>
+  <circle cx="1010" cy="76" r="138" fill="#38bdf8" opacity="0.15" filter="url(#soft)"/>
+  <circle cx="101" cy="318" r="142" fill="#22c55e" opacity="0.16" filter="url(#soft)"/>
+  <path d="M72 290 C210 238 290 250 412 188 S650 110 778 154 985 226 1126 142" fill="none" stroke="url(#accent)" stroke-width="5" opacity="0.82"/>
+  <path d="M72 314 C245 246 310 302 452 218 S686 150 806 202 984 274 1126 208" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.38"/>
+  <g opacity="0.26" stroke="#cbd5e1" stroke-width="1">
+    <path d="M70 70 H1130"/>
+    <path d="M70 130 H1130"/>
+    <path d="M70 190 H1130"/>
+    <path d="M70 250 H1130"/>
+    <path d="M170 42 V336"/>
+    <path d="M370 42 V336"/>
+    <path d="M570 42 V336"/>
+    <path d="M770 42 V336"/>
+    <path d="M970 42 V336"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="72" y="96" fill="#94a3b8" font-size="20" font-weight="700">RIYADH · STC · ARABIC AI · MARKET INTELLIGENCE</text>
+    <text x="72" y="160" fill="#ffffff" font-size="58" font-weight="900">Abdulrahman Saad Asiri</text>
+    <text x="74" y="205" fill="#dbeafe" font-size="28" font-weight="700">Data Engineer · AI Engineer · Learningholic Builder</text>
+    <text x="74" y="246" fill="#cbd5e1" font-size="21">I build data platforms, LLM systems, Arabic NLP tools, and Saudi market intelligence products.</text>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">
+    <rect x="74" y="282" width="175" height="42" rx="14" fill="#22c55e" opacity="0.18" stroke="#22c55e"/>
+    <text x="100" y="309" fill="#bbf7d0">Data Platforms</text>
+    <rect x="268" y="282" width="155" height="42" rx="14" fill="#38bdf8" opacity="0.18" stroke="#38bdf8"/>
+    <text x="296" y="309" fill="#bae6fd">Arabic NLP</text>
+    <rect x="442" y="282" width="170" height="42" rx="14" fill="#facc15" opacity="0.16" stroke="#facc15"/>
+    <text x="470" y="309" fill="#fef3c7">Saudi Markets</text>
+    <rect x="631" y="282" width="158" height="42" rx="14" fill="#a78bfa" opacity="0.18" stroke="#a78bfa"/>
+    <text x="659" y="309" fill="#ddd6fe">LLM Agents</text>
+  </g>
+  <g transform="translate(900 120)">
+    <rect x="0" y="0" width="230" height="148" rx="22" fill="#020617" opacity="0.7" stroke="#334155"/>
+    <text x="26" y="44" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Current direction</text>
+    <text x="26" y="78" fill="#86efac" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Production AI</text>
+    <text x="26" y="108" fill="#7dd3fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Saudi market systems</text>
+    <text x="26" y="138" fill="#fde68a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">CMT + quant research</text>
+  </g>
+</svg>

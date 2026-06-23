@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Project showcase</title>
+  <desc id="desc">A visual showcase of Abdulrahman's public projects grouped by finance AI, Arabic education, product systems, and awareness tools.</desc>
+  <rect width="1200" height="500" rx="22" fill="#0b1020"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="60" y="62" fill="#ffffff" font-size="34" font-weight="900">Public portfolio map</text>
+    <text x="60" y="96" fill="#94a3b8" font-size="18">Projects grouped by the type of value they show</text>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <g transform="translate(60 135)">
+      <rect width="330" height="140" rx="18" fill="#052e16" stroke="#22c55e"/>
+      <text x="26" y="42" fill="#bbf7d0" font-size="22" font-weight="900">Finance AI</text>
+      <text x="26" y="76" fill="#dcfce7" font-size="17">Stock Agents</text>
+      <text x="26" y="104" fill="#dcfce7" font-size="17">Saudi Market Intelligence</text>
+    </g>
+    <g transform="translate(435 135)">
+      <rect width="330" height="140" rx="18" fill="#082f49" stroke="#38bdf8"/>
+      <text x="26" y="42" fill="#bae6fd" font-size="22" font-weight="900">Arabic Learning</text>
+      <text x="26" y="76" fill="#e0f2fe" font-size="17">Data Science Basics</text>
+      <text x="26" y="104" fill="#e0f2fe" font-size="17">Mindmaps Encyclopedia</text>
+    </g>
+    <g transform="translate(810 135)">
+      <rect width="330" height="140" rx="18" fill="#312e81" stroke="#a78bfa"/>
+      <text x="26" y="42" fill="#ddd6fe" font-size="22" font-weight="900">AI Product Systems</text>
+      <text x="26" y="76" fill="#ede9fe" font-size="17">Bidaya interview coach</text>
+      <text x="26" y="104" fill="#ede9fe" font-size="17">Sentiment Insight</text>
+    </g>
+    <g transform="translate(248 315)">
+      <rect width="330" height="110" rx="18" fill="#422006" stroke="#facc15"/>
+      <text x="26" y="42" fill="#fef3c7" font-size="22" font-weight="900">Community Tools</text>
+      <text x="26" y="78" fill="#fef9c3" font-size="17">Cyber-Awareness</text>
+    </g>
+    <g transform="translate(623 315)">
+      <rect width="330" height="110" rx="18" fill="#3f1d2f" stroke="#fb7185"/>
+      <text x="26" y="42" fill="#ffe4e6" font-size="22" font-weight="900">Immersive Arabic</text>
+      <text x="26" y="78" fill="#ffe4e6" font-size="17">Tasamuh VR</text>
+    </g>
+  </g>
+  <path d="M225 275 C260 300 300 306 356 315" stroke="#22c55e" stroke-width="3" fill="none" opacity="0.65"/>
+  <path d="M600 275 C574 299 550 309 522 315" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.65"/>
+  <path d="M975 275 C936 299 894 310 843 315" stroke="#a78bfa" stroke-width="3" fill="none" opacity="0.65"/>
+</svg>

@@ -1,134 +1,153 @@
-<!--
-Profile README for Abdulrahman-S-Asiri.
-Keep this concise: GitHub strips custom CSS, and most readers scan the first screen.
--->
-
-<h1 align="center">Abdulrahman Saad Asiri</h1>
-
-<p align="center">
-  <strong>Data Engineer at stc | AI Engineer | Builder of data products for Arabic AI and financial markets</strong>
-</p>
-
-<p align="center">
-  Riyadh, Saudi Arabia &nbsp;|&nbsp; Data platforms &nbsp;|&nbsp; LLM systems &nbsp;|&nbsp; Quant research &nbsp;|&nbsp; Arabic NLP
-</p>
+<div align="center">
+  <img src="./assets/profile-hero.svg" width="100%" alt="Abdulrahman Saad Asiri profile hero">
+</div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
   <a href="https://x.com/D7oomyStay">
-    <img alt="X" src="https://img.shields.io/badge/X-111111?style=flat-square&logo=x&logoColor=white">
+    <img alt="X" src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=white">
   </a>
   <a href="https://huggingface.co/Abdulrahman-S-Asiri">
-    <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=111111">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111">
   </a>
   <a href="mailto:abdulrahman.s.alasiri@gmail.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white">
+    <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
 </p>
 
 ---
 
-## Profile
+## About Me | نبذة عني
 
-I build production-grade data and AI systems with a focus on reliable pipelines, measurable model behavior, and practical product execution. My current work sits across data engineering, LLM applications, Arabic language systems, and market intelligence.
+I am **Abdulrahman Saad Asiri**, a **Data Engineer at stc** in Riyadh, Saudi Arabia. I build at the intersection of **data engineering**, **AI systems**, **Arabic NLP**, and **financial markets**.
 
-| Area | What I focus on |
+I describe myself as a **learningholic**: if a field can improve how I build, analyze, or invest, I study it deeply. My current direction is clear: build production-grade AI products, especially for Arabic users and market-intelligence workflows.
+
+| What is real about me | Details |
 |:---|:---|
-| Data engineering | Scalable pipelines, analytics layers, operational data quality, and decision-ready datasets |
-| AI engineering | RAG systems, embeddings, agents, evaluation workflows, and Arabic NLP |
-| Financial systems | Saudi market intelligence, portfolio tooling, technical analysis, and signal research |
-| Product execution | Clear interfaces, reproducible builds, readable documentation, and maintainable UX |
+| Current role | Data Engineer at stc |
+| Based in | Riyadh, Saudi Arabia |
+| Main technical focus | LLMs, embeddings, agentic systems, data platforms, Arabic NLP |
+| Market focus | Saudi stock market, Tadawul, technical analysis, quant research |
+| Currently studying | CMT Program, production LLM systems, large-scale data architecture |
+| Builder mindset | Turn messy data into usable intelligence, then into real products |
 
 ---
 
-## Selected Work
+## My Builder Map
 
-| Project | What it demonstrates | Stack |
+<div align="center">
+  <img src="./assets/builder-map.svg" width="100%" alt="Abdulrahman's builder map showing data engineering, AI systems, Arabic NLP, and finance">
+</div>
+
+---
+
+## Signature Projects
+
+<div align="center">
+  <img src="./assets/project-showcase.svg" width="100%" alt="Visual map of Abdulrahman's public projects">
+</div>
+
+| Project | Why it matters | Stack |
 |:---|:---|:---|
-| [Stock Agents](https://github.com/Abdulrahman-S-Asiri/Stock_Agents) | Multi-agent investment analysis platform covering US equities and Tadawul with portfolio analytics and real-time market data | Next.js, TypeScript, FastAPI, PostgreSQL, Redis, Docker |
-| [Saudi Market Intelligence](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence) | Market scanner and prediction workflow for Saudi equities with portfolio tracking and calibrated confidence outputs | Python, PyTorch, FastAPI, React, Tailwind CSS |
-| [Data Science Basics](https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics) | Bilingual Arabic/English learning path for practical data science, from fundamentals to applied notebooks | Python, Jupyter, pandas, scikit-learn |
-| [Bidaya](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | AI interview coach with voice input, feedback loops, resume analysis, and bilingual user experience | React, Flask, OpenAI APIs, Vite |
-| [Mindmaps Encyclopedia](https://github.com/Abdulrahman-S-Asiri/Mindmaps) | Interactive knowledge maps for technical domains with generated HTML outputs | Python, HTML, CSS |
+| [Stock Agents](https://github.com/Abdulrahman-S-Asiri/Stock_Agents) | Investment platform with 11 specialized AI agents, dual-market coverage, portfolio analytics, and real-time data | Next.js, TypeScript, FastAPI, PostgreSQL, Redis, Docker |
+| [Saudi Market Intelligence](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence) | Tadawul-focused market intelligence with technical features, confidence scoring, scanner workflows, and portfolio tracking | Python, PyTorch, FastAPI, React, Tailwind CSS |
+| [Data Science Basics](https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics) | Bilingual Arabic/English data science path built to help learners move from basics to applied notebooks | Python, Jupyter, pandas, scikit-learn |
+| [Bidaya](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | Arabic/English AI interview coach with voice pipeline, resume analysis, feedback loops, and analytics | React, Flask, OpenAI APIs, Vite |
+| [Mindmaps Encyclopedia](https://github.com/Abdulrahman-S-Asiri/Mindmaps) | Interactive mindmaps for learning technical domains with generated HTML outputs | Python, HTML, CSS |
 | [Cyber-Awareness](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness) | Arabic-first cybersecurity awareness training with incident-response guidance | HTML, CSS, JavaScript |
 
 ---
 
 ## Open Source And Research
 
-| Contribution | Focus |
+| Contribution | Focus | Link |
+|:---|:---|:---|
+| SA-Retrieval Embeddings 0.2B | Retrieval-optimized embedding model for Saudi Arabic RAG systems | [Hugging Face](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B) |
+| SAFIR Leaderboard | Arabic AI benchmark and model-evaluation leaderboard by NAMAA | [Hugging Face Space](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard) |
+
+---
+
+## Stack Snapshot
+
+<div align="center">
+
+| AI / ML | Data | Backend | Frontend | Markets |
+|:---:|:---:|:---:|:---:|:---:|
+| PyTorch | PostgreSQL | FastAPI | React | Tadawul |
+| Transformers | Redis | Flask | Next.js | US equities |
+| Embeddings | pandas | REST APIs | TypeScript | Technical analysis |
+| RAG | NumPy | WebSockets | Tailwind CSS | Portfolio analytics |
+| Agents | SQL | Docker | Vite | Quant research |
+
+</div>
+
+---
+
+## Education, Certifications, And Leadership
+
+| Area | Details |
 |:---|:---|
-| [SA-Retrieval Embeddings 0.2B](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B) | Retrieval-optimized embedding model for Saudi Arabic RAG systems |
-| [SAFIR Leaderboard](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard) | Arabic AI benchmark and model-evaluation leaderboard |
+| Education | B.Sc. Computer Science, Majmaah University |
+| Training | Data Science & AI Bootcamp, Tuwaiq Academy |
+| Certifications | Data Scientist Associate, DataCamp; Deep Learning Fundamentals, NVIDIA |
+| Finance path | CMT Candidate, Chartered Market Technician Program |
+| Leadership | Head of Investment Committees and Head of Financial Analysis, Investment Club |
 
 ---
 
-## Engineering Standards
+## What I Am Building Toward
 
-I aim for projects that are easy to inspect, run, test, and extend.
+```text
+Arabic AI products
+  -> reliable retrieval
+  -> measurable model behavior
+  -> useful interfaces
+  -> production deployment
 
-- Architecture is explained before implementation details.
-- Public APIs and data contracts are explicit.
-- CI covers linting, tests, and build checks where the stack supports it.
-- AI features include evaluation sets, error analysis, and clear guardrails.
-- Documentation shows setup, usage, tradeoffs, and known limitations.
-- UI work prioritizes accessibility, responsive behavior, and predictable workflows.
-
----
-
-## Technical Range
-
-| Domain | Tools and systems |
-|:---|:---|
-| Languages | Python, TypeScript, JavaScript, SQL |
-| AI/ML | PyTorch, Transformers, scikit-learn, embeddings, RAG, LLM agents |
-| Data | pandas, NumPy, PostgreSQL, Redis, analytics pipelines |
-| Backend | FastAPI, Flask, REST APIs, WebSockets, Docker |
-| Frontend | React, Next.js, Vite, Tailwind CSS |
-| Markets | Tadawul, US equities, technical analysis, portfolio analytics |
+Saudi market intelligence
+  -> cleaner data pipelines
+  -> better signals
+  -> portfolio-aware decisions
+  -> explainable analysis
+```
 
 ---
 
-## GitHub Activity
+## GitHub Analytics
 
-<details>
-<summary>View activity cards</summary>
+<div align="center">
+  <img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true">
+  <img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8">
+</div>
 
 <br>
 
-<p align="center">
-  <img height="165" alt="Abdulrahman's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true">
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=github_dark&hide_border=true&langs_count=8">
-</p>
-
-<p align="center">
-  <img alt="Contribution streak" src="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&theme=github-dark-blue&hide_border=true">
-</p>
-
-</details>
+<div align="center">
+  <img width="92%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&bg_color=0b1020&color=38bdf8&line=22c55e&point=facc15&area=true&hide_border=true&custom_title=Abdulrahman's%20Contribution%20Activity">
+</div>
 
 ---
 
-## Working Principles
+## How I Work
 
-- Build the smallest useful version, validate it, then scale the system.
-- Treat data quality as a product feature, not a backend detail.
-- Prefer measured model behavior over impressive demos.
-- Keep project narratives specific: problem, decisions, evidence, result.
-- Write code and documentation that another engineer can continue without guessing.
+- I care about systems that actually run, not just demos.
+- I like projects that connect data, AI, and real decision-making.
+- I document architecture, tradeoffs, and limitations so another engineer can understand the work.
+- I use AI tools as engineering assistants, but I keep ownership of the decisions, review, testing, and final result.
 
 ---
 
-## Contact
-
-I am open to AI engineering, data engineering, Arabic NLP, and market-intelligence collaborations.
+<p align="center">
+  <strong>Open to collaborations in AI engineering, data platforms, Arabic NLP, and market-intelligence systems.</strong>
+</p>
 
 <p align="center">
+  <a href="mailto:abdulrahman.s.alasiri@gmail.com">Email</a>
+  &nbsp;|&nbsp;
   <a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">LinkedIn</a>
   &nbsp;|&nbsp;
   <a href="https://huggingface.co/Abdulrahman-S-Asiri">Hugging Face</a>
-  &nbsp;|&nbsp;
-  <a href="mailto:abdulrahman.s.alasiri@gmail.com">Email</a>
 </p>
