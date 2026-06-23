@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-labelledby="title desc">
+  <title id="title">Current roadmap</title>
+  <desc id="desc">A visual roadmap for Abdulrahman's current focus areas: Arabic AI products, Saudi market intelligence, engineering maturity, and finance learning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="460" rx="28" fill="url(#bg)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="64" y="66" fill="#ffffff" font-size="36" font-weight="900">Current roadmap</text>
+    <text x="64" y="100" fill="#94a3b8" font-size="18">What I am improving next across engineering, AI, and markets.</text>
+  </g>
+  <line x1="112" y1="226" x2="1168" y2="226" stroke="url(#rail)" stroke-width="8" stroke-linecap="round"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <g transform="translate(88 152)">
+      <rect width="250" height="148" rx="20" fill="#052e16" stroke="#22c55e"/>
+      <circle cx="28" cy="74" r="12" fill="#22c55e"/>
+      <text x="58" y="46" fill="#bbf7d0" font-size="20" font-weight="900">Arabic AI</text>
+      <text x="58" y="78" fill="#dcfce7" font-size="15">retrieval · embeddings</text>
+      <text x="58" y="104" fill="#dcfce7" font-size="15">evals · Arabic UX</text>
+    </g>
+    <g transform="translate(374 152)">
+      <rect width="250" height="148" rx="20" fill="#082f49" stroke="#38bdf8"/>
+      <circle cx="28" cy="74" r="12" fill="#38bdf8"/>
+      <text x="58" y="46" fill="#bae6fd" font-size="20" font-weight="900">Market Intel</text>
+      <text x="58" y="78" fill="#e0f2fe" font-size="15">Tadawul signals</text>
+      <text x="58" y="104" fill="#e0f2fe" font-size="15">portfolio-aware analysis</text>
+    </g>
+    <g transform="translate(660 152)">
+      <rect width="250" height="148" rx="20" fill="#312e81" stroke="#a78bfa"/>
+      <circle cx="28" cy="74" r="12" fill="#a78bfa"/>
+      <text x="58" y="46" fill="#ddd6fe" font-size="20" font-weight="900">Engineering</text>
+      <text x="58" y="78" fill="#ede9fe" font-size="15">CI · deployment</text>
+      <text x="58" y="104" fill="#ede9fe" font-size="15">docs · reproducibility</text>
+    </g>
+    <g transform="translate(946 152)">
+      <rect width="250" height="148" rx="20" fill="#422006" stroke="#facc15"/>
+      <circle cx="28" cy="74" r="12" fill="#facc15"/>
+      <text x="58" y="46" fill="#fef3c7" font-size="20" font-weight="900">Finance</text>
+      <text x="58" y="78" fill="#fef9c3" font-size="15">CMT program</text>
+      <text x="58" y="104" fill="#fef9c3" font-size="15">market structure</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="160" y="350" width="960" height="54" rx="18" fill="#020617" opacity="0.78" stroke="#334155"/>
+    <text x="194" y="384" fill="#cbd5e1" font-size="17">Goal: fewer demos, more durable systems with clear data contracts, tested AI behavior, and usable product interfaces.</text>
+  </g>
+</svg>
