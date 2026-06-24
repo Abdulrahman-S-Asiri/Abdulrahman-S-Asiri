@@ -138,59 +138,77 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="33%" valign="top">
 
-**🤖 AI & Machine Learning**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-017CEE?style=for-the-badge&logo=xgboost&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+<h3>🧠 Model Layer</h3>
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white"/>
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&amp;logo=pytorch&amp;logoColor=white"/>
+<img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&amp;logo=tensorflow&amp;logoColor=white"/>
+<img alt="Hugging Face" src="https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black"/>
+<img alt="Scikit-Learn" src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white"/>
+<img alt="XGBoost" src="https://img.shields.io/badge/XGBoost-017CEE?style=for-the-badge"/>
+<img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&amp;logo=openai&amp;logoColor=white"/>
+<br/>
+<sub>LLMs · embeddings · ML pipelines · evaluation</sub>
 
 </td>
-<td align="center" width="50%">
+<td align="center" width="33%" valign="top">
 
-**📊 Data & Analytics**
+<h3>🗄️ Data Layer</h3>
+<img alt="SQL" src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"/>
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white"/>
+<img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&amp;logo=redis&amp;logoColor=white"/>
+<img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white"/>
+<img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"/>
+<img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white"/>
+<img alt="Tableau" src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&amp;logo=tableau&amp;logoColor=white"/>
+<br/>
+<sub>data modeling · analytics notebooks · BI reporting</sub>
 
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+</td>
+<td align="center" width="33%" valign="top">
+
+<h3>⚙️ API Layer</h3>
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white"/>
+<img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&amp;logo=flask&amp;logoColor=white"/>
+<img alt="REST APIs" src="https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge&amp;logo=postman&amp;logoColor=white"/>
+<img alt="WebSockets" src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&amp;logo=socketdotio&amp;logoColor=white"/>
+<br/>
+<sub>service design · typed APIs · realtime channels</sub>
 
 </td>
 </tr>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="33%" valign="top">
 
-**⚙️ Backend & Frontend**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+<h3>🖥️ Interface Layer</h3>
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&amp;logo=nextdotjs&amp;logoColor=white"/>
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&amp;logo=react&amp;logoColor=black"/>
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"/>
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&amp;logo=tailwindcss&amp;logoColor=white"/>
+<br/>
+<sub>dashboards · responsive UI · product workflows</sub>
 
 </td>
-<td align="center" width="50%">
+<td align="center" width="33%" valign="top">
 
-**☁️ DevOps · 📈 Finance**
+<h3>🚢 Delivery Layer</h3>
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white"/>
+<img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&amp;logo=terraform&amp;logoColor=white"/>
+<img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&amp;logo=git&amp;logoColor=white"/>
+<br/>
+<sub>containers · infrastructure as code · clean version history</sub>
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![REST](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge&logo=postman&logoColor=white)
-![Algo Trading](https://img.shields.io/badge/Algo%20Trading-00C853?style=for-the-badge&logo=bitcoin&logoColor=white)
-![Technical Analysis](https://img.shields.io/badge/Technical%20Analysis-7B68EE?style=for-the-badge&logo=tradingview&logoColor=white)
-![Market Data](https://img.shields.io/badge/Market%20Data-FF5722?style=for-the-badge&logo=yahoo&logoColor=white)
+</td>
+<td align="center" width="33%" valign="top">
+
+<h3>📈 Market Layer</h3>
+<img alt="Algo Trading" src="https://img.shields.io/badge/Algo%20Trading-00C853?style=for-the-badge&amp;logo=tradingview&amp;logoColor=white"/>
+<img alt="Technical Analysis" src="https://img.shields.io/badge/Technical%20Analysis-7B68EE?style=for-the-badge&amp;logo=chartdotjs&amp;logoColor=white"/>
+<img alt="Market Data" src="https://img.shields.io/badge/Market%20Data-FF5722?style=for-the-badge&amp;logo=yahoo&amp;logoColor=white"/>
+<br/>
+<sub>Tadawul research · market intelligence · decision systems</sub>
 
 </td>
 </tr>
