@@ -475,34 +475,50 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 SA-Retrieval Embeddings (0.2B)
-**Retrieval-Optimized Embedding Model for Saudi Arabic RAG Systems**
+<h3>🧠 SA-Retrieval Embeddings (0.2B)</h3>
+<p><strong>Retrieval-Optimized Embedding Model for Saudi Arabic RAG Systems</strong></p>
 
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+<p>
+  <img alt="Transformers" src="https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black"/>
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white"/>
+</p>
 
-- 🔍 **88% Top-1 Accuracy** · **99.2% Recall@5**
-- 🗣️ Optimized for Saudi dialect + MSA
-- 🔗 Hard negatives + triplet-based discrimination
-- 📚 MARBERTv2 → SA-BERT → SA-STS (768-dim)
+<ul>
+  <li>🔍 <strong>88% Top-1 Accuracy</strong> · <strong>99.2% Recall@5</strong></li>
+  <li>🗣️ Optimized for Saudi dialect + MSA</li>
+  <li>🔗 Hard negatives + triplet-based discrimination</li>
+  <li>📚 MARBERTv2 → SA-BERT → SA-STS (768-dim)</li>
+</ul>
 
-[![Hugging Face](https://img.shields.io/badge/View%20Model-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B)
+<p align="center">
+  <a href="https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B">
+    <img alt="View Model" src="https://img.shields.io/badge/View%20Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black"/>
+  </a>
+</p>
 
 </td>
 <td width="50%" valign="top">
 
-### 🏆 SAFIR Leaderboard
-**Arabic AI Benchmark by NAMAA**
+<h3>🏆 SAFIR Leaderboard</h3>
+<p><strong>Arabic AI Benchmark by NAMAA</strong></p>
 
-![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+<p>
+  <img alt="Gradio" src="https://img.shields.io/badge/Gradio-F97316?style=flat-square&amp;logo=gradio&amp;logoColor=white"/>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
+</p>
 
-- 📊 Ranks Arabic AI models across benchmarks
-- 🌐 Open-source platform for Arab AI research
-- 👥 Community-driven evaluation and collaboration
-- 🧩 Network for Advancing Modern Arabic AI
+<ul>
+  <li>📊 Ranks Arabic AI models across benchmarks</li>
+  <li>🌐 Open-source platform for Arab AI research</li>
+  <li>👥 Community-driven evaluation and collaboration</li>
+  <li>🧩 Network for Advancing Modern Arabic AI</li>
+</ul>
 
-[![View Leaderboard](https://img.shields.io/badge/View%20Leaderboard-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)
+<p align="center">
+  <a href="https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard">
+    <img alt="View Leaderboard" src="https://img.shields.io/badge/View%20Leaderboard-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black"/>
+  </a>
+</p>
 
 </td>
 </tr>
