@@ -43,7 +43,7 @@
      ABOUT ME
      ════════════════════════════════════════════════════════════════════════════ -->
 
-## 👋 About Me &nbsp;·&nbsp; نبذة عني
+## About Me · نبذة عني
 
 <div align="center">
 
@@ -57,12 +57,39 @@ I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Compa
 
 I build at the intersection of **data engineering**, **production AI systems**, and **financial markets**. My current direction is building an AI company focused on practical agents, market-intelligence tools, and systems that turn messy data into useful decisions.
 
-- 🔭 **Building:** An AI company — production-grade agents, ML systems, and market-intelligence products
-- 🧠 **Focus Areas:** LLMs · Embeddings · Agentic Systems · Quant Finance · Market Intelligence
-- 📈 **Markets:** Saudi Stock Market · Tadawul · Technical Analysis · Portfolio Intelligence
-- 📚 **Currently Studying:** CMT Program + production LLM architecture
-- ⚡ **Mindset:** Learningholic — if it is new and useful, I am already studying it
-- 🌍 **Based In:** Riyadh, Saudi Arabia
+<div align="center">
+
+![Data Engineering](https://img.shields.io/badge/Data%20Engineering-0A66C2?style=for-the-badge&logo=databricks&logoColor=white)
+![AI Systems](https://img.shields.io/badge/AI%20Systems-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Market Intelligence](https://img.shields.io/badge/Market%20Intelligence-00C853?style=for-the-badge&logo=tradingview&logoColor=white)
+![Quant Finance](https://img.shields.io/badge/Quant%20Finance-7B68EE?style=for-the-badge&logo=chartdotjs&logoColor=white)
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🧭 Current Direction</h3>
+<ul>
+  <li>🔭 <strong>Building:</strong> An AI company focused on agents, ML systems, and market-intelligence products</li>
+  <li>🧠 <strong>Core Work:</strong> LLMs · Embeddings · Agentic Systems · Data Engineering</li>
+  <li>📈 <strong>Markets:</strong> Saudi Stock Market · Tadawul · Technical Analysis · Portfolio Intelligence</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>⚡ Learning & Mindset</h3>
+<ul>
+  <li>📚 <strong>Studying:</strong> CMT Program + production LLM architecture</li>
+  <li>🌍 <strong>Base:</strong> Riyadh, Saudi Arabia</li>
+  <li>🧩 <strong>Mindset:</strong> If it is new, useful, and hard, I am already studying it</li>
+</ul>
+
+</td>
+</tr>
+</table>
 
 <br clear="right"/>
 
@@ -94,7 +121,7 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 ### 🏆 GitHub Trophies
 
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abdulrahman-S-Asiri&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8"/>
+  <img src="https://gh-trophy.cdnsoft.net/?username=Abdulrahman-S-Asiri&amp;theme=tokyonight&amp;no-frame=true&amp;no-bg=true&amp;column=7&amp;margin-w=8" alt="GitHub Profile Trophies"/>
 </a>
 
 </div>
