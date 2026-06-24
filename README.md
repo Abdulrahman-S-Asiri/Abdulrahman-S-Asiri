@@ -53,13 +53,15 @@
 
 <img align="right" alt="Coding" width="380" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif"/>
 
-I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, AI engineer, and self-described **learningholic** 🇸🇦. My work sits at the intersection of **artificial intelligence**, **financial markets**.
+I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, AI engineer, and self-described **learningholic** based in **Riyadh, Saudi Arabia** 🇸🇦.
 
-- 🔭 **Building:** An AI company — production-grade agents & ML systems
-- 🧠 **Focus Areas:** LLMs · Embeddings · Agentic Systems · Quant Finance · Arabic NLP
-- 💬 **Ask Me About:** AI, Data Engineering, Saudi Stock Market, Technical Analysis
-- 📚 **Currently Studying:** CMT Program (Chartered Market Technician)
-- ⚡ **Philosophy:** If it's new, I'm already studying it
+I build at the intersection of **data engineering**, **production AI systems**, and **financial markets**. My current direction is building an AI company focused on practical agents, market-intelligence tools, and systems that turn messy data into useful decisions.
+
+- 🔭 **Building:** An AI company — production-grade agents, ML systems, and market-intelligence products
+- 🧠 **Focus Areas:** LLMs · Embeddings · Agentic Systems · Quant Finance · Market Intelligence
+- 📈 **Markets:** Saudi Stock Market · Tadawul · Technical Analysis · Portfolio Intelligence
+- 📚 **Currently Studying:** CMT Program + production LLM architecture
+- ⚡ **Mindset:** Learningholic — if it is new and useful, I am already studying it
 - 🌍 **Based In:** Riyadh, Saudi Arabia
 
 <br clear="right"/>
@@ -427,10 +429,10 @@ I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Compa
 ![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- 📊 Ranks Arabic NLP & AI models across benchmarks
+- 📊 Ranks Arabic AI models across benchmarks
 - 🌐 Open-source platform for Arab AI research
 - 👥 Community-driven evaluation and collaboration
-- 🧩 Network for Advancing Modern Arabic NLP & AI
+- 🧩 Network for Advancing Modern Arabic AI
 
 [![View Leaderboard](https://img.shields.io/badge/View%20Leaderboard-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard)
 
