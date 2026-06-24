@@ -527,61 +527,28 @@ I build at the intersection of **data engineering**, **data science**, **AI engi
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 <h3>⚙️ CodeForge</h3>
-<p><strong>Full-stack development platform</strong></p>
+<p><strong>Private full-stack development platform</strong></p>
 <p>
+  <img alt="Private Repo" src="https://img.shields.io/badge/Private%20Repo-0D1117?style=flat-square&amp;logo=github&amp;logoColor=white"/>
   <img alt="Full Stack" src="https://img.shields.io/badge/Full--Stack-58A6FF?style=flat-square"/>
   <img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&amp;logo=terraform&amp;logoColor=white"/>
 </p>
 <p>Development workflow platform with Terraform-backed infrastructure.</p>
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 <h3>📈 Stock_101</h3>
-<p><strong>Python stock market analysis tool</strong></p>
+<p><strong>Private Python stock market analysis repo</strong></p>
 <p>
+  <img alt="Private Repo" src="https://img.shields.io/badge/Private%20Repo-0D1117?style=flat-square&amp;logo=github&amp;logoColor=white"/>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
   <img alt="Markets" src="https://img.shields.io/badge/Markets-00C853?style=flat-square&amp;logo=tradingview&amp;logoColor=white"/>
 </p>
 <p>Market analysis workspace for research, signals, and technical review.</p>
-
-</td>
-<td width="33%" valign="top">
-
-<h3>🌐 Saudi Market Knowledge Graph</h3>
-<p><strong>Saudi market data graph with Jupyter analytics</strong></p>
-<p>
-  <img alt="Knowledge Graph" src="https://img.shields.io/badge/Knowledge%20Graph-7C3AED?style=flat-square"/>
-  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&amp;logo=jupyter&amp;logoColor=white"/>
-</p>
-<p>Structured knowledge layer for Saudi market entities, relationships, and analytics.</p>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top" colspan="2">
-
-<h3>💬 Sentiment Analysis</h3>
-<p><strong>Arabic sentiment analysis project</strong></p>
-<p>
-  <img alt="Arabic NLP" src="https://img.shields.io/badge/Arabic%20NLP-FFD21E?style=flat-square"/>
-  <img alt="Sentiment" src="https://img.shields.io/badge/Sentiment-412991?style=flat-square"/>
-</p>
-<p>Private NLP project focused on Arabic text understanding and sentiment classification.</p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>📊 DataPulse-Analytics</h3>
-<p><strong>Advanced data analytics and processing platform</strong></p>
-<p>
-  <img alt="Analytics" src="https://img.shields.io/badge/Analytics-0A66C2?style=flat-square"/>
-  <img alt="Data Processing" src="https://img.shields.io/badge/Data%20Processing-00C853?style=flat-square"/>
-</p>
-<p>Analytics platform for processing, exploring, and operationalizing data workflows.</p>
 
 </td>
 </tr>
