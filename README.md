@@ -2,7 +2,7 @@
      HEADER BANNER
      ════════════════════════════════════════════════════════════════════════════ -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Abdulrahman%20Saad%20Asiri&fontSize=46&fontColor=fff&animation=twinkling&fontAlignY=34&desc=Data%20Engineer%20%7C%20AI%20Engineer%20%7C%20Builder&descSize=18&descAlignY=58&descAlign=50"/>
+  <img width="100%" alt="Abdulrahman Saad Asiri profile banner" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D1117,50:1F6FEB,100:7C3AED&amp;height=220&amp;section=header&amp;text=Abdulrahman%20Saad%20Asiri&amp;fontSize=48&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=35&amp;desc=Data%20Engineer%20%7C%20AI%20Systems%20Builder%20%7C%20Market%20Intelligence&amp;descSize=18&amp;descAlignY=58&amp;descAlign=50"/>
 </div>
 
 <!-- ════════════════════════════════════════════════════════════════════════════
@@ -10,7 +10,15 @@
      ════════════════════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=Data+Engineer+at+STC+%F0%9F%87%B8%F0%9F%87%A6;Data+Scientist+%7C+AI+Engineer+%7C+Trader)](https://git.io/typing-svg)
+  <a href="https://git.io/typing-svg">
+    <img alt="Typing introduction" src="https://readme-typing-svg.demolab.com?font=Fira%20Code&amp;weight=600&amp;size=24&amp;duration=3000&amp;pause=900&amp;color=58A6FF&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=900&amp;height=120&amp;lines=Data%20Engineer%20at%20STC%20%F0%9F%87%B8%F0%9F%87%A6;Building%20production%20AI%20and%20data%20systems;Turning%20market%20data%20into%20decisions"/>
+  </a>
+
+  <br/>
+
+  <img alt="Based in Riyadh" src="https://img.shields.io/badge/Riyadh-Saudi%20Arabia-00C853?style=flat-square&amp;labelColor=0D1117"/>
+  <img alt="Role" src="https://img.shields.io/badge/Data%20Engineer-STC-58A6FF?style=flat-square&amp;labelColor=0D1117"/>
+  <img alt="Focus" src="https://img.shields.io/badge/Focus-AI%20Agents%20%7C%20Data%20Platforms-7C3AED?style=flat-square&amp;labelColor=0D1117"/>
 
 </div>
 
@@ -19,19 +27,24 @@
      ════════════════════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-  ![Profile Views](https://komarev.com/ghpvc/?username=Abdulrahman-S-Asiri&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
-  ![Followers](https://img.shields.io/github/followers/Abdulrahman-S-Asiri?style=for-the-badge&color=58A6FF&labelColor=000)
-  ![Stars](https://img.shields.io/github/stars/Abdulrahman-S-Asiri?style=for-the-badge&color=ffd700&labelColor=000)
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Abdulrahman-S-Asiri&amp;color=blueviolet&amp;style=for-the-badge&amp;label=PROFILE%20VIEWS"/>
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/Abdulrahman-S-Asiri?style=for-the-badge&amp;color=58A6FF&amp;labelColor=000"/>
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/Abdulrahman-S-Asiri?style=for-the-badge&amp;color=ffd700&amp;labelColor=000"/>
 
   <br/>
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
-  &nbsp;
-  [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
-  &nbsp;
-  [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Abdulrahman-S-Asiri)
-  &nbsp;
-  [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulrahman.s.alasiri@gmail.com)
+  <a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"/>
+  </a>
+  <a href="https://x.com/D7oomyStay">
+    <img alt="X" src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white"/>
+  </a>
+  <a href="https://huggingface.co/Abdulrahman-S-Asiri">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black"/>
+  </a>
+  <a href="mailto:abdulrahman.s.alasiri@gmail.com">
+    <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white"/>
+  </a>
 
 </div>
 
@@ -532,24 +545,6 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 | 📈 | **CMT Candidate** | Chartered Market Technician Program |
 | 📊 | **Data Scientist Associate** | DataCamp |
 | 🧠 | **Deep Learning Fundamentals** | NVIDIA |
-
-</div>
-
----
-
-<!-- ════════════════════════════════════════════════════════════════════════════
-     CURRENTLY LEARNING
-     ════════════════════════════════════════════════════════════════════════════ -->
-
-## 🚀 Currently Learning
-
-<div align="center">
-
-| Focus Area | Progress |
-|:---|:---:|
-| 📈 **CMT Program** (Chartered Market Technician) | ![](https://geps.dev/progress/65) |
-| 🧠 **Production LLM & Agentic Systems** | ![](https://geps.dev/progress/80) |
-| 🏗️ **Large-Scale Data Architecture** | ![](https://geps.dev/progress/75) |
 
 </div>
 
