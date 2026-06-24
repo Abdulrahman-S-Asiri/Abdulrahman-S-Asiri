@@ -103,25 +103,35 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <div align="center">
 
-<a href="https://github.com/Abdulrahman-S-Asiri">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
-</a>
+<table>
+<tr>
+<td width="50%">
+
+<img width="100%" alt="GitHub Performance" src="https://github-readme-stats.vercel.app/api?username=Abdulrahman-S-Asiri&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;count_private=true&amp;include_all_commits=true&amp;rank_icon=github&amp;custom_title=GitHub%20Performance"/>
+
+</td>
+<td width="50%">
+
+<img width="100%" alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulrahman-S-Asiri&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;langs_count=10&amp;card_width=420&amp;custom_title=Most%20Used%20Languages"/>
+
+</td>
+</tr>
+</table>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak"/>
+<img width="92%" alt="GitHub Streak" src="https://streak-stats.demolab.com?user=Abdulrahman-S-Asiri&amp;theme=tokyonight&amp;hide_border=true&amp;border_radius=10&amp;date_format=M%20j%5B%2C%20Y%5D"/>
 
 <br/><br/>
 
-<img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&bg_color=1a1b27&color=58a6ff&line=bf91f3&point=ffffff&area=true&area_color=58a6ff&hide_border=true&custom_title=Contribution%20Activity"/>
+<img width="92%" alt="Contribution Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Abdulrahman-S-Asiri&amp;bg_color=1a1b27&amp;color=70a5fd&amp;line=bf91f3&amp;point=ffffff&amp;area=true&amp;area_color=70a5fd&amp;hide_border=true&amp;custom_title=Contribution%20Activity"/>
 
 <br/><br/>
 
-### 🏆 GitHub Trophies
+<h3>🏆 Achievement Wall</h3>
 
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://gh-trophy.cdnsoft.net/?username=Abdulrahman-S-Asiri&amp;theme=tokyonight&amp;no-frame=true&amp;no-bg=true&amp;column=7&amp;margin-w=8" alt="GitHub Profile Trophies"/>
+  <img width="92%" alt="GitHub Profile Trophies" src="https://gh-trophy.cdnsoft.net/?username=Abdulrahman-S-Asiri&amp;theme=tokyonight&amp;no-frame=true&amp;no-bg=true&amp;row=1&amp;column=7&amp;margin-w=8&amp;margin-h=8"/>
 </a>
 
 </div>
