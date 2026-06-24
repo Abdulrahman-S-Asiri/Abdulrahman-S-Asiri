@@ -525,30 +525,66 @@ I build at the intersection of **data engineering**, **data science**, **AI engi
 
 <div align="center">
 
+<p>
+  <img alt="Selected Private Repositories" src="https://img.shields.io/badge/Selected%20Private%20Repositories-0D1117?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  <img alt="Strategic Builds" src="https://img.shields.io/badge/Strategic%20Builds-7C3AED?style=for-the-badge"/>
+  <img alt="Limited Public Details" src="https://img.shields.io/badge/Limited%20Public%20Details-FFB000?style=for-the-badge"/>
+</p>
+
+<p><strong>Private work I keep intentionally scoped here: important systems, limited details, clear engineering focus.</strong></p>
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
 <h3>⚙️ CodeForge</h3>
-<p><strong>Private full-stack development platform</strong></p>
+<p><strong>Private full-stack development platform with infrastructure automation</strong></p>
 <p>
   <img alt="Private Repo" src="https://img.shields.io/badge/Private%20Repo-0D1117?style=flat-square&amp;logo=github&amp;logoColor=white"/>
+  <img alt="Priority Build" src="https://img.shields.io/badge/Priority-Build-7C3AED?style=flat-square"/>
   <img alt="Full Stack" src="https://img.shields.io/badge/Full--Stack-58A6FF?style=flat-square"/>
   <img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&amp;logo=terraform&amp;logoColor=white"/>
 </p>
-<p>Development workflow platform with Terraform-backed infrastructure.</p>
+<table>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Developer workflows and platform tooling</td>
+</tr>
+<tr>
+<td><strong>Stack</strong></td>
+<td>Full-stack app architecture + Terraform infrastructure</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Make development, deployment, and infrastructure work more repeatable</td>
+</tr>
+</table>
 
 </td>
 <td width="50%" valign="top">
 
 <h3>📈 Stock_101</h3>
-<p><strong>Private Python stock market analysis repo</strong></p>
+<p><strong>Private Python stock market research and analysis workspace</strong></p>
 <p>
   <img alt="Private Repo" src="https://img.shields.io/badge/Private%20Repo-0D1117?style=flat-square&amp;logo=github&amp;logoColor=white"/>
+  <img alt="Market Research" src="https://img.shields.io/badge/Market-Research-00C853?style=flat-square"/>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
   <img alt="Markets" src="https://img.shields.io/badge/Markets-00C853?style=flat-square&amp;logo=tradingview&amp;logoColor=white"/>
 </p>
-<p>Market analysis workspace for research, signals, and technical review.</p>
+<table>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Stock market analysis, research, and technical review</td>
+</tr>
+<tr>
+<td><strong>Stack</strong></td>
+<td>Python-based market analysis workflow</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Organize trading ideas, signals, and market observations</td>
+</tr>
+</table>
 
 </td>
 </tr>
@@ -740,10 +776,6 @@ Collab Inquiries
 <div align="center">
 
 ### ⭐ If you like my work, consider starring a repo — it means a lot!
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
 
 </div>
 
