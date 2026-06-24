@@ -66,9 +66,9 @@
 
 <img align="right" alt="Coding" width="380" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif"/>
 
-I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, AI engineer, and self-described **learningholic** based in **Riyadh, Saudi Arabia** 🇸🇦.
+I'm **Abdulrahman Saad Asiri** — a **Data Engineer at STC (Saudi Telecom Company)**, **AI Engineer**, and self-described **learningholic** based in **Riyadh, Saudi Arabia** 🇸🇦.
 
-I build at the intersection of **data engineering**, **production AI systems**, and **financial markets**. My current direction is building an AI company focused on practical agents, market-intelligence tools, and systems that turn messy data into useful decisions.
+I build at the intersection of **data engineering**, **data science**, **AI engineering**, and **financial markets**. My current direction is building an AI company focused on practical agents, market-intelligence tools, and systems that turn messy data into useful decisions.
 
 <div align="center">
 
@@ -249,219 +249,210 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <div align="center">
 
-<!-- Project quick-nav -->
-
-[⬇ Stock Agents](#-stock-agents) &nbsp;·&nbsp;
-[⬇ Saudi Market Intelligence](#-saudi-market-intelligence) &nbsp;·&nbsp;
-[⬇ Data Science Basics](#-data-science-basics--from-zero-to-hero) &nbsp;·&nbsp;
-[⬇ Bidaya](#-bidaya-بداية) &nbsp;·&nbsp;
-[⬇ Sentiment Insight](#-sentiment-insight) &nbsp;·&nbsp;
-[⬇ Mindmaps](#-mindmaps-encyclopedia) &nbsp;·&nbsp;
-[⬇ Tasamuh VR](#-tasamuh-vr-تسامح) &nbsp;·&nbsp;
-[⬇ Cyber-Awareness](#-cyber-awareness)
+<p>
+  <img alt="AI Agents" src="https://img.shields.io/badge/AI%20Agents-0D1117?style=for-the-badge&amp;logo=openai&amp;logoColor=white"/>
+  <img alt="Saudi Market" src="https://img.shields.io/badge/Saudi%20Market-00C853?style=for-the-badge&amp;logo=tradingview&amp;logoColor=white"/>
+  <img alt="Arabic First" src="https://img.shields.io/badge/Arabic--First-7C3AED?style=for-the-badge"/>
+  <img alt="Production Systems" src="https://img.shields.io/badge/Production%20Systems-58A6FF?style=for-the-badge&amp;logo=docker&amp;logoColor=white"/>
+</p>
 
 </div>
 
-<br/>
-
-### 🤖 Stock Agents
-> **CIO-Grade Investment Platform Powered by 11 Specialized AI Agents**
-
-<div align="center">
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-</div>
-
-- 👥 **11 specialized AI agents** collaborating on institutional-quality investment analysis
-- 🌍 Dual-market coverage — **US equities** and **Saudi Tadawul**
-- ⚡ Real-time price streaming over **WebSockets** with Redis-backed caching
-- 📊 Portfolio analytics with automated **multi-agent conviction logic**
-- 🛠️ Dockerized microservices architecture (FastAPI + Next.js + PostgreSQL)
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Stock_Agents)
-
-</div>
-
----
-
-### ⭐ Saudi Market Intelligence
-> **Institutional-Grade Market Intelligence for Tadawul (TASI)**
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</div>
-
-- 🧠 BiLSTM + Multi-Head Attention architecture trained on 40+ technical features
-- 🎯 Monte Carlo Dropout for calibrated confidence scores (25–95%)
-- 📈 Real-time stock scanner ranking 200+ Saudi stocks by signal strength
-- 💼 Full portfolio tracking with P/L, risk metrics, and trade execution
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence)
-
-</div>
-
----
-
-### 📚 Data Science Basics — From Zero to Hero
-> **Comprehensive Bilingual (Arabic / English) Data Science Guide** &nbsp;·&nbsp; ⭐ 50+ Stars
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-
-</div>
-
-- 🎓 End-to-end curriculum covering **machine learning**, **deep learning**, and practical Python
-- 🌐 Fully **bilingual** content — written to serve the Arabic-speaking community
-- 📓 Hands-on Jupyter notebooks from fundamentals through production-ready patterns
-- ✨ The **most-starred repo** in my public portfolio — community-validated learning resource
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics)
-
-</div>
-
----
-
-### 💼 Bidaya (بداية)
-> **AI-Powered Interview Coach with Voice AI & Real-Time Feedback**
-
-<div align="center">
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-
-</div>
-
-- 🎙️ Voice AI pipeline — Speech-to-Text, Text-to-Speech, live recording
-- 🤖 Multi-AI support (GPT-4o, Grok, Llama 3.1, Gemini)
-- 🎯 Smart interview modes (Behavioral, Technical, Mixed) with difficulty levels
-- 🌐 Bilingual support (Arabic & English) with resume analysis
-- 📊 Analytics dashboard with performance tracking and 7-day action plans
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2)
-
-</div>
-
----
-
-### 💬 Sentiment Insight
-> **AI-Powered Sentiment Analysis Platform — Understand Feelings. Empower Decisions.**
-
-<div align="center">
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-</div>
-
-- 🧠 Transformer-based sentiment model served via a FastAPI inference layer
-- 🎨 Clean, branded web interface for real-time inference
-- ⚙️ Production-oriented packaging with clear request/response contracts
-- 📦 Ships with full branding guide and deployment documentation
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final)
-
-</div>
-
----
-
-### 🧠 Mindmaps Encyclopedia
-> **Interactive, Deeply-Detailed Tech Mindmaps**
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-</div>
-
-- 📚 30+ comprehensive interactive mindmaps covering major tech domains
-- 🔎 Detailed reference branches attached to every mindmap for deeper learning
-- ⚙️ Automated generation via Python, exported to HTML
-- 🌐 Centralized portal dashboard for easy navigation
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Mindmaps)
-
-</div>
-
----
-
-### 🕌 Tasamuh VR (تسامح)
-> **Interactive Arabic VR Experience on Tolerance, Justice, and Revenge**
-
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![WebXR](https://img.shields.io/badge/WebXR-FF6600?style=flat-square&logo=webxr&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-
-</div>
-
-- 🥽 Immersive VR storytelling exploring **tolerance, justice, and revenge**
-- 🌍 **Arabic-first** experience designed for cultural and educational contexts
-- 🎨 Interactive scenes built for web-based VR delivery
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/tasamuh-vr)
-
-</div>
-
----
-
-### 🛡️ Cyber-Awareness
-> **Interactive Cybersecurity Awareness Training Platform**
-
-<div align="center">
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-</div>
-
-- 💥 Shock splash animation simulating a breach scenario for awareness training
-- ✅ Step-by-step incident response checklist (disconnect, passwords, 2FA, scan)
-- 📚 Preventive tips in Arabic (RTL) with responsive dark UI and glitch effects
-- 🔄 Replay control for demos and repeated training sessions
-
-<div align="center">
-
-[![View Project](https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness)
-
-</div>
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🤖 Stock Agents</h3>
+<p><strong>CIO-Grade Investment Platform Powered by 11 Specialized AI Agents</strong></p>
+<p>
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white"/>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white"/>
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white"/>
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white"/>
+  <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white"/>
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>👥 <strong>11 specialized AI agents</strong> collaborating on institutional-quality investment analysis</li>
+  <li>🌍 Dual-market coverage: <strong>US equities</strong> and <strong>Saudi Tadawul</strong></li>
+  <li>⚡ Real-time price streaming over <strong>WebSockets</strong> with Redis-backed caching</li>
+  <li>📊 Portfolio analytics with automated <strong>multi-agent conviction logic</strong></li>
+  <li>🛠️ Dockerized microservices architecture: FastAPI + Next.js + PostgreSQL</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/Stock_Agents">
+    <img alt="View Stock Agents" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>⭐ Saudi Market Intelligence</h3>
+<p><strong>Institutional-Grade Market Intelligence for Tadawul (TASI)</strong></p>
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white"/>
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white"/>
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black"/>
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>🧠 BiLSTM + Multi-Head Attention architecture trained on 40+ technical features</li>
+  <li>🎯 Monte Carlo Dropout for calibrated confidence scores: 25-95%</li>
+  <li>📈 Real-time stock scanner ranking 200+ Saudi stocks by signal strength</li>
+  <li>💼 Full portfolio tracking with P/L, risk metrics, and trade execution</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">
+    <img alt="View Saudi Market Intelligence" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>📚 Data Science Basics — From Zero to Hero</h3>
+<p><strong>Comprehensive Bilingual Arabic / English Data Science Guide</strong> · ⭐ 50+ Stars</p>
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&amp;logo=jupyter&amp;logoColor=white"/>
+  <img alt="Scikit-Learn" src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white"/>
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat-square&amp;logo=pandas&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>🎓 End-to-end curriculum covering <strong>machine learning</strong>, <strong>deep learning</strong>, and practical Python</li>
+  <li>🌐 Fully <strong>bilingual</strong> content for the Arabic-speaking community</li>
+  <li>📓 Hands-on Jupyter notebooks from fundamentals through production-ready patterns</li>
+  <li>✨ Most-starred repo in my public portfolio and a community-validated learning resource</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics">
+    <img alt="View Data Science Basics" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>💼 Bidaya (بداية)</h3>
+<p><strong>AI-Powered Interview Coach with Voice AI & Real-Time Feedback</strong></p>
+<p>
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black"/>
+  <img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=flat-square&amp;logo=flask&amp;logoColor=white"/>
+  <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&amp;logo=openai&amp;logoColor=white"/>
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>🎙️ Voice AI pipeline: Speech-to-Text, Text-to-Speech, live recording</li>
+  <li>🤖 Multi-AI support: GPT-4o, Grok, Llama 3.1, Gemini</li>
+  <li>🎯 Smart interview modes with Behavioral, Technical, Mixed, and difficulty levels</li>
+  <li>🌐 Bilingual support: Arabic & English with resume analysis</li>
+  <li>📊 Analytics dashboard with performance tracking and 7-day action plans</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2">
+    <img alt="View Bidaya" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>💬 Sentiment Insight</h3>
+<p><strong>AI-Powered Sentiment Analysis Platform — Understand Feelings. Empower Decisions.</strong></p>
+<p>
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white"/>
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white"/>
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white"/>
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black"/>
+</p>
+<ul>
+  <li>🧠 Transformer-based sentiment model served via a FastAPI inference layer</li>
+  <li>🎨 Clean, branded web interface for real-time inference</li>
+  <li>⚙️ Production-oriented packaging with clear request/response contracts</li>
+  <li>📦 Ships with full branding guide and deployment documentation</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final">
+    <img alt="View Sentiment Insight" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>🧠 Mindmaps Encyclopedia</h3>
+<p><strong>Interactive, Deeply-Detailed Tech Mindmaps</strong></p>
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white"/>
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&amp;logo=css3&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>📚 30+ comprehensive interactive mindmaps covering major tech domains</li>
+  <li>🔎 Detailed reference branches attached to every mindmap for deeper learning</li>
+  <li>⚙️ Automated generation via Python, exported to HTML</li>
+  <li>🌐 Centralized portal dashboard for easy navigation</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps">
+    <img alt="View Mindmaps" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🕌 Tasamuh VR (تسامح)</h3>
+<p><strong>Interactive Arabic VR Experience on Tolerance, Justice, and Revenge</strong></p>
+<p>
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black"/>
+  <img alt="WebXR" src="https://img.shields.io/badge/WebXR-FF6600?style=flat-square"/>
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white"/>
+</p>
+<ul>
+  <li>🥽 Immersive VR storytelling exploring <strong>tolerance, justice, and revenge</strong></li>
+  <li>🌍 <strong>Arabic-first</strong> experience designed for cultural and educational contexts</li>
+  <li>🎨 Interactive scenes built for web-based VR delivery</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr">
+    <img alt="View Tasamuh VR" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>🛡️ Cyber-Awareness</h3>
+<p><strong>Interactive Cybersecurity Awareness Training Platform</strong></p>
+<p>
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white"/>
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&amp;logo=css3&amp;logoColor=white"/>
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black"/>
+</p>
+<ul>
+  <li>💥 Shock splash animation simulating a breach scenario for awareness training</li>
+  <li>✅ Step-by-step incident response checklist: disconnect, passwords, 2FA, scan</li>
+  <li>📚 Preventive tips in Arabic RTL with responsive dark UI and glitch effects</li>
+  <li>🔄 Replay control for demos and repeated training sessions</li>
+</ul>
+<p align="center">
+  <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">
+    <img alt="View Cyber-Awareness" src="https://img.shields.io/badge/View%20Project-58A6FF?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+  </a>
+</p>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -534,13 +525,67 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <div align="center">
 
-| | Project | Description |
-|:---:|:---|:---|
-| ⚙️ | **CodeForge** | Full-stack development platform with Terraform infrastructure |
-| 📈 | **Stock_101** | Stock market analysis tool built with Python |
-| 🌐 | **Saudi Market Knowledge Graph** | Knowledge graph for Saudi market data with Jupyter analytics |
-| 💬 | **Sentiment Analysis** | Arabic sentiment analysis project |
-| 📊 | **DataPulse-Analytics** | Advanced data analytics and processing platform |
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<h3>⚙️ CodeForge</h3>
+<p><strong>Full-stack development platform</strong></p>
+<p>
+  <img alt="Full Stack" src="https://img.shields.io/badge/Full--Stack-58A6FF?style=flat-square"/>
+  <img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&amp;logo=terraform&amp;logoColor=white"/>
+</p>
+<p>Development workflow platform with Terraform-backed infrastructure.</p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>📈 Stock_101</h3>
+<p><strong>Python stock market analysis tool</strong></p>
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"/>
+  <img alt="Markets" src="https://img.shields.io/badge/Markets-00C853?style=flat-square&amp;logo=tradingview&amp;logoColor=white"/>
+</p>
+<p>Market analysis workspace for research, signals, and technical review.</p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>🌐 Saudi Market Knowledge Graph</h3>
+<p><strong>Saudi market data graph with Jupyter analytics</strong></p>
+<p>
+  <img alt="Knowledge Graph" src="https://img.shields.io/badge/Knowledge%20Graph-7C3AED?style=flat-square"/>
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&amp;logo=jupyter&amp;logoColor=white"/>
+</p>
+<p>Structured knowledge layer for Saudi market entities, relationships, and analytics.</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" colspan="2">
+
+<h3>💬 Sentiment Analysis</h3>
+<p><strong>Arabic sentiment analysis project</strong></p>
+<p>
+  <img alt="Arabic NLP" src="https://img.shields.io/badge/Arabic%20NLP-FFD21E?style=flat-square"/>
+  <img alt="Sentiment" src="https://img.shields.io/badge/Sentiment-412991?style=flat-square"/>
+</p>
+<p>Private NLP project focused on Arabic text understanding and sentiment classification.</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>📊 DataPulse-Analytics</h3>
+<p><strong>Advanced data analytics and processing platform</strong></p>
+<p>
+  <img alt="Analytics" src="https://img.shields.io/badge/Analytics-0A66C2?style=flat-square"/>
+  <img alt="Data Processing" src="https://img.shields.io/badge/Data%20Processing-00C853?style=flat-square"/>
+</p>
+<p>Analytics platform for processing, exploring, and operationalizing data workflows.</p>
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -554,13 +599,47 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <div align="center">
 
-|  | Credential | Institution |
-|:---:|:---|:---|
-| 💻 | **B.Sc. Computer Science** | Majmaah University |
-| 🤖 | **Data Science & AI Bootcamp** | Tuwaiq Academy |
-| 📈 | **CMT Candidate** | Chartered Market Technician Program |
-| 📊 | **Data Scientist Associate** | DataCamp |
-| 🧠 | **Deep Learning Fundamentals** | NVIDIA |
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<h3>💻 B.Sc. Computer Science</h3>
+<p><strong>Majmaah University</strong></p>
+<p><img alt="Computer Science" src="https://img.shields.io/badge/Core-Computer%20Science-58A6FF?style=flat-square"/></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>🤖 Data Science & AI Bootcamp</h3>
+<p><strong>Tuwaiq Academy</strong></p>
+<p><img alt="Data Science and AI" src="https://img.shields.io/badge/Track-Data%20Science%20%26%20AI-7C3AED?style=flat-square"/></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>📈 CMT Candidate</h3>
+<p><strong>Chartered Market Technician Program</strong></p>
+<p><img alt="Market Technician" src="https://img.shields.io/badge/Focus-Technical%20Analysis-00C853?style=flat-square"/></p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>📊 Data Scientist Associate</h3>
+<p><strong>DataCamp</strong></p>
+<p><img alt="Data Scientist" src="https://img.shields.io/badge/Credential-Data%20Scientist-0A66C2?style=flat-square"/></p>
+
+</td>
+<td width="50%" valign="top" colspan="2">
+
+<h3>🧠 Deep Learning Fundamentals</h3>
+<p><strong>NVIDIA</strong></p>
+<p><img alt="Deep Learning" src="https://img.shields.io/badge/Credential-Deep%20Learning-76B900?style=flat-square&amp;logo=nvidia&amp;logoColor=white"/></p>
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -574,28 +653,36 @@ I build at the intersection of **data engineering**, **production AI systems**, 
 
 <div align="center">
 
-### 🏢 Data Engineer &nbsp;·&nbsp; **stc (Saudi Telecom Company)**
-
-Building scalable data pipelines and AI systems for the region's leading digital enabler.
-
-<br/>
-
 <table>
 <tr>
-<td align="center" width="50%">
+<td width="100%" valign="top" colspan="2">
 
-### 🏦 Head of Investment Committees
-**Investment Club**
-
-Leading strategic investment decisions and portfolio management initiatives.
+<h3>🏢 Data Engineer · stc (Saudi Telecom Company)</h3>
+<p><strong>Building scalable data pipelines and AI systems for the region's leading digital enabler.</strong></p>
+<p>
+  <img alt="Data Engineering" src="https://img.shields.io/badge/Data%20Engineering-0A66C2?style=flat-square&amp;logo=databricks&amp;logoColor=white"/>
+  <img alt="AI Systems" src="https://img.shields.io/badge/AI%20Systems-412991?style=flat-square&amp;logo=openai&amp;logoColor=white"/>
+  <img alt="Telecom" src="https://img.shields.io/badge/Telecom-stc-7C3AED?style=flat-square"/>
+</p>
 
 </td>
-<td align="center" width="50%">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 📈 Head of Financial Analysis
-**Investment Club**
+<h3>🏦 Head of Investment Committees</h3>
+<p><strong>Investment Club</strong></p>
+<p>Leading strategic investment decisions and portfolio management initiatives.</p>
+<p><img alt="Portfolio Leadership" src="https://img.shields.io/badge/Leadership-Portfolio%20Decisions-00C853?style=flat-square"/></p>
 
-Directing financial research and market analysis operations.
+</td>
+<td width="50%" valign="top">
+
+<h3>📈 Head of Financial Analysis</h3>
+<p><strong>Investment Club</strong></p>
+<p>Directing financial research and market analysis operations.</p>
+<p><img alt="Financial Analysis" src="https://img.shields.io/badge/Leadership-Market%20Research-58A6FF?style=flat-square"/></p>
+
 
 </td>
 </tr>
@@ -613,44 +700,52 @@ Directing financial research and market analysis operations.
 
 <div align="center">
 
-I'm always open to discussing **AI**, **data engineering**, **quant finance**, and opportunities for **collaboration**.
+<p><strong>I'm open to focused conversations around AI, data engineering, quant finance, and practical collaboration.</strong></p>
 
 <br/>
 
 <table>
 <tr>
-<td align="center" width="25%">
+<td align="center" width="25%" valign="top">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200)
+<a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"/>
+</a>
 
-**Professional**
+<h3>Professional</h3>
 <br/>
 Network & Career
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="25%" valign="top">
 
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/D7oomyStay)
+<a href="https://x.com/D7oomyStay">
+  <img alt="X" src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white"/>
+</a>
 
-**Thoughts**
+<h3>Thoughts</h3>
 <br/>
 AI · Markets · Tech
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="25%" valign="top">
 
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Abdulrahman-S-Asiri)
+<a href="https://huggingface.co/Abdulrahman-S-Asiri">
+  <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black"/>
+</a>
 
-**Models**
+<h3>Models</h3>
 <br/>
 Research & Releases
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="25%" valign="top">
 
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdulrahman.s.alasiri@gmail.com)
+<a href="mailto:abdulrahman.s.alasiri@gmail.com">
+  <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white"/>
+</a>
 
-**Direct**
+<h3>Direct</h3>
 <br/>
 Collab Inquiries
 
@@ -660,7 +755,12 @@ Collab Inquiries
 
 <br/>
 
-📬 **Open to:** Collaborations · Research Partnerships · AI Projects · Speaking
+<p>
+  <img alt="Collaborations" src="https://img.shields.io/badge/Open%20to-Collaborations-00C853?style=for-the-badge"/>
+  <img alt="Research Partnerships" src="https://img.shields.io/badge/Research-Partnerships-58A6FF?style=for-the-badge"/>
+  <img alt="AI Projects" src="https://img.shields.io/badge/AI-Projects-7C3AED?style=for-the-badge"/>
+  <img alt="Speaking" src="https://img.shields.io/badge/Speaking-Available-FFD21E?style=for-the-badge"/>
+</p>
 
 </div>
 
@@ -680,4 +780,4 @@ Collab Inquiries
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer"/>
+<img width="100%" alt="Footer wave" src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=120&amp;section=footer"/>
