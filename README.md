@@ -51,6 +51,11 @@ I am building toward one clear direction: **production-grade AI products for Ara
   <img src="./assets/project-showcase.svg" width="100%" alt="Visual portfolio cards for Abdulrahman's public projects">
 </div>
 
+<details>
+<summary><strong>Project details</strong></summary>
+
+<br>
+
 | Project | Why it represents me | Stack |
 |:---|:---|:---|
 | [Stock Agents](https://github.com/Abdulrahman-S-Asiri/Stock_Agents) | 11-agent investment analysis platform, dual-market coverage, portfolio analytics, real-time data | Next.js, TypeScript, FastAPI, PostgreSQL, Redis, Docker |
@@ -59,6 +64,8 @@ I am building toward one clear direction: **production-grade AI products for Ara
 | [Bidaya](https://github.com/Abdulrahman-S-Asiri/Bidaya_v2) | Arabic/English AI interview coach with voice pipeline, resume analysis, feedback loops, and analytics | React, Flask, OpenAI APIs, Vite |
 | [Mindmaps Encyclopedia](https://github.com/Abdulrahman-S-Asiri/Mindmaps) | Interactive knowledge maps for learning technical domains through generated HTML | Python, HTML, CSS |
 | [Cyber-Awareness](https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness) | Arabic-first cybersecurity awareness training with incident-response guidance | HTML, CSS, JavaScript |
+
+</details>
 
 ---
 

@@ -58,8 +58,8 @@
     <text x="644" y="340" fill="#fef3c7" font-size="18" font-weight="800">Tadawul Signals</text>
   </g>
 
-  <g transform="translate(846 118)" font-family="Inter, Segoe UI, Arial, sans-serif">
-    <rect width="334" height="268" rx="24" fill="url(#glass)" stroke="#334155"/>
+  <g transform="translate(842 116)" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect width="350" height="272" rx="24" fill="#0f172a" opacity="0.94" stroke="#475569"/>
     <text x="28" y="44" fill="#ffffff" font-size="24" font-weight="900">Operating profile</text>
     <line x1="28" y1="62" x2="306" y2="62" stroke="#334155"/>
     <text x="28" y="96" fill="#94a3b8" font-size="15" font-weight="800">ROLE</text>
