@@ -27,49 +27,49 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/saudi-market-intelligence-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-light.svg">
-  <img src="assets/portfolio/saudi-market-intelligence-light.svg" width="480" alt="Saudi Market Intelligence: Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.">
+  <img src="assets/portfolio/saudi-market-intelligence-light.svg" width="410" alt="Saudi Market Intelligence: Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/data-science-basics-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/data-science-basics-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-light.svg">
-  <img src="assets/portfolio/data-science-basics-light.svg" width="480" alt="Data Science Basics: A bilingual Arabic / English learning path from data fundamentals to applied notebooks.">
+  <img src="assets/portfolio/data-science-basics-light.svg" width="410" alt="Data Science Basics: A bilingual Arabic / English learning path from data fundamentals to applied notebooks.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-light.svg">
-  <img src="assets/portfolio/bidaya-light.svg" width="480" alt="Bidaya: An Arabic / English interview coach exploring voice input, feedback and resume analysis.">
+  <img src="assets/portfolio/bidaya-light.svg" width="410" alt="Bidaya: An Arabic / English interview coach exploring voice input, feedback and resume analysis.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/sentiment-insight-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/sentiment-insight-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/sentiment-insight-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/sentiment-insight-light.svg">
-  <img src="assets/portfolio/sentiment-insight-light.svg" width="480" alt="Sentiment Insight: Transformer-based sentiment analysis with an inference API and a branded web interface.">
+  <img src="assets/portfolio/sentiment-insight-light.svg" width="410" alt="Sentiment Insight: Transformer-based sentiment analysis with an inference API and a branded web interface.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/mindmaps-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/mindmaps-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/mindmaps-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/mindmaps-light.svg">
-  <img src="assets/portfolio/mindmaps-light.svg" width="480" alt="Mindmaps Encyclopedia: Interactive technical knowledge maps with generated HTML references and a navigation portal.">
+  <img src="assets/portfolio/mindmaps-light.svg" width="410" alt="Mindmaps Encyclopedia: Interactive technical knowledge maps with generated HTML references and a navigation portal.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/tasamuh-vr-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/tasamuh-vr-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/tasamuh-vr-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/tasamuh-vr-light.svg">
-  <img src="assets/portfolio/tasamuh-vr-light.svg" width="480" alt="Tasamuh VR: An Arabic-first web VR experience exploring tolerance, justice and revenge.">
+  <img src="assets/portfolio/tasamuh-vr-light.svg" width="410" alt="Tasamuh VR: An Arabic-first web VR experience exploring tolerance, justice and revenge.">
 </picture></a>
 <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness"><picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/cyber-awareness-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/cyber-awareness-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/cyber-awareness-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/cyber-awareness-light.svg">
-  <img src="assets/portfolio/cyber-awareness-light.svg" width="480" alt="Cyber-Awareness: Arabic cybersecurity awareness training with interactive scenarios and incident-response guidance.">
+  <img src="assets/portfolio/cyber-awareness-light.svg" width="410" alt="Cyber-Awareness: Arabic cybersecurity awareness training with interactive scenarios and incident-response guidance.">
 </picture></a>
 </p>
 
@@ -106,21 +106,21 @@ These curated summaries reuse scope already published in this profile. Private r
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/stock-agents-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/stock-agents-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/stock-agents-light.svg">
-  <img src="assets/portfolio/stock-agents-light.svg" width="480" alt="Stock Agents: A private investment-analysis platform exploring specialized agents, market data and portfolio tools.">
+  <img src="assets/portfolio/stock-agents-light.svg" width="410" alt="Stock Agents: A private investment-analysis platform exploring specialized agents, market data and portfolio tools.">
 </picture>
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/codeforge-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/codeforge-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/codeforge-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/codeforge-light.svg">
-  <img src="assets/portfolio/codeforge-light.svg" width="480" alt="CodeForge: Private developer-workflow and platform tooling with infrastructure automation.">
+  <img src="assets/portfolio/codeforge-light.svg" width="410" alt="CodeForge: Private developer-workflow and platform tooling with infrastructure automation.">
 </picture>
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/stock-101-mobile-dark.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/stock-101-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/stock-101-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/stock-101-light.svg">
-  <img src="assets/portfolio/stock-101-light.svg" width="480" alt="Stock_101: A private Python workspace for stock-market research, technical review and organized observations.">
+  <img src="assets/portfolio/stock-101-light.svg" width="410" alt="Stock_101: A private Python workspace for stock-market research, technical review and organized observations.">
 </picture>
 </p>
 
