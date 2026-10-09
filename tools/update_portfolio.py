@@ -449,7 +449,7 @@ def render(registry, snapshot, readme):
     public = sorted([q for q in projects if q["visibility"] == "public"], key=lambda q: not q["featured"])
     for project in public:
         record = snapshot["projects"].get(project["id"], {})
-        image = picture(project["id"], project["name"] + ": " + project["summary"], "410")
+        image = picture(project["id"], project["name"] + ": " + project["summary"], "400")
         if record.get("url"):
             image = f'<a href="{html.escape(record["url"], quote=True)}">{image}</a>'
         parts += [image]
@@ -479,7 +479,7 @@ def render(registry, snapshot, readme):
     parts += ['', "A workflow result describes that workflow only. Project scope, model calibration, production readiness and financial performance require their own evidence.", '', f'Discovery check: **{snapshot["discovery_status"]}**. Add the `{registry["discovery_topic"]}` topic to an eligible public repository to include it automatically.', '', '</details>', '', '## Private work · ملخصات الأعمال الخاصة', '', 'These curated summaries reuse scope already published in this profile. Private repositories are not queried.', '', '<p align="center">']
     for project in projects:
         if project["visibility"] == "summary-only":
-            parts += [picture(project["id"], project["name"] + ": " + project["summary"], "410")]
+            parts += [picture(project["id"], project["name"] + ": " + project["summary"], "400")]
     parts += ['</p>', '']
     generated = START + "\n\n" + "\n".join(parts).rstrip() + "\n\n" + END
     before, remainder = readme.split(START)
