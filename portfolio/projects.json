@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "owner": "Abdulrahman-S-Asiri",
+  "discovery_topic": "portfolio-profile",
+  "profile": {
+    "name": "Abdulrahman Saad Asiri",
+    "role": "Data Engineer at stc · AI Engineer",
+    "direction": "Data → AI → Decisions",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  "projects": [
+    {
+      "id": "saudi-market-intelligence",
+      "name": "Saudi Market Intelligence",
+      "visibility": "public",
+      "repository": "saudi-market-intelligence",
+      "category": "markets",
+      "summary": "Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.",
+      "stack": ["Python", "PyTorch", "FastAPI", "React"],
+      "featured": true
+    },
+    {
+      "id": "data-science-basics",
+      "name": "Data Science Basics",
+      "visibility": "public",
+      "repository": "Data_Science_Basics",
+      "category": "data",
+      "summary": "A bilingual Arabic / English learning path from data fundamentals to applied notebooks.",
+      "stack": ["Python", "Jupyter", "pandas", "scikit-learn"],
+      "featured": true
+    },
+    {
+      "id": "bidaya",
+      "name": "Bidaya",
+      "visibility": "public",
+      "repository": "Bidaya_v2",
+      "category": "ai",
+      "summary": "An Arabic / English interview coach exploring voice input, feedback and resume analysis.",
+      "stack": ["React", "Flask", "OpenAI APIs", "Vite"],
+      "featured": true
+    },
+    {
+      "id": "sentiment-insight",
+      "name": "Sentiment Insight",
+      "visibility": "public",
+      "repository": "sentiment-analysis-project-Final",
+      "category": "ai",
+      "summary": "Transformer-based sentiment analysis with an inference API and a branded web interface.",
+      "stack": ["Python", "PyTorch", "FastAPI"],
+      "featured": false
+    },
+    {
+      "id": "mindmaps",
+      "name": "Mindmaps Encyclopedia",
+      "visibility": "public",
+      "repository": "Mindmaps",
+      "category": "data",
+      "summary": "Interactive technical knowledge maps with generated HTML references and a navigation portal.",
+      "stack": ["Python", "HTML", "CSS"],
+      "featured": false
+    },
+    {
+      "id": "tasamuh-vr",
+      "name": "Tasamuh VR",
+      "visibility": "public",
+      "repository": "tasamuh-vr",
+      "category": "engineering",
+      "summary": "An Arabic-first web VR experience exploring tolerance, justice and revenge.",
+      "stack": ["JavaScript", "WebXR", "HTML"],
+      "featured": false
+    },
+    {
+      "id": "cyber-awareness",
+      "name": "Cyber-Awareness",
+      "visibility": "public",
+      "repository": "Cyber-Awareness",
+      "category": "engineering",
+      "summary": "Arabic cybersecurity awareness training with interactive scenarios and incident-response guidance.",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "featured": false
+    },
+    {
+      "id": "stock-agents",
+      "name": "Stock Agents",
+      "visibility": "summary-only",
+      "category": "markets",
+      "summary": "A private investment-analysis platform exploring specialized agents, market data and portfolio tools.",
+      "stack": ["Next.js", "FastAPI", "PostgreSQL", "Redis"],
+      "featured": false,
+      "publication_basis": "Description already public in README at 5c0dddf46666c4f00a4a45c5836f08a2e8dc79ec"
+    },
+    {
+      "id": "codeforge",
+      "name": "CodeForge",
+      "visibility": "summary-only",
+      "category": "engineering",
+      "summary": "Private developer-workflow and platform tooling with infrastructure automation.",
+      "stack": ["Full stack", "Terraform"],
+      "featured": false,
+      "publication_basis": "Description already public in README at 5c0dddf46666c4f00a4a45c5836f08a2e8dc79ec"
+    },
+    {
+      "id": "stock-101",
+      "name": "Stock_101",
+      "visibility": "summary-only",
+      "category": "markets",
+      "summary": "A private Python workspace for stock-market research, technical review and organized observations.",
+      "stack": ["Python", "Market research"],
+      "featured": false,
+      "publication_basis": "Description already public in README at 5c0dddf46666c4f00a4a45c5836f08a2e8dc79ec"
+    }
+  ]
+}
