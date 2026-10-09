@@ -1,0 +1,97 @@
+{
+  "checked_on": "2026-10-09",
+  "discovered": [],
+  "discovery_status": "current",
+  "projects": {
+    "bidaya": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "Python",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-02-02",
+      "url": "https://github.com/Abdulrahman-S-Asiri/Bidaya_v2",
+      "workflow": null,
+      "workflow_status": "current"
+    },
+    "cyber-awareness": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "CSS",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2025-12-19",
+      "url": "https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness",
+      "workflow": null,
+      "workflow_status": "current"
+    },
+    "data-science-basics": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "Jupyter Notebook",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-02-24",
+      "url": "https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics",
+      "workflow": null,
+      "workflow_status": "current"
+    },
+    "mindmaps": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "HTML",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-03-01",
+      "url": "https://github.com/Abdulrahman-S-Asiri/Mindmaps",
+      "workflow": {
+        "completed_on": "2026-03-01",
+        "conclusion": "success",
+        "name": "pages build and deployment",
+        "url": "https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511"
+      },
+      "workflow_status": "current"
+    },
+    "saudi-market-intelligence": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "HTML",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-02-02",
+      "url": "https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence",
+      "workflow": null,
+      "workflow_status": "current"
+    },
+    "sentiment-insight": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "Python",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-04-30",
+      "url": "https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final",
+      "workflow": null,
+      "workflow_status": "current"
+    },
+    "tasamuh-vr": {
+      "archived": false,
+      "checked_on": "2026-10-09",
+      "language": "JavaScript",
+      "release": null,
+      "release_status": "current",
+      "status": "current",
+      "updated_on": "2026-08-02",
+      "url": "https://github.com/Abdulrahman-S-Asiri/tasamuh-vr",
+      "workflow": null,
+      "workflow_status": "current"
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,56 @@
+name: Refresh portfolio
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [portfolio-update]
+  push:
+    branches: [main]
+    paths:
+      - portfolio/projects.json
+      - tools/update_portfolio.py
+      - README.md
+      - .github/workflows/update-portfolio.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: Verify the updater before publication
+        run: python -m unittest discover -s tests -v
+      - name: Refresh public sources and render
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/update_portfolio.py --refresh
+      - name: Verify rendered output
+        run: python tools/update_portfolio.py --check
+      - name: Commit only generated portfolio files
+        run: |
+          git add README.md assets/portfolio portfolio/snapshot.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git diff --cached --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh public portfolio snapshot'
+          git push

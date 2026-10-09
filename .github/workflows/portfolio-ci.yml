@@ -1,0 +1,27 @@
+name: Portfolio checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, codex/living-portfolio]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: Test privacy, source failures and rendering
+        run: python -m unittest discover -s tests -v
+      - name: Verify checked-in output is reproducible
+        run: python tools/update_portfolio.py --check
+      - name: Check patch whitespace
+        run: git diff --check
