@@ -79,6 +79,8 @@ The first three commands work offline. Refresh uses GitHub's public API; `GITHUB
 
 Only the block between `<!-- portfolio:start -->` and `<!-- portfolio:end -->` is generated. Content outside it remains hand-authored. Broken or duplicated markers stop generation. Generated SVGs are self-contained, with titles, descriptions, escaped text, no scripts, no external resources and no motion.
 
+The visual system uses cyan/violet gradients, restrained light effects, category icons and theme-specific contrast. Decorative nodes and bars represent portfolio themes, not financial results or technical dependencies. Interactive hover elevation belongs to the standalone HTML preview; the GitHub README displays the static SVG treatment.
+
 ## Review and rollback
 
 Every registry/renderer change goes through the read-only **Portfolio checks** workflow on the pull request. The refresh workflow tests the updater before writing, validates output afterward and stages only generated paths. Both new workflows pin actions to verified immutable commit SHAs.
