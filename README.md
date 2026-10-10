@@ -9,7 +9,7 @@
   <img src="assets/portfolio/banner-light.svg" width="100%" alt="Abdulrahman Saad Asiri — Data to AI to Decisions">
 </picture>
 
-<p align="center">Public sources checked on <strong>2026-10-09 UTC</strong> · 7/7 source checks succeeded</p>
+<p align="center">Public sources checked on <strong>2026-10-10 UTC</strong> · 7/7 source checks succeeded</p>
 
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/map-mobile-dark.svg">
@@ -82,13 +82,13 @@ No published stable releases were verified in this snapshot. Repository activity
 
 | Project | Source check | Latest stable release | Latest completed workflow on default branch |
 |:---|:---|:---|:---|
-| <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">Saudi Market Intelligence</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics">Data Science Basics</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2">Bidaya</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final">Sentiment Insight</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps">Mindmaps Encyclopedia</a> | current · 2026-10-09 | No stable release reported | <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-03-01 |
-| <a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr">Tasamuh VR</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">Cyber-Awareness</a> | current · 2026-10-09 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">Saudi Market Intelligence</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics">Data Science Basics</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2">Bidaya</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final">Sentiment Insight</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps">Mindmaps Encyclopedia</a> | current · 2026-10-10 | No stable release reported | <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-03-01 |
+| <a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr">Tasamuh VR</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
+| <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">Cyber-Awareness</a> | current · 2026-10-10 | No stable release reported | No completed run reported |
 
 A workflow result describes that workflow only. Project scope, model calibration, production readiness and financial performance require their own evidence.
 
