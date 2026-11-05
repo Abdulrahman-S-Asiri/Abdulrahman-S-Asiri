@@ -14,11 +14,13 @@ A completed workflow is evidence for that named workflow, not a blanket test or 
 
 ## Identity and reading order
 
-The profile uses navy and muted gold, a geometric AS mark, flat surfaces and system fonts. Dark surfaces use `#0B1220` / `#111D30`, ivory text `#F4F1EA`, muted text `#B7C0CE` and gold `#D6B87C`. Light surfaces use `#FAF8F3` / `#FFFFFF`, navy text `#17243A`, muted text `#526074` and gold `#826226`.
+The profile uses the architectural B direction: navy and muted gold, an original folded-plane emblem, a two-line name, and continuous numbered project rows. The emblem has restrained gold/ivory gradients; the content remains on flat surfaces with system fonts. Dark surfaces use `#0B1220`, ivory text `#F4F1EA`, muted text `#B7C0CE` and gold `#D6B87C`. Light surfaces use `#FAF8F3`, navy text `#17243A`, muted text `#526074` and gold `#826226`. Slanted tabs number the selected projects in display order, and decorative flowing lines finish the last row. These graphics convey identity, not market results or system topology.
 
 The hand-authored README prefix contains the banner reference, introduction and contact links. The banner assets themselves remain generated from the profile fields. The generated block then displays the first three public projects marked `featured`, in registry order. Extra featured projects, ordinary public projects and discovered projects appear in **More Projects**. With no featured projects, the selected-work heading is omitted. A separate **Private Work** disclosure retains published names and summaries, without repository links. **Source Details** holds synchronization, releases and workflow evidence. Empty release headings are omitted.
 
 The hand-authored suffix contains expertise, research links, working method, background and contact information. Keep factual claims grounded in the published sources; source checks do not establish results or individual research contributions.
+
+Keep the featured pictures inside one paragraph-level HTML block. GitHub otherwise reparses multiline linked pictures and can discard responsive sources or replace the project destination with an image link. Avoid separate card containers: the rows should read as one ordered portfolio. Use concise factual summaries; technology lists remain available in Source Details. On mobile, the emblem sits above the two-line name and row descriptions move beneath the numbered title to retain a comfortable reading size.
 
 ## Add a public project
 

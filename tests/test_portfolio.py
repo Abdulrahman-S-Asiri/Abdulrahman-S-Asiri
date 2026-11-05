@@ -110,7 +110,13 @@ class PortfolioTests(unittest.TestCase):
         self.assertEqual(sections.hidden_images, [])
         self.assertIn("ordinary", " ".join(sections.hidden_text))
         self.assertIn("overflow", " ".join(sections.hidden_text))
+        self.assertIn("Python · PyTorch · FastAPI · React", "".join(sections.hidden_text))
         self.assertEqual(sum(name.endswith(".svg") for name in outputs), 16)
+        for pid, number in (("first", "01"), ("second", "02"), ("third", "03")):
+            for variant in ("dark", "light", "mobile-dark", "mobile-light"):
+                root = ET.fromstring(outputs[f"assets/portfolio/{pid}-{variant}.svg"])
+                labels = [el.text for el in root.findall("{http://www.w3.org/2000/svg}text")]
+                self.assertIn(number, labels)
 
     def test_no_featured_projects_keeps_public_and_private_work_in_disclosures(self):
         self.registry["projects"][0]["featured"] = False
@@ -141,14 +147,6 @@ class PortfolioTests(unittest.TestCase):
                 self.assertIn(label, output)
                 if status == 404:
                     self.assertNotIn("https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence", output)
-
-    def test_mobile_engineering_heading_wraps_and_moves_title_below_it(self):
-        project = dict(self.registry["projects"][0], category="engineering")
-        root = ET.fromstring(p.card(project, {}, "dark", mobile=True))
-        texts = root.findall("{http://www.w3.org/2000/svg}text")
-        self.assertEqual([el.text for el in texts[:2]], ["ENGINEERING &", "EXPERIENCES"])
-        self.assertGreater(float(texts[2].get("y")) - float(texts[1].get("y")),
-                           float(texts[2].get("font-size")))
 
     def test_private_summary_never_requests_repository(self):
         api = FakeAPI(self.registry)
