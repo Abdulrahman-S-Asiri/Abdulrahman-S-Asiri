@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - portfolio/projects.json
+      - portfolio/showcases.json
       - tools/update_portfolio.py
       - README.md
       - .github/workflows/update-portfolio.yml

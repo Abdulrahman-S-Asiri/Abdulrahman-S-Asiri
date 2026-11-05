@@ -97,6 +97,57 @@ class PortfolioTests(unittest.TestCase):
     def current(self):
         return p.refresh(self.registry, empty(), FakeAPI(self.registry), "2026-10-09")
 
+    def showcase(self):
+        return {"version": 1, "projects": {"saudi-market-intelligence": {
+            "image": "saudi-market-intelligence.png", "caption": "Example preview",
+            "steps": [{"label": label, "text": "Public project explanation."}
+                      for label in ("Collect", "Analyze", "Inspect")],
+            "sources": [{"label": "Read source", "path": "blob/main/README.md"}]
+        }}}
+
+    def test_showcase_disclosure_preserves_preview_flow_stack_and_source(self):
+        output = p.render(self.registry, self.current(), self.readme, self.showcase())["README.md"]
+        sections = RenderedSections(output)
+        self.assertEqual(sections.visible_images, ["assets/showcases/saudi-market-intelligence.png"])
+        self.assertEqual(sections.hidden_images, ["assets/portfolio/saudi-market-intelligence-light.svg"])
+        self.assertIn("Explore Saudi Market Intelligence", "".join(sections.hidden_text))
+        self.assertIn("Python · PyTorch · FastAPI · React", "".join(sections.hidden_text))
+        self.assertIn("https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence/blob/main/README.md", output)
+
+    def test_access_loss_hides_showcase_media_and_deep_source_links(self):
+        result = p.refresh(self.registry, self.current(), FakeAPI(self.registry, metadata_error=p.SourceError(404)), "2026-10-10")
+        output = p.render(self.registry, result, self.readme, self.showcase())["README.md"]
+        self.assertNotIn("assets/showcases/", output)
+        self.assertNotIn("blob/main/README.md", output)
+        self.assertIn("SOURCE UNAVAILABLE", output)
+
+    def test_unchecked_project_has_warning_and_no_showcase_references(self):
+        outputs = p.render(self.registry, empty(), self.readme, self.showcase())
+        self.assertIn("SOURCE UNAVAILABLE", outputs["assets/portfolio/saudi-market-intelligence-dark.svg"])
+        self.assertIn("SOURCE UNAVAILABLE", outputs["README.md"])
+        self.assertNotIn("assets/showcases/", outputs["README.md"])
+        self.assertNotIn("blob/main/README.md", outputs["README.md"])
+
+    def test_showcase_paths_cannot_escape_assets_or_repository(self):
+        for field, value in (("image", "../secret.png"), ("mobile_image", "../secret.png"), ("source", "blob/main/../../secret"),
+                             ("source", "https://example.com/asset")):
+            with self.subTest(value=value):
+                config = self.showcase()
+                item = config["projects"]["saudi-market-intelligence"]
+                if field in {"image", "mobile_image"}:
+                    item[field] = value
+                else:
+                    item["sources"][0]["path"] = value
+                with self.assertRaises(ValueError):
+                    p.render(self.registry, self.current(), self.readme, config)
+
+    def test_mobile_showcase_keeps_responsive_source_inside_linked_picture(self):
+        config = self.showcase()
+        config["projects"]["saudi-market-intelligence"]["mobile_image"] = "saudi-market-intelligence-mobile.png"
+        output = p.render(self.registry, self.current(), self.readme, config)["README.md"]
+        self.assertIn('media="(max-width: 900px)" srcset="assets/showcases/saudi-market-intelligence-mobile.png"', output)
+        self.assertIn('<a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence"><picture>', output)
+
     def test_only_first_three_featured_projects_get_images_in_registry_order(self):
         original = self.registry["projects"][0]
         self.registry["projects"] = [dict(original, id=pid, repository=pid, name=pid, featured=featured)

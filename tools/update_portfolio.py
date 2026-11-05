@@ -271,78 +271,58 @@ def text(x, y, value, size=18, color="#e6edf3", weight=400, family="Segoe UI,Ari
 
 
 def palette(theme):
-    return ({"bg": "#0B1220", "panel": "#111D30", "border": "#2C394D",
-             "ink": "#F4F1EA", "muted": "#B7C0CE", "accent": "#D6B87C"}
+    return ({"bg": "#0D1117", "panel": "#151C29", "border": "#2C384A",
+             "ink": "#F0F6FC", "muted": "#A7B4C5", "accent": "#58D5F7", "violet": "#B69BFF"}
             if theme == "dark" else
-            {"bg": "#FAF8F3", "panel": "#FFFFFF", "border": "#E1D9C8",
-             "ink": "#17243A", "muted": "#526074", "accent": "#826226"})
+            {"bg": "#F6F8FC", "panel": "#FFFFFF", "border": "#CDD6E3",
+             "ink": "#152339", "muted": "#526074", "accent": "#096A82", "violet": "#6942AF"})
 
 
 def svg(width, height, title, description, body, theme):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{html.escape(title)}</title><desc id="desc">{html.escape(description)}</desc>{body}</svg>\n'
 
 
-def metal_defs():
-    return ('<defs>'
-            '<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">'
-            '<stop stop-color="#F1D59A"/><stop offset=".55" stop-color="#D6B87C"/>'
-            '<stop offset="1" stop-color="#A78243"/></linearGradient>'
-            '<linearGradient id="silver" x1="0" y1="0" x2="1" y2=".7">'
-            '<stop stop-color="#F4F1EA"/><stop offset=".4" stop-color="#AAA9A4"/>'
-            '<stop offset="1" stop-color="#414854"/></linearGradient>'
-            '<linearGradient id="ivory" x1="0" y1="0" x2="1" y2="1">'
-            '<stop stop-color="#FCF8EC"/><stop offset="1" stop-color="#B5B2A7"/>'
-            '</linearGradient></defs>')
-
-
-def folded_mark(x, y, scale):
-    """Original directional mark: three interleaved, folded planes."""
-    return (f'<g transform="translate({x} {y}) scale({scale})">'
-            '<path d="M184 25 Q184 13 195 19 L281 68 Q292 74 292 86 V195 '
-            'Q292 213 278 222 L184 276 Z" fill="url(#gold)" stroke="#F1D59A" stroke-width="1.4"/>'
-            '<path d="M105 83 Q105 71 116 77 L224 139 Q235 145 235 158 V249 '
-            'L118 182 Q105 176 105 163 Z" fill="url(#silver)" stroke="#E7E2D7" stroke-width="1.4"/>'
-            '<path d="M235 158 L278 183 Q292 192 292 201 Q292 213 278 222 '
-            'L184 276 H111 L184 234 V188 Z" fill="url(#gold)"/>'
-            '<path d="M235 158 V249 L184 276 V188 Z" fill="#0B1220" fill-opacity=".20"/>'
-            '<path d="M105 163 L155 192 L76 237 Q71 240 64 239 L4 237 '
-            'Q-2 237 4 233 Z" fill="url(#ivory)" stroke="#E7E2D7" stroke-width="1"/>'
-            '<path d="M155 192 V215 L76 260 V237 Z" fill="#303B4D"/>'
-            '<path d="M155 192 L76 237" fill="none" stroke="#F4F1EA" stroke-opacity=".6"/>'
-            '</g>')
+def motion_style():
+    # A single short entrance, never an endless distraction. Images remain useful
+    # with CSS/animation disabled, including GitHub's static preview contexts.
+    return ('<style>@keyframes trace{from{stroke-dashoffset:120}to{stroke-dashoffset:0}}'
+            '.trace{stroke-dasharray:8 12;animation:trace 4.5s ease-out 1}'
+            '@media(prefers-reduced-motion:reduce){.trace{animation:none}}</style>')
 
 
 def banner(registry, snapshot, theme, mobile=False):
     p, profile = palette(theme), registry["profile"]
-    width, x = (360, 24) if mobile else (900, 48)
+    width, height, x = (360, 350, 24) if mobile else (900, 240, 40)
+    body = motion_style() + f'<rect width="{width}" height="{height}" rx="16" fill="{p["bg"]}"/>'
+    body += f'<path d="M{x} 24 H{x + 42}" stroke="{p["accent"]}" stroke-width="3"/>'
+    body += text(x + 54, 31, "DATA / AI", 21, p["accent"], 600)
     given, _, family = profile["name"].partition(" ")
-    name_lines = textwrap.wrap(given, 13 if mobile else 17)
-    name_lines += textwrap.wrap(family, 15 if mobile else 19)
-    role_lines = textwrap.wrap(profile["role"], 25 if mobile else 43)
-    direction_lines = textwrap.wrap(profile["direction"], 23 if mobile else 40)
-    name_y, name_step = (163, 52) if mobile else (120, 70)
-    role_y = name_y + (len(name_lines) - 1) * name_step + (48 if mobile else 52)
-    location_y = role_y + (len(role_lines) - 1) * 32 + 42
-    direction_y = location_y + (60 if mobile else 72)
-    height = direction_y + (len(direction_lines) - 1) * 35 + 34
-    body = metal_defs() + f'<rect width="{width}" height="{height}" fill="{p["bg"]}"/>'
-    body += f'<path d="M{x} {34 if mobile else 44} H{x + 64}" stroke="{p["accent"]}" stroke-width="4"/>'
-    if mobile:
-        body += text(x, 88, "DATA / AI", 24, p["accent"], 600)
-        body += folded_mark(221, 16, .38)
-    else:
-        body += folded_mark(578, 47, .96)
+    name_lines = (textwrap.wrap(given, 15) + textwrap.wrap(family, 18)) if mobile else [profile["name"]]
+    name_y, step = (86, 43) if mobile else (102, 57)
     for i, line in enumerate(name_lines):
-        body += text(x, name_y + i * name_step, line, 42 if mobile else 62, p["ink"], 700)
-    for i, line in enumerate(role_lines):
-        body += text(x, role_y + i * 32, line, 24 if mobile else 26, p["ink"])
-    body += text(x + 28, location_y, profile["location"], 24 if mobile else 26, p["muted"])
-    body += (f'<g transform="translate({x + 1} {location_y - 20})" fill="none" stroke="{p["accent"]}" stroke-width="2">'
-             '<path d="M9 23 Q0 12 0 9 A9 9 0 1 1 18 9 Q18 12 9 23Z"/><circle cx="9" cy="9" r="2.5"/></g>')
-    body += f'<path d="M{x} {direction_y - 23} V{direction_y + (len(direction_lines) - 1) * 35 + 2}" stroke="{p["accent"]}" stroke-width="4"/>'
-    for i, line in enumerate(direction_lines):
-        body += text(x + 16, direction_y + i * 35, line, 26 if mobile else 30, p["ink"], 600)
-    return svg(width, height, profile["name"], f'{profile["role"]}. {profile["direction"]}. {profile["location"]}. An original folded-plane mark represents connected engineering disciplines.', body, theme)
+        body += text(x, name_y + i * step, line, 35 if mobile else 43, p["ink"], 700)
+    y = name_y + (len(name_lines) - 1) * step + 41
+    for line in textwrap.wrap(profile["role"], 25 if mobile else 43):
+        body += text(x, y, line, 24 if mobile else 25, p["muted"])
+        y += 30
+    body += text(x, y + 7, profile["location"], 22, p["muted"])
+    if mobile:
+        body += f'<path class="trace" d="M44 289 H316" stroke="{p["accent"]}" stroke-width="2"/>'
+        for cx, label in ((44, "DATA"), (180, "MODELS"), (316, "BUILD")):
+            body += f'<circle cx="{cx}" cy="289" r="7" fill="{p["bg"]}" stroke="{p["violet"]}" stroke-width="2"/>'
+            tx = cx - (22 if label == "DATA" else 40 if label == "MODELS" else 27)
+            body += text(tx, 326, label, 19, p["muted"], 600)
+    else:
+        # A compact data-flow illustration, not a fabricated metric or dashboard.
+        for gx in range(604, 867, 24):
+            for gy in range(36, 263, 24):
+                body += f'<circle cx="{gx}" cy="{gy}" r="1" fill="{p["border"]}"/>'
+        body += f'<path class="trace" d="M646 82 H715 V146 H790 V211 H830" fill="none" stroke="{p["accent"]}" stroke-width="3"/>'
+        for bx, by, label in ((590, 52, "DATA"), (677, 116, "MODELS"), (744, 181, "SYSTEMS")):
+            body += f'<g class="reveal"><rect x="{bx}" y="{by}" width="116" height="54" rx="10" fill="{p["panel"]}" stroke="{p["border"]}"/>'
+            body += text(bx + 15, by + 34, label, 20, p["accent"] if label != "MODELS" else p["violet"], 600) + '</g>'
+        body += text(x, 218, profile["direction"], 23, p["accent"], 600)
+    return svg(width, height, profile["name"], f'{profile["role"]}. {profile["direction"]}. {profile["location"]}. Data, models and systems illustration.', body, theme)
 
 
 def source_notice(record):
@@ -353,45 +333,38 @@ def source_notice(record):
     return "ARCHIVED PUBLIC SOURCE" if record.get("archived") else ""
 
 
-def card(project, record, theme, mobile=False, rank=1, last=False):
-    p = palette(theme)
-    width, margin = (360, 24) if mobile else (900, 48)
-    title_x = 132 if mobile else 172
-    title_lines = textwrap.wrap(project["name"], 14 if mobile else 40)
-    summary_lines = textwrap.wrap(project["summary"], 26 if mobile else 53)
-    body = metal_defs()
-    bx, by = margin, 32
-    body += f'<path d="M{bx + 21} {by} H{bx + 84} L{bx + 63} {by + 42} H{bx} Z" fill="url(#gold)"/>'
-    body += text(bx + 25, by + 30, f"{rank:02}", 27, "#0B1220", 600)
-    title_y = 61
-    for i, line in enumerate(title_lines):
-        body += text(title_x, title_y + i * 36, line, 28 if mobile else 34, p["ink"], 700)
-    title_bottom = title_y + (len(title_lines) - 1) * 36
-    divider_x = 116 if mobile else 151
-    body += f'<path d="M{divider_x} 32 V{title_bottom + 10}" stroke="{p["accent"]}" stroke-opacity=".65"/>'
-    y = title_bottom + 42
-    copy_x = margin if mobile else title_x
-    for line in summary_lines:
-        body += text(copy_x, y, line, 24 if mobile else 26, p["muted"])
-        y += 31
+def card(project, record, theme, mobile=False, rank=1, last=False, showcase=None):
+    """Responsive visual walkthrough; never claims live system activity."""
+    p, width = palette(theme), 360 if mobile else 900
+    steps = (showcase or {}).get("steps") or [
+        {"label": "Explore", "text": project["summary"]},
+        {"label": "Inspect", "text": " · ".join(project["stack"]) or "Public source"},
+        {"label": "Build", "text": "Read the source and project documentation."}]
+    height = 626 if mobile else 332
+    body = motion_style() + f'<rect width="{width}" height="{height}" rx="14" fill="{p["bg"]}"/>'
+    body += text(24 if mobile else 32, 40, f"{rank:02}", 24, p["accent"], 600)
+    body += text(70 if mobile else 80, 40, "HOW IT WORKS", 21, p["muted"], 600)
+    for i, item in enumerate(steps):
+        bx, by, bw, bh = (24, 67 + i * 170, 312, 144) if mobile else (32 + i * 290, 75, 256, 185)
+        if i < 2:
+            path = f'M180 {by + bh} V{by + 170}' if mobile else f'M{bx + bw} 168 H{bx + 290}'
+            body += f'<path class="trace" d="{path}" stroke="{p["accent"]}" stroke-width="2"/>'
+        body += f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="12" fill="{p["panel"]}" stroke="{p["border"]}"/>'
+        color = p["violet"] if i == 1 else p["accent"]
+        body += f'<circle cx="{bx + 30}" cy="{by + 30}" r="6" fill="{color}"/>'
+        body += text(bx + 49, by + 39, item["label"], 27, p["ink"], 600)
+        lines = textwrap.wrap(item["text"], 26 if mobile else 21)
+        # The native walkthrough retains the full text; the graphic is a synopsis.
+        if len(lines) > 3:
+            lines = lines[:3]
+            lines[-1] = lines[-1].rstrip('.,;') + "…"
+        for j, line in enumerate(lines):
+            body += text(bx + 20, by + 76 + j * 27, line, 21, p["muted"])
     notice = source_notice(record)
-    if notice:
-        y += 8
-        for line in textwrap.wrap(notice, 25 if mobile else 50):
-            body += text(copy_x, y, line, 24, p["accent"], 600)
-            y += 31
-    height = y + (84 if last else 10)
-    if last:
-        for i in range(4):
-            offset = i * 9
-            body += (f'<path d="M{width * .15} {height - 4 + offset} '
-                     f'C{width * .42} {height - 40 + offset} {width * .56} {height - 18 + offset} {width * .68} {height - 37 + offset} '
-                     f'L{width + 30} {y + 12 + offset}" fill="none" stroke="{p["accent"]}" '
-                     f'stroke-opacity="{.75 - i * .15}" stroke-width="1"/>')
-    else:
-        body += f'<path d="M{margin} {height - 1} H{width - margin}" stroke="{p["border"]}"/>'
-    frame = f'<rect width="{width}" height="{height}" fill="{p["bg"]}"/>'
-    return svg(width, height, project["name"], project["summary"] + (" " + notice if notice else ""), frame + body, theme)
+    footer = notice or "SOURCE-BASED WALKTHROUGH"
+    for i, line in enumerate(textwrap.wrap(footer, 27 if mobile else 70)):
+        body += text(24 if mobile else 32, height - 39 + i * 24, line, 21, p["accent"] if notice else p["muted"])
+    return svg(width, height, project["name"], project["summary"] + (" " + notice if notice else ""), body, theme)
 
 
 def picture(name, alt, width="900"):
@@ -403,9 +376,45 @@ def link(url, label):
     return f'<a href="{html.escape(safe_url(url), quote=True)}">{html.escape(label).replace("|", "&#124;")}</a>'
 
 
-def render(registry, snapshot, readme):
+def validate_showcases(data, registry):
+    """Curated public presentation metadata; never a remote-data input."""
+    if set(data) != {"version", "projects"} or data["version"] != 1 or not isinstance(data["projects"], dict):
+        raise ValueError("Invalid showcase configuration")
+    public_ids = {q["id"] for q in registry["projects"] if q["visibility"] == "public"}
+    for pid, item in data["projects"].items():
+        if pid not in public_ids or set(item) - {"image", "mobile_image", "image_width", "caption", "steps", "sources"} or not {"image", "caption", "steps", "sources"} <= set(item):
+            raise ValueError("Showcases require a registered public project")
+        if type(item.get("image_width", 900)) is not int or not 320 <= item.get("image_width", 900) <= 900:
+            raise ValueError("Invalid preview width")
+        if item["image"] is not None and item["image"] != pid + ".png":
+            raise ValueError("Showcase images must use the project ID")
+        if "mobile_image" in item and (not item["image"] or item["mobile_image"] != pid + "-mobile.png"):
+            raise ValueError("Mobile previews must use the project ID")
+        if not item["caption"] or item["caption"] != plain(item["caption"], 180):
+            raise ValueError("Invalid showcase caption")
+        if not isinstance(item["steps"], list) or len(item["steps"]) != 3:
+            raise ValueError("Showcases need three concise steps")
+        for step in item["steps"]:
+            if set(step) != {"label", "text"}:
+                raise ValueError("Invalid walkthrough step")
+            for key, limit in (("label", 20), ("text", 180)):
+                if not step[key] or step[key] != plain(step[key], limit):
+                    raise ValueError("Invalid walkthrough text")
+        if not isinstance(item["sources"], list) or not 1 <= len(item["sources"]) <= 3:
+            raise ValueError("Showcases need source references")
+        for source in item["sources"]:
+            if set(source) != {"label", "path"} or not source["label"] or source["label"] != plain(source["label"], 50):
+                raise ValueError("Invalid showcase reference")
+            path = source["path"]
+            if not isinstance(path, str) or not re.fullmatch(r"blob/[A-Za-z0-9_.-]+/[A-Za-z0-9_./-]+", path) or any(part in {"", ".", ".."} for part in path.split("/")):
+                raise ValueError("References must stay inside the public repository")
+    return data["projects"]
+
+
+def render(registry, snapshot, readme, showcases=None):
     validate_registry(registry)
     validate_snapshot(registry, snapshot)
+    showcases = validate_showcases(showcases, registry) if showcases is not None else {}
     if readme.count(START) != 1 or readme.count(END) != 1 or readme.index(START) >= readme.index(END):
         raise ValueError("README must contain one ordered generated block")
     projects = registry["projects"] + snapshot["discovered"]
@@ -419,23 +428,43 @@ def render(registry, snapshot, readme):
         outputs[f"assets/portfolio/banner-mobile-{theme}.svg"] = banner(registry, snapshot, theme, mobile=True)
         for rank, project in enumerate(featured, 1):
             record = snapshot["projects"].get(project["id"], {})
-            outputs[f'assets/portfolio/{project["id"]}-{theme}.svg'] = card(project, record, theme, rank=rank, last=rank == len(featured))
-            outputs[f'assets/portfolio/{project["id"]}-mobile-{theme}.svg'] = card(project, record, theme, mobile=True, rank=rank, last=rank == len(featured))
+            showcase = showcases.get(project["id"]) if record.get("url") else None
+            outputs[f'assets/portfolio/{project["id"]}-{theme}.svg'] = card(project, record, theme, rank=rank, showcase=showcase)
+            outputs[f'assets/portfolio/{project["id"]}-mobile-{theme}.svg'] = card(project, record, theme, mobile=True, rank=rank, showcase=showcase)
     current = sum(r["status"] == "current" for r in snapshot["projects"].values())
     public_count = len([p for p in projects if p["visibility"] == "public"])
     check = snapshot["checked_on"] or "not yet checked"
-    parts = ['## Selected Work · أعمال مختارة', '', '<p>'] if featured else []
-    for project in featured:
+    parts = ['## Selected Work', '', 'Open a project or expand its walkthrough · **أعمال مختارة**', ''] if featured else []
+    for rank, project in enumerate(featured, 1):
         record = snapshot["projects"].get(project["id"], {})
+        showcase = showcases.get(project["id"], {}) if record.get("url") else {}
         notice = source_notice(record)
-        image = picture(project["id"], project["name"] + ": " + project["summary"] + (" " + notice if notice else ""))
+        title = link(record["url"], project["name"]) if record.get("url") else html.escape(project["name"])
+        parts += [f'### {rank:02} · {title}', '']
+        alt = project["name"] + ": " + project["summary"] + (" " + notice if notice else "")
+        walkthrough = picture(project["id"], alt)
+        image = (f'<img src="assets/showcases/{showcase["image"]}" width="{showcase.get("image_width", 900)}" alt="{html.escape(showcase["caption"], quote=True)}">'
+                 if showcase.get("image") else walkthrough)
+        if showcase.get("mobile_image"):
+            image = f'<picture>\n<source media="(max-width: 900px)" srcset="assets/showcases/{showcase["mobile_image"]}">\n{image}\n</picture>'
         if record.get("url"):
             image = f'<a href="{html.escape(record["url"], quote=True)}">{image}</a>'
-        # One HTML block preserves picture sources and links without the large
-        # paragraph gaps that would separate the continuous project rows.
-        parts += [image]
-    if featured:
-        parts += ['</p>', '']
+        # Keep linked responsive pictures inside a block so GitHub retains their sources.
+        parts += ['<p align="center">', image, '</p>', '']
+        if notice:
+            parts += [f'<p><em>{html.escape(notice)}</em></p>', '']
+        if showcase:
+            parts += [f'<p>{html.escape(project["summary"])}<br><sub>{html.escape(showcase["caption"])}</sub></p>', '',
+                      '<details>', f'<summary><strong>Explore {html.escape(project["name"])} · عرض التفاصيل</strong></summary>', '']
+            if showcase.get("image"):
+                parts += ['<p>', walkthrough, '</p>', '',
+                          f'<a href="assets/showcases/{showcase["image"]}">View full preview</a>', '']
+            for i, step in enumerate(showcase["steps"], 1):
+                parts += [f'{i}. **{html.escape(step["label"])}** — {html.escape(step["text"])}']
+            parts += ['', f'<p><strong>Built with</strong> · {html.escape(" · ".join(project["stack"]))}</p>', '']
+            parts += [' · '.join(link(record["url"] + '/' + source["path"], source["label"]) for source in showcase["sources"]), '', '</details>', '']
+        else:
+            parts += [html.escape(project["summary"]), '']
     if secondary:
         parts += ['<details>', '<summary><strong>More Projects · مشاريع أخرى</strong></summary>', '']
         for project in secondary:
@@ -486,7 +515,7 @@ def render(registry, snapshot, readme):
     for name, content in outputs.items():
         if name.endswith(".svg"):
             root = ET.fromstring(content)
-            if any(el.tag.rsplit("}", 1)[-1] not in {"svg", "title", "desc", "rect", "circle", "path", "text", "g", "defs", "linearGradient", "radialGradient", "stop"} for el in root.iter()):
+            if any(el.tag.rsplit("}", 1)[-1] not in {"svg", "title", "desc", "rect", "circle", "path", "text", "g", "defs", "linearGradient", "radialGradient", "stop", "style"} for el in root.iter()):
                 raise ValueError("Unexpected SVG content")
     return outputs
 
@@ -531,7 +560,17 @@ def main():
         validate_snapshot(registry, snapshot)
         if args.refresh:
             snapshot = refresh(registry, snapshot, GitHub(), datetime.now(timezone.utc).date().isoformat())
-        outputs = render(registry, snapshot, (root / "README.md").read_text(encoding="utf-8"))
+        showcase_file = root / "portfolio/showcases.json"
+        showcases = json.loads(showcase_file.read_text(encoding="utf-8")) if showcase_file.exists() else None
+        if showcases is not None:
+            for item in validate_showcases(showcases, registry).values():
+                for image_name in (item["image"], item.get("mobile_image")):
+                    if not image_name:
+                        continue
+                    image_path = root / "assets/showcases" / image_name
+                    if image_path.is_symlink() or not image_path.is_file():
+                        raise ValueError("Missing or unsafe showcase image")
+        outputs = render(registry, snapshot, (root / "README.md").read_text(encoding="utf-8"), showcases)
         write_outputs(root, outputs, args.check)
         states = [r["status"] for r in snapshot["projects"].values()]
         print(f'Portfolio {"verified" if args.check else "rendered"}: {len(outputs)} files; {states.count("current")} current, {states.count("stale")} cached, {states.count("unavailable")} unavailable sources.')
