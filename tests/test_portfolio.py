@@ -142,6 +142,14 @@ class PortfolioTests(unittest.TestCase):
                 if status == 404:
                     self.assertNotIn("https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence", output)
 
+    def test_mobile_engineering_heading_wraps_and_moves_title_below_it(self):
+        project = dict(self.registry["projects"][0], category="engineering")
+        root = ET.fromstring(p.card(project, {}, "dark", mobile=True))
+        texts = root.findall("{http://www.w3.org/2000/svg}text")
+        self.assertEqual([el.text for el in texts[:2]], ["ENGINEERING &", "EXPERIENCES"])
+        self.assertGreater(float(texts[2].get("y")) - float(texts[1].get("y")),
+                           float(texts[2].get("font-size")))
+
     def test_private_summary_never_requests_repository(self):
         api = FakeAPI(self.registry)
         result = p.refresh(self.registry, empty(), api, "2026-10-09")

@@ -324,8 +324,10 @@ def card(project, record, theme, mobile=False):
     summary_lines = textwrap.wrap(project["summary"], 26 if mobile else 66)
     stack = " · ".join(project["stack"]) or record.get("language") or "Public source"
     stack_lines = textwrap.wrap(stack, 26 if mobile else 64, break_long_words=True)
-    body = text(x, 36, CATEGORIES[project["category"]].upper(), 24, p["accent"], 600)
-    y = 78
+    heading_lines = textwrap.wrap(CATEGORIES[project["category"]].upper(), 23 if mobile else 60)
+    body = "".join(text(x, 36 + i * 30, line, 24, p["accent"], 600)
+                   for i, line in enumerate(heading_lines))
+    y = 78 + (len(heading_lines) - 1) * 30
     for line in title_lines:
         body += text(x, y, line, title_size, p["ink"], 700)
         y += 34 if mobile else 42
@@ -385,7 +387,9 @@ def render(registry, snapshot, readme):
         image = picture(project["id"], project["name"] + ": " + project["summary"] + (" " + notice if notice else ""))
         if record.get("url"):
             image = f'<a href="{html.escape(record["url"], quote=True)}">{image}</a>'
-        parts += [image, '']
+        # A block-level wrapper keeps GFM from reparsing the multiline picture
+        # as inline HTML, which otherwise drops its sources and repository link.
+        parts += ['<p>', image, '</p>', '']
     if secondary:
         parts += ['<details>', '<summary><strong>More Projects · مشاريع أخرى</strong></summary>', '']
         for project in secondary:

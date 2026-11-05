@@ -16,6 +16,7 @@ I build across **data engineering, Arabic AI and financial-market research**, tu
 
 ## Selected Work · أعمال مختارة
 
+<p>
 <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics"><picture>
   <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/data-science-basics-mobile-dark.svg">
   <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-mobile-light.svg">
@@ -23,7 +24,9 @@ I build across **data engineering, Arabic AI and financial-market research**, tu
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-light.svg">
   <img src="assets/portfolio/data-science-basics-light.svg" width="900" alt="Data Science Basics: A bilingual Arabic / English learning path from data fundamentals to applied notebooks.">
 </picture></a>
+</p>
 
+<p>
 <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2"><picture>
   <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-mobile-dark.svg">
   <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-mobile-light.svg">
@@ -31,7 +34,9 @@ I build across **data engineering, Arabic AI and financial-market research**, tu
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-light.svg">
   <img src="assets/portfolio/bidaya-light.svg" width="900" alt="Bidaya: An Arabic / English interview coach exploring voice input, feedback and resume analysis.">
 </picture></a>
+</p>
 
+<p>
 <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence"><picture>
   <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/saudi-market-intelligence-mobile-dark.svg">
   <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-mobile-light.svg">
@@ -39,6 +44,7 @@ I build across **data engineering, Arabic AI and financial-market research**, tu
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-light.svg">
   <img src="assets/portfolio/saudi-market-intelligence-light.svg" width="900" alt="Saudi Market Intelligence: Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.">
 </picture></a>
+</p>
 
 <details>
 <summary><strong>More Projects · مشاريع أخرى</strong></summary>
