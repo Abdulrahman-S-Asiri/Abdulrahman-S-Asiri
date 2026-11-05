@@ -1,3 +1,4 @@
+import base64
 import copy
 from datetime import date
 import importlib.util
@@ -108,8 +109,8 @@ class PortfolioTests(unittest.TestCase):
     def test_showcase_disclosure_preserves_preview_flow_stack_and_source(self):
         output = p.render(self.registry, self.current(), self.readme, self.showcase())["README.md"]
         sections = RenderedSections(output)
-        self.assertEqual(sections.visible_images, ["assets/showcases/saudi-market-intelligence.png"])
-        self.assertEqual(sections.hidden_images, ["assets/portfolio/saudi-market-intelligence-light.svg"])
+        self.assertEqual(sections.visible_images, ["assets/portfolio/saudi-market-intelligence-light.svg"])
+        self.assertEqual(sections.hidden_images, ["assets/showcases/saudi-market-intelligence.png"])
         self.assertIn("Explore Saudi Market Intelligence", "".join(sections.hidden_text))
         self.assertIn("Python · PyTorch · FastAPI · React", "".join(sections.hidden_text))
         self.assertIn("https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence/blob/main/README.md", output)
@@ -120,6 +121,8 @@ class PortfolioTests(unittest.TestCase):
         self.assertNotIn("assets/showcases/", output)
         self.assertNotIn("blob/main/README.md", output)
         self.assertIn("SOURCE UNAVAILABLE", output)
+        svg = p.render(self.registry, result, self.readme, self.showcase())["assets/portfolio/saudi-market-intelligence-dark.svg"]
+        self.assertNotIn("<image", svg)
 
     def test_unchecked_project_has_warning_and_no_showcase_references(self):
         outputs = p.render(self.registry, empty(), self.readme, self.showcase())
@@ -127,6 +130,7 @@ class PortfolioTests(unittest.TestCase):
         self.assertIn("SOURCE UNAVAILABLE", outputs["README.md"])
         self.assertNotIn("assets/showcases/", outputs["README.md"])
         self.assertNotIn("blob/main/README.md", outputs["README.md"])
+        self.assertNotIn("<image", outputs["assets/portfolio/saudi-market-intelligence-dark.svg"])
 
     def test_showcase_paths_cannot_escape_assets_or_repository(self):
         for field, value in (("image", "../secret.png"), ("mobile_image", "../secret.png"), ("source", "blob/main/../../secret"),
@@ -162,7 +166,7 @@ class PortfolioTests(unittest.TestCase):
         self.assertIn("ordinary", " ".join(sections.hidden_text))
         self.assertIn("overflow", " ".join(sections.hidden_text))
         self.assertIn("Python · PyTorch · FastAPI · React", "".join(sections.hidden_text))
-        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 16)
+        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 30)
         for pid, number in (("first", "01"), ("second", "02"), ("third", "03")):
             for variant in ("dark", "light", "mobile-dark", "mobile-light"):
                 root = ET.fromstring(outputs[f"assets/portfolio/{pid}-{variant}.svg"])
@@ -177,7 +181,7 @@ class PortfolioTests(unittest.TestCase):
         self.assertNotIn("## Selected", outputs["README.md"])
         self.assertIn("Saudi Market Intelligence", " ".join(sections.hidden_text))
         self.assertIn("Stock_101", " ".join(sections.hidden_text))
-        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 4)
+        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 18)
 
     def test_discovered_projects_are_text_only_and_optional_evidence_is_collapsed(self):
         repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]])
@@ -346,9 +350,65 @@ class PortfolioTests(unittest.TestCase):
                 continue
             root = ET.fromstring(content)
             tags = {el.tag.rsplit("}", 1)[-1] for el in root.iter()}
-            self.assertTrue({"title", "desc", "text"} <= tags)
-            self.assertFalse({"script", "image", "foreignObject", "animate"} & tags)
+            self.assertTrue({"title", "desc"} <= tags)
+            self.assertFalse({"script", "foreignObject", "animate"} & tags)
         self.assertNotIn("<script>", outputs["README.md"])
+
+    def test_svg_validation_rejects_active_and_external_content(self):
+        payloads = (
+            '<image href="https://example.com/image.webp"/>',
+            '<image href="data:image/svg+xml;base64,PHN2Zy8+"/>',
+            '<image href="data:image/webp;base64,' + base64.b64encode(b"not a WebP").decode() + '"/>',
+            '<script>alert(1)</script>',
+            '<rect onload="alert(1)"/>',
+            '<rect fill="url(https://example.com/a)"/>',
+            '<style>@import "https://example.com/a";</style>',
+            '<style>.x{fill:url(https://example.com/a)}</style>',
+        )
+        for body in payloads:
+            with self.subTest(body=body), self.assertRaises(ValueError):
+                p.validate_svg('<svg xmlns="http://www.w3.org/2000/svg">' + body + '</svg>')
+        p.validate_svg('<svg xmlns="http://www.w3.org/2000/svg"><image href="' + p.artwork("blue-brain") + '"/></svg>')
+
+    def test_artwork_allowlist_rejects_unknown_and_private_names(self):
+        for name in ("../blue-brain", "stock-101", "private", "blue-artwork.webp"):
+            with self.subTest(name=name), self.assertRaises(ValueError):
+                p.artwork(name)
+
+    def test_real_assets_are_deterministic_self_contained_and_responsive(self):
+        config = p.validate_registry(json.loads((ROOT / "portfolio/projects.json").read_text(encoding="utf-8")))
+        snapshot = json.loads((ROOT / "portfolio/snapshot.json").read_text(encoding="utf-8"))
+        outputs = p.render(config, snapshot, self.readme)
+        self.assertEqual(outputs, p.render(config, snapshot, outputs["README.md"]))
+        assets = {name: value for name, value in outputs.items() if name.endswith(".svg")}
+        self.assertEqual(len(assets), 30)
+        for name, content in assets.items():
+            with self.subTest(name=name):
+                p.validate_svg(content)
+                root = ET.fromstring(content)
+                self.assertEqual(root.get("width"), "320" if "-mobile-" in name else "900")
+                for image in root.iter("{http://www.w3.org/2000/svg}image"):
+                    self.assertTrue(image.get("href", "").startswith("data:image/webp;base64,"))
+        banner = assets["assets/portfolio/banner-dark.svg"]
+        self.assertIn("animation:turn 4.8s", banner)
+        self.assertIn("animation:flow 1.6s linear 3", banner)
+        self.assertIn("prefers-reduced-motion:reduce", banner)
+        self.assertIn("animation:none", banner)
+        for name in ("banner", "toolkit", "research", "connect"):
+            self.assertNotEqual(assets[f"assets/portfolio/{name}-dark.svg"], assets[f"assets/portfolio/{name}-mobile-dark.svg"])
+
+    def test_reduced_motion_selects_assets_without_animation(self):
+        outputs = p.render(self.registry, self.current(), self.readme)
+        for variant in ("banner-still", "banner-mobile-still"):
+            content = outputs[f"assets/portfolio/{variant}.svg"]
+            self.assertNotIn("@keyframes", content)
+            self.assertNotIn("animation:", content)
+            self.assertIn("Static neural scene", content)
+        picture = p.picture("banner", "Profile")
+        self.assertLess(picture.index("banner-mobile-still.svg"), picture.index("banner-still.svg"))
+        self.assertLess(picture.index("banner-still.svg"), picture.index("banner-dark.svg"))
+        actual = (ROOT / "README.md").read_text(encoding="utf-8").split("</picture>", 1)[0]
+        self.assertIn('media="(prefers-reduced-motion: reduce)" srcset="assets/portfolio/banner-still.svg"', actual)
 
     def test_malicious_links_paths_and_duplicate_ids_are_rejected(self):
         for url in ("javascript:alert(1)", "http://github.com/a", "https://user:password@github.com/a", "https://github.com/a\n"):
