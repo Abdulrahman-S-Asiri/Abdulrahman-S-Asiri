@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "projects": {
+    "data-science-basics": {
+      "image": "data-science-basics.png",
+      "mobile_image": "data-science-basics-mobile.png",
+      "image_width": 720,
+      "caption": "Notebook example · K-means clustering with synthetic data.",
+      "steps": [
+        {"label": "Explore", "text": "Build a foundation with NumPy, pandas and visual exploration."},
+        {"label": "Experiment", "text": "Run the notebooks and inspect how the models behave."},
+        {"label": "Evaluate", "text": "Compare the exercise notebook with its worked solutions."}
+      ],
+      "sources": [
+        {"label": "Exercise notebook", "path": "blob/043375eb72da8f4ade97860bd9674c3441ad49cc/Data_Science_Basics.ipynb"},
+        {"label": "Worked notebook", "path": "blob/043375eb72da8f4ade97860bd9674c3441ad49cc/Data_Science_Basics_Solve.ipynb"}
+      ]
+    },
+    "bidaya": {
+      "image": "bidaya.png",
+      "image_width": 380,
+      "caption": "Interface preview · Configure a bilingual interview practice session.",
+      "steps": [
+        {"label": "Prepare", "text": "Choose an interview context in the Arabic / English interface."},
+        {"label": "Practice", "text": "Work through interview questions and responses."},
+        {"label": "Reflect", "text": "Explore the feedback and resume-analysis features described in the project."}
+      ],
+      "sources": [
+        {"label": "Project guide", "path": "blob/ded111aa503513051378a9f3e7c7e789516ba4bd/README.md"},
+        {"label": "Interface source", "path": "blob/ded111aa503513051378a9f3e7c7e789516ba4bd/frontend/src/pages/Home.jsx"}
+      ]
+    },
+    "saudi-market-intelligence": {
+      "image": null,
+      "caption": "Architecture overview · From market data to research interfaces.",
+      "steps": [
+        {"label": "Collect", "text": "Market-data loaders supply prices and technical features."},
+        {"label": "Analyze", "text": "Python analysis and model modules expose research through FastAPI."},
+        {"label": "Inspect", "text": "React views organize stock analysis, scanning and portfolio research."}
+      ],
+      "sources": [
+        {"label": "Architecture and API", "path": "blob/7a43abebfd509111ec2f8452c440a79576922be3/README.md"}
+      ]
+    }
+  }
+}
