@@ -15,7 +15,7 @@
       "visibility": "public",
       "repository": "Data_Science_Basics",
       "category": "data",
-      "summary": "A bilingual Arabic / English learning path from data fundamentals to applied notebooks.",
+      "summary": "Bilingual data fundamentals and applied notebooks.",
       "stack": ["Python", "Jupyter", "pandas", "scikit-learn"],
       "featured": true
     },
@@ -25,7 +25,7 @@
       "visibility": "public",
       "repository": "Bidaya_v2",
       "category": "ai",
-      "summary": "An Arabic / English interview coach exploring voice input, feedback and resume analysis.",
+      "summary": "Arabic / English interview coaching.",
       "stack": ["React", "Flask", "OpenAI APIs", "Vite"],
       "featured": true
     },
@@ -35,7 +35,7 @@
       "visibility": "public",
       "repository": "saudi-market-intelligence",
       "category": "markets",
-      "summary": "Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.",
+      "summary": "Research tools for Tadawul.",
       "stack": ["Python", "PyTorch", "FastAPI", "React"],
       "featured": true
     },
