@@ -1,6 +1,7 @@
 import copy
 from datetime import date
 import importlib.util
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import tempfile
@@ -17,12 +18,38 @@ SPEC.loader.exec_module(p)
 
 def registry():
     result = json.loads((ROOT / "portfolio/projects.json").read_text(encoding="utf-8"))
-    result["projects"] = [result["projects"][0], result["projects"][-1]]
+    result["projects"] = [next(q for q in result["projects"] if q["id"] == pid)
+                          for pid in ("saudi-market-intelligence", "stock-101")]
     return result
 
 
 def empty():
     return {"version": 1, "checked_on": None, "discovery_status": "stale", "discovered": [], "projects": {}}
+
+
+class RenderedSections(HTMLParser):
+    """Observe the public image list and content hidden in native disclosures."""
+    def __init__(self, markup):
+        super().__init__()
+        self.depth = 0
+        self.visible_images = []
+        self.hidden_images = []
+        self.hidden_text = []
+        self.feed(markup)
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "details":
+            self.depth += 1
+        if tag == "img":
+            (self.hidden_images if self.depth else self.visible_images).append(dict(attrs)["src"])
+
+    def handle_endtag(self, tag):
+        if tag == "details":
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if self.depth:
+            self.hidden_text.append(data)
 
 
 def metadata(owner, name, **extra):
@@ -69,6 +96,59 @@ class PortfolioTests(unittest.TestCase):
 
     def current(self):
         return p.refresh(self.registry, empty(), FakeAPI(self.registry), "2026-10-09")
+
+    def test_only_first_three_featured_projects_get_images_in_registry_order(self):
+        original = self.registry["projects"][0]
+        self.registry["projects"] = [dict(original, id=pid, repository=pid, name=pid, featured=featured)
+                                    for pid, featured in (("ordinary", False), ("first", True),
+                                                          ("second", True), ("third", True), ("overflow", True))]
+        outputs = p.render(self.registry, self.current(), self.readme)
+        sections = RenderedSections(outputs["README.md"])
+        self.assertEqual(sections.visible_images, ["assets/portfolio/first-light.svg",
+                                                   "assets/portfolio/second-light.svg",
+                                                   "assets/portfolio/third-light.svg"])
+        self.assertEqual(sections.hidden_images, [])
+        self.assertIn("ordinary", " ".join(sections.hidden_text))
+        self.assertIn("overflow", " ".join(sections.hidden_text))
+        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 16)
+
+    def test_no_featured_projects_keeps_public_and_private_work_in_disclosures(self):
+        self.registry["projects"][0]["featured"] = False
+        outputs = p.render(self.registry, self.current(), self.readme)
+        sections = RenderedSections(outputs["README.md"])
+        self.assertEqual(sections.visible_images + sections.hidden_images, [])
+        self.assertNotIn("## Selected", outputs["README.md"])
+        self.assertIn("Saudi Market Intelligence", " ".join(sections.hidden_text))
+        self.assertIn("Stock_101", " ".join(sections.hidden_text))
+        self.assertEqual(sum(name.endswith(".svg") for name in outputs), 4)
+
+    def test_discovered_projects_are_text_only_and_optional_evidence_is_collapsed(self):
+        repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]])
+        result = p.refresh(self.registry, empty(), FakeAPI(self.registry, discovery=[repo]), "2026-10-09")
+        outputs = p.render(self.registry, result, self.readme)
+        sections = RenderedSections(outputs["README.md"])
+        self.assertEqual(sections.visible_images, ["assets/portfolio/saudi-market-intelligence-light.svg"])
+        self.assertIn("new-repo", " ".join(sections.hidden_text))
+        self.assertIn("No stable release reported", " ".join(sections.hidden_text))
+        self.assertNotIn("auto-new-repo-dark.svg", " ".join(outputs))
+
+    def test_secondary_unavailable_source_has_no_link_and_stale_status_is_visible(self):
+        self.registry["projects"][0]["featured"] = False
+        for status, label in ((503, "CACHED / SOURCE CHECK FAILED"), (404, "SOURCE UNAVAILABLE")):
+            with self.subTest(status=status):
+                result = p.refresh(self.registry, self.current(), FakeAPI(self.registry, metadata_error=p.SourceError(status)), "2026-10-10")
+                output = p.render(self.registry, result, self.readme)["README.md"]
+                self.assertIn(label, output)
+                if status == 404:
+                    self.assertNotIn("https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence", output)
+
+    def test_mobile_engineering_heading_wraps_and_moves_title_below_it(self):
+        project = dict(self.registry["projects"][0], category="engineering")
+        root = ET.fromstring(p.card(project, {}, "dark", mobile=True))
+        texts = root.findall("{http://www.w3.org/2000/svg}text")
+        self.assertEqual([el.text for el in texts[:2]], ["ENGINEERING &", "EXPERIENCES"])
+        self.assertGreater(float(texts[2].get("y")) - float(texts[1].get("y")),
+                           float(texts[2].get("font-size")))
 
     def test_private_summary_never_requests_repository(self):
         api = FakeAPI(self.registry)
@@ -161,17 +241,26 @@ class PortfolioTests(unittest.TestCase):
         self.assertEqual([q["repository"] for q in result["discovered"]], ["new-repo"])
         self.assertIn("auto-new-repo", result["projects"])
 
-    def test_topic_removal_removes_snapshot_and_generated_assets(self):
+    def test_topic_removal_removes_snapshot_and_public_listing(self):
         repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]])
         previous = p.refresh(self.registry, empty(), FakeAPI(self.registry, discovery=[repo]), "2026-10-09")
         result = p.refresh(self.registry, previous, FakeAPI(self.registry), "2026-10-10")
         self.assertEqual(result["discovered"], [])
         self.assertNotIn("auto-new-repo", result["projects"])
+        self.assertIn("new-repo", p.render(self.registry, previous, self.readme)["README.md"])
+        self.assertNotIn("new-repo", p.render(self.registry, result, self.readme)["README.md"])
+
+    def test_unfeaturing_project_removes_previously_generated_images(self):
         with tempfile.TemporaryDirectory(prefix=".portfolio-test-", dir=ROOT) as directory:
             root = Path(directory)
-            p.write_outputs(root, p.render(self.registry, previous, self.readme))
-            p.write_outputs(root, p.render(self.registry, result, self.readme))
-            self.assertFalse((root / "assets/portfolio/auto-new-repo-dark.svg").exists())
+            snapshot = self.current()
+            p.write_outputs(root, p.render(self.registry, snapshot, self.readme))
+            card_path = root / "assets/portfolio/saudi-market-intelligence-dark.svg"
+            self.assertTrue(card_path.exists())
+            self.registry["projects"][0]["featured"] = False
+            p.write_outputs(root, p.render(self.registry, snapshot, self.readme))
+            self.assertFalse(card_path.exists())
+            self.assertTrue((root / "assets/portfolio/banner-dark.svg").exists())
 
     def test_failed_discovery_checks_previous_candidates_individually(self):
         repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]])

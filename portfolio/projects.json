@@ -5,20 +5,10 @@
   "profile": {
     "name": "Abdulrahman Saad Asiri",
     "role": "Data Engineer at stc · AI Engineer",
-    "direction": "Data → AI → Decisions",
+    "direction": "Data Engineering · Applied AI",
     "location": "Riyadh, Saudi Arabia"
   },
   "projects": [
-    {
-      "id": "saudi-market-intelligence",
-      "name": "Saudi Market Intelligence",
-      "visibility": "public",
-      "repository": "saudi-market-intelligence",
-      "category": "markets",
-      "summary": "Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.",
-      "stack": ["Python", "PyTorch", "FastAPI", "React"],
-      "featured": true
-    },
     {
       "id": "data-science-basics",
       "name": "Data Science Basics",
@@ -37,6 +27,16 @@
       "category": "ai",
       "summary": "An Arabic / English interview coach exploring voice input, feedback and resume analysis.",
       "stack": ["React", "Flask", "OpenAI APIs", "Vite"],
+      "featured": true
+    },
+    {
+      "id": "saudi-market-intelligence",
+      "name": "Saudi Market Intelligence",
+      "visibility": "public",
+      "repository": "saudi-market-intelligence",
+      "category": "markets",
+      "summary": "Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.",
+      "stack": ["Python", "PyTorch", "FastAPI", "React"],
       "featured": true
     },
     {

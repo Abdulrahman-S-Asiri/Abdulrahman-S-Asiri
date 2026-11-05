@@ -8,9 +8,17 @@ The public profile is a view of selected projects, source evidence and curated s
 2. The updater reads public repository metadata, the latest stable release and the latest completed workflow on each default branch.
 3. A public repository with the `portfolio-profile` topic is also discovered automatically. Forks, archived discovery candidates and this profile repository are excluded. Removing the topic removes an automatically discovered entry after a successful discovery check.
 4. `portfolio/snapshot.json` stores normalized public fields. Raw responses, tokens, commit messages, private metadata and release bodies are never stored.
-5. The same snapshot produces the managed README block and accessible light/dark SVGs in `assets/portfolio/`.
+5. The same snapshot produces the managed README block and accessible light/dark SVGs in `assets/portfolio/`. Only the banner and the first three featured public projects receive images; the remaining projects use native text.
 
-The map groups portfolio themes and shared skills. It does not assert technical dependencies between projects. A completed workflow is evidence for that named workflow, not a blanket test or quality certification.
+A completed workflow is evidence for that named workflow, not a blanket test or quality certification.
+
+## Identity and reading order
+
+The profile uses navy and muted gold, a geometric AS mark, flat surfaces and system fonts. Dark surfaces use `#0B1220` / `#111D30`, ivory text `#F4F1EA`, muted text `#B7C0CE` and gold `#D6B87C`. Light surfaces use `#FAF8F3` / `#FFFFFF`, navy text `#17243A`, muted text `#526074` and gold `#826226`.
+
+The hand-authored README prefix contains the banner reference, introduction and contact links. The banner assets themselves remain generated from the profile fields. The generated block then displays the first three public projects marked `featured`, in registry order. Extra featured projects, ordinary public projects and discovered projects appear in **More Projects**. With no featured projects, the selected-work heading is omitted. A separate **Private Work** disclosure retains published names and summaries, without repository links. **Source Details** holds synchronization, releases and workflow evidence. Empty release headings are omitted.
+
+The hand-authored suffix contains expertise, research links, working method, background and contact information. Keep factual claims grounded in the published sources; source checks do not establish results or individual research contributions.
 
 ## Add a public project
 
@@ -31,7 +39,7 @@ For controlled copy, category, stack and order, add an entry to `portfolio/proje
 }
 ```
 
-Categories: `data`, `ai`, `markets`, `engineering`. IDs must be unique lowercase letters, digits and hyphens. Registering a project manually takes precedence over topic discovery.
+Categories: `data`, `ai`, `markets`, `engineering`. IDs must be unique lowercase letters, digits and hyphens. Registering a project manually takes precedence over topic discovery. Set `featured: true` and place the entry among the first three featured public entries to give it a visual card.
 
 ## Private summaries
 
@@ -77,9 +85,9 @@ python tools/update_portfolio.py --refresh
 
 The first three commands work offline. Refresh uses GitHub's public API; `GITHUB_TOKEN` is optional locally and supplied automatically in the refresh workflow. A token never appears in logged output or checked-in data. API calls refuse redirects, cap response size, use timeouts and retry temporary network/server failures once.
 
-Only the block between `<!-- portfolio:start -->` and `<!-- portfolio:end -->` is generated. Content outside it remains hand-authored. Broken or duplicated markers stop generation. Generated SVGs are self-contained, with titles, descriptions, escaped text, no scripts, no external resources and no motion.
+Only the block between `<!-- portfolio:start -->` and `<!-- portfolio:end -->` is generated. Content outside it remains hand-authored, including the banner picture markup; keep its light/dark sources and 900px mobile breakpoint aligned with `picture()` when editing. Broken or duplicated markers stop generation. Generated SVGs are self-contained, with titles, descriptions, escaped text, no scripts, no external resources and no motion. Images that are no longer generated are removed from `assets/portfolio/`, including cards for projects that are no longer featured. Project entries and evidence remain in the disclosures.
 
-The visual system uses cyan/violet gradients, restrained light effects, category icons and theme-specific contrast. Decorative nodes and bars represent portfolio themes, not financial results or technical dependencies. Interactive hover elevation belongs to the standalone HTML preview; the GitHub README displays the static SVG treatment.
+The README uses static SVG images and native links and disclosures. Mobile artwork is selected at viewport widths up to 900px, accounting for GitHub's narrower profile content column on tablets. Test the actual GitHub view at 320, 390, 768 and 1440 pixels in both color schemes. Verify readable text, image loading, keyboard navigation and closed-disclosure height. Source failures remain explicitly labeled on the affected card or text entry.
 
 ## Review and rollback
 
