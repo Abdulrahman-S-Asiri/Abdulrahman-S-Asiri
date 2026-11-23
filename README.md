@@ -136,6 +136,8 @@ I build across data engineering, data science, Arabic AI and financial-market re
 
 **Currently learning:** production LLM architecture and the Chartered Market Technician program.
 
+[My role in ServeDoctorBench · دوري في البحث](docs/research/servedoctorbench-case-study.md)
+
 <p align="center">
   <a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">LinkedIn</a> ·
   <a href="https://x.com/D7oomyStay">X</a> ·
