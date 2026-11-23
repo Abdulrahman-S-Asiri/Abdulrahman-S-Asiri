@@ -12,7 +12,6 @@ on:
       - portfolio/projects.json
       - portfolio/showcases.json
       - tools/update_portfolio.py
-      - assets/identity/**
       - README.md
       - .github/workflows/update-portfolio.yml
 
