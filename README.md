@@ -158,6 +158,7 @@ I build across data engineering, data science, Arabic AI and financial-market re
 |:---|:---|
 | [SA-Retrieval Embeddings 0.2B](https://huggingface.co/Omartificial-Intelligence-Space/SA-Retrieval-Embeddings-0.2B) | Retrieval for Saudi Arabic and Modern Standard Arabic |
 | [SAFIR Leaderboard](https://huggingface.co/spaces/NAMAA-Space/SAFIR-Leaderboard) | Arabic AI benchmarks and model evaluation |
+| [ServeDoctorBench · Research Poster (PDF)](docs/research/Tasaru_A0_ServeDoctorBench.pdf) | Tuwaiq Academy Demo Day 2026 team poster. We compared how seven language models diagnosed faults, cited evidence and chose safe next actions across 62 vLLM serving cases. |
 
 Model-specific metrics, datasets and evaluation assumptions belong with their original sources.
 
@@ -176,11 +177,21 @@ Model-specific metrics, datasets and evaluation assumptions belong with their or
 
 - **Data Engineer** — stc (Saudi Telecom Company).
 - **B.Sc. Computer Science** — Majmaah University.
-- **Data Science & AI Bootcamp** — Tuwaiq Academy.
+- **Data Science & AI Bootcamp** — Tuwaiq Academy, 2025. Exploratory analysis, model evaluation and NLP.
+- **Tasaru · AI Infrastructure Bootcamp** — Tuwaiq Academy, June–August 2026. GPU performance, LLM serving and agents.
 - **CMT candidate** — Chartered Market Technician program.
 - **Data Scientist Associate** — DataCamp.
 - **Deep Learning Fundamentals** — NVIDIA.
 - **Investment Club:** Head of Investment Committees and Head of Financial Analysis.
+
+<details>
+<summary>What I studied at Tuwaiq · ما درسته في طويق</summary>
+
+**Data science and AI.** I studied exploratory data analysis, regression and classification, cross-validation and text preprocessing for NLP. [Bootcamp at Tuwaiq Academy](https://tuwaiq.edu.sa/bootcamp/w8z310gY/view)
+
+**Tasaru.** I studied how to profile GPU workloads, distribute model training across GPUs and serve language models. The labs covered attention, KV caching and agents that call tools. Our team explored how models diagnose faults in a running vLLM service. [Tasaru at Tuwaiq Academy](https://tuwaiq.edu.sa/bootcamp/qNKbNKnX/view) · [Team research poster (PDF)](docs/research/Tasaru_A0_ServeDoctorBench.pdf)
+
+</details>
 
 ## How I build
 
