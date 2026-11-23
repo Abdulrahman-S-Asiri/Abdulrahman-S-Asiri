@@ -193,6 +193,11 @@ Model-specific metrics, datasets and evaluation assumptions belong with their or
 
 In my loan-classification exercise, I dropped a score that could reveal the approval decision. Logistic regression then classified 375 of 400 held-out synthetic applications correctly. [View the notebook and confusion matrix](docs/learning/loan-approval.ipynb)
 
+| Actual outcome | Predicted rejection | Predicted approval |
+|:---|---:|---:|
+| Rejected | 213 | 11 |
+| Approved | 14 | 162 |
+
 **Tasaru.** I studied how to profile GPU workloads, distribute model training across GPUs and serve language models. The labs covered attention, KV caching and agents that call tools. Our team explored how models diagnose faults in a running vLLM service. [Tasaru at Tuwaiq Academy](https://tuwaiq.edu.sa/bootcamp/qNKbNKnX/view) · [Team research poster (PDF)](docs/research/Tasaru_A0_ServeDoctorBench.pdf)
 
 </details>
