@@ -19,6 +19,7 @@ import xml.etree.ElementTree as ET
 
 START, END = "<!-- portfolio:start -->", "<!-- portfolio:end -->"
 CATEGORIES = {"data": "Data & learning", "ai": "AI & language", "markets": "Markets & decisions", "engineering": "Engineering & experiences"}
+COLORS = {"data": "#38bdf8", "ai": "#a78bfa", "markets": "#34d399", "engineering": "#fbbf24"}
 MODULE_ROOT = Path(__file__).resolve().parents[1]
 SLUG = re.compile(r"[a-z0-9][a-z0-9-]{0,79}\Z")
 REPO = re.compile(r"[A-Za-z0-9_.-]{1,100}\Z")
@@ -280,17 +281,6 @@ def validate_snapshot(registry, snapshot):
     return snapshot
 
 
-INK_THEMES = {
-    "light": {"paper": "#FAFBFE", "ink": "#111E42", "blue": "#234BBC", "wash": "#739ADC", "rule": "#647394"},
-    "dark": {"paper": "#101A30", "ink": "#F1F5FF", "blue": "#9FBEFF", "wash": "#6E96EB", "rule": "#8599C3"},
-}
-FONT = "Segoe UI,Helvetica Neue,Arial,sans-serif"
-ILLUSTRATIONS = {
-    "saudi-market-intelligence": "Three stages connect a market database, an analysis engine and a research report.",
-    "bidaya": "Overlapping Arabic and English speech bubbles illustrate bilingual interview practice.",
-}
-
-
 def validate_showcases(manifest):
     if set(manifest) != {"version", "projects"} or manifest["version"] != 1 or not isinstance(manifest["projects"], dict):
         raise ValueError("Invalid showcase manifest")
@@ -322,96 +312,161 @@ def validate_showcases(manifest):
     return manifest["projects"]
 
 
-def svg_text(x, y, label, size, color, weight=400):
-    return f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{color}">{html.escape(label)}</text>'
+def text(x, y, value, size=18, color="#e6edf3", weight=400, family="Segoe UI,Arial,sans-serif"):
+    return f'<text x="{x}" y="{y}" font-family="{family}" font-size="{size}" font-weight="{weight}" fill="{color}">{html.escape(str(value))}</text>'
 
 
-def market_art(colors):
-    # Three original line drawings share a light, irregular wash, like ink on paper.
-    wash = (
-        '<path d="M8 19 Q11 12 19 15 L34 11 48 13 58 10 62 17 67 20 65 32 68 44 64 53 66 61 56 67 43 65 '
-        '32 70 23 67 15 69 10 62 4 58 7 48 3 39 7 31 Z"/>'
-        '<path d="M7 49 Q19 62 26 58 T43 61 L59 56 66 51 63 62 59 68 44 67 31 73 16 70 10 64 3 60 Z" opacity=".65"/>'
-        '<path d="M9 22 L20 18 27 19 32 16 M11 62 L17 65 23 64 M46 67 L54 63 61 63" fill="none" stroke="currentColor" stroke-width=".9"/>'
-    )
-    washes = ''.join(f'<g transform="translate({x} {y})" fill="{colors["wash"]}" color="{colors["wash"]}" opacity=".32">{wash}</g>'
-                     for x, y in ((0, 5), (83, 3), (166, 5)))
-    icons = (
-        # Cylindrical price store.
-        '<path d="M17 31 C17 23 49 22 49 31 C49 39 17 39 17 31 Z M17 31 L17 56 C17 63 49 63 49 55 L49 31 '
-        'M17 40 C20 47 46 47 49 40 M17 48 C20 55 46 55 49 48"/>'
-        '<path d="M21 29 Q28 25 38 27 M44 44 l1 -1 M44 52 l1 -1" stroke-width="1"/>'
-        # Gear with an open center.
-        '<path d="M110 27 L115 25 116 19 123 19 125 25 130 27 135 24 140 30 136 35 138 40 144 42 '
-        '143 49 137 50 134 55 136 61 130 65 125 61 120 62 117 68 110 66 110 60 104 57 '
-        '99 59 95 53 99 48 99 42 93 39 95 32 102 32 106 28 105 24 Z"/>'
-        '<circle cx="119" cy="43" r="9"/>'
-        # Folded report sheet with a small research chart.
-        '<path d="M184 24 L205 23 215 32 215 63 184 64 Z M205 23 L205 33 215 32 '
-        'M190 34 l10 0 M190 40 l16 -1 M191 57 v-5 h3 v5 Z M198 57 v-9 h3 v9 Z M205 57 v-14 h3 v14 Z"/>'
-        '<path d="M67 44 L87 43 M82 40 L88 43 82 47 M151 43 L172 44 M167 40 L173 44 167 48"/>'
-    )
-    return washes + f'<g fill="none" stroke="{colors["blue"]}" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">{icons}</g>'
+def palette(theme):
+    return {"bg": "#091221", "panel": "#122137", "border": "#2a405c", "ink": "#f1f5f9", "muted": "#b4c5d9", "accent": "#7dd3fc", "violet": "#bba5ff"} if theme == "dark" else {"bg": "#f3f6ff", "panel": "#ffffff", "border": "#cbd5e1", "ink": "#142238", "muted": "#475569", "accent": "#0369a1", "violet": "#6d28d9"}
 
 
-def bidaya_art(colors):
-    shadows = (
-        '<path d="M8 38 L14 32 26 34 33 24 44 25 57 17 70 20 85 14 100 19 112 16 123 24 138 24 151 30 '
-        '165 27 181 32 194 32 200 40 213 45 212 52 225 60 222 71 207 75 195 74 186 83 171 79 159 86 '
-        '143 81 131 86 116 79 100 83 88 76 76 78 66 72 54 73 48 67 34 68 26 61 14 61 11 52 5 48 Z"/>'
-        '<path d="M12 44 L25 39 38 33 56 32 68 25 85 27 99 23 119 31 132 30 153 37 175 36 186 43 199 42 '
-        '211 52 217 63 211 69 198 70 186 77 169 75 152 79 131 74 112 76 97 69 75 69 56 61 38 63 25 56 14 53 Z" opacity=".52"/>'
-    )
-    bubbles = (
-        '<path d="M35 12 Q34 6 43 6 L124 7 Q133 7 133 14 L132 48 Q131 53 124 53 L58 54 42 65 44 54 '
-        'Q34 54 34 46 Z"/>'
-        '<path d="M105 44 Q105 36 115 36 L194 37 Q202 37 202 45 L202 72 Q201 80 193 80 L190 80 194 91 177 81 '
-        '111 80 Q104 79 104 73 Z"/>'
-    )
-    rules = '<path d="M64 25 Q87 24 119 25 M45 34 L117 34 M45 42 L93 42 M115 61 L190 61 M115 69 L180 69"/>'
-    return (f'<g fill="{colors["wash"]}" opacity=".30">{shadows}</g>'
-            f'<g fill="{colors["paper"]}" stroke="{colors["blue"]}" stroke-width="1.7" stroke-linejoin="round">{bubbles}</g>'
-            f'<g fill="none" stroke="{colors["blue"]}" stroke-width="1.2" stroke-linecap="round">{rules}</g>'
-            + svg_text(44, 27, "AR", 13, colors["ink"], 700) + svg_text(177, 53, "EN", 13, colors["ink"], 700))
+def category_color(category, theme):
+    return COLORS[category] if theme == "dark" else {"data": "#0369a1", "ai": "#6d28d9", "markets": "#047857", "engineering": "#92400e"}[category]
 
 
-def project_row(project, theme, mobile):
-    colors = INK_THEMES[theme]
-    pid = project["id"]
-    artwork = market_art(colors) if pid == "saudi-market-intelligence" else bidaya_art(colors)
-    subtitle = project.get("subtitle", project["summary"])
-    title_lines = textwrap.wrap(project["name"], width=26 if mobile else 34)
-    subtitle_lines = textwrap.wrap(subtitle, width=35 if mobile else 51)
-    width = 380 if mobile else 900
-    x, title_y = (12, 118) if mobile else (283, 60)
-    title_step, sub_step = (32, 23) if mobile else (40, 28)
-    subtitle_y = title_y + (len(title_lines) - 1) * title_step + sub_step + 5
-    height = subtitle_y + (len(subtitle_lines) - 1) * sub_step + (18 if mobile else 31)
-    art_transform = "translate(7 0) scale(1.04)" if mobile else f"translate(8 {(height - 100) // 2}) scale(1.04)"
-    title = html.escape(project["name"])
-    description = html.escape(project["summary"] + " " + ILLUSTRATIONS[pid])
-    pieces = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
-              f'<title id="title">{title}</title><desc id="desc">{description}</desc>',
-              f'<rect width="{width}" height="{height}" fill="{colors["paper"]}"/>',
-              f'<g transform="{art_transform}">{artwork}</g>']
-    if not mobile:
-        pieces.append(f'<path d="M262 25 V{height - 25}" fill="none" stroke="{colors["rule"]}" stroke-width="1"/>')
-    for i, line in enumerate(title_lines):
-        pieces.append(svg_text(x, title_y + i * title_step, line, 29 if mobile else 36, colors["ink"], 700))
-    for i, line in enumerate(subtitle_lines):
-        pieces.append(svg_text(x, subtitle_y + i * sub_step, line, 20 if mobile else 23, colors["ink"]))
-    pieces.append("</svg>\n")
-    return "".join(pieces)
+def visual_defs(theme, accent=None):
+    p = palette(theme)
+    accent = accent or p["accent"]
+    return (f'<defs><linearGradient id="surface" x2="1" y2="1"><stop stop-color="{p["panel"]}"/><stop offset="1" stop-color="{p["bg"]}"/></linearGradient>'
+            f'<linearGradient id="rim"><stop stop-color="{accent}" stop-opacity=".55"/><stop offset=".5" stop-color="{p["border"]}"/><stop offset="1" stop-color="{p["violet"]}" stop-opacity=".45"/></linearGradient>'
+            f'<linearGradient id="highlight"><stop stop-color="{accent}"/><stop offset="1" stop-color="{p["violet"]}"/></linearGradient>'
+            f'<radialGradient id="aura"><stop stop-color="{accent}" stop-opacity="{.20 if theme == "dark" else .10}"/><stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient></defs>')
 
 
-def picture(pid, alt):
-    parts = ["<p><picture>"]
-    for theme in ("dark", "light"):
-        parts.append(f'  <source media="(max-width: 900px) and (prefers-color-scheme: {theme})" srcset="assets/portfolio/{pid}-mobile-{theme}.svg">')
-    for theme in ("dark", "light"):
-        parts.append(f'  <source media="(prefers-color-scheme: {theme})" srcset="assets/portfolio/{pid}-{theme}.svg">')
-    parts += [f'  <img src="assets/portfolio/{pid}-light.svg" width="100%" alt="{html.escape(alt, quote=True)}">', "</picture></p>"]
-    return "\n".join(parts)
+def icon(category, x, y, color, size=28, opacity=1):
+    shapes = {
+        "data": '<path d="M4 7 Q4 3 16 3 Q28 3 28 7 Q28 11 16 11 Q4 11 4 7 Z M4 7 V24 Q4 28 16 28 Q28 28 28 24 V7 M4 15 Q4 19 16 19 Q28 19 28 15 M4 22 Q4 26 16 26 Q28 26 28 22"/>',
+        "ai": '<path d="M8 8 L24 8 L16 24 Z M16 16 V24 M8 8 L16 16 L24 8"/><circle cx="8" cy="8" r="4"/><circle cx="24" cy="8" r="4"/><circle cx="16" cy="24" r="4"/>',
+        "markets": '<rect x="3" y="16" width="6" height="12" rx="1"/><rect x="13" y="5" width="6" height="23" rx="1"/><rect x="23" y="11" width="6" height="17" rx="1"/>',
+        "engineering": '<path d="M10 6 L3 16 L10 26 M22 6 L29 16 L22 26 M19 4 L13 28"/>',
+    }
+    return f'<g transform="translate({x} {y}) scale({size / 32})" fill="none" stroke="{color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="{opacity}">{shapes[category]}</g>'
+
+
+def svg(width, height, title, description, body, theme, background=True):
+    p = palette(theme)
+    backdrop = f'<rect width="{width}" height="{height}" rx="24" fill="{p["bg"]}"/>' if background else ""
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{html.escape(title)}</title><desc id="desc">{html.escape(description)}</desc>{backdrop}{body}</svg>\n'
+
+
+def banner(registry, snapshot, theme, mobile=False):
+    p, profile = palette(theme), registry["profile"]
+    public = len([q for q in registry["projects"] + snapshot["discovered"] if q["visibility"] == "public"])
+    private = len([q for q in registry["projects"] if q["visibility"] == "summary-only"])
+    width, height = (360, 350) if mobile else (1180, 378)
+    body = visual_defs(theme)
+    body += f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="24" fill="url(#surface)" stroke="url(#rim)"/>'
+    body += f'<rect x="{width - (260 if mobile else 470)}" y="10" width="{250 if mobile else 460}" height="{height - 20}" rx="24" fill="url(#aura)"/>'
+    if mobile:
+        body += icon("ai", 305, 22, p["violet"], 29)
+        body += text(24, 40, "ENGINEERING / RESEARCH", 12, p["accent"], 600)
+        body += text(24, 88, profile["name"], 26, p["ink"], 700)
+        body += text(24, 120, profile["role"], 17, p["muted"])
+        body += '<path d="M26 148 H166 L190 158 H334" fill="none" stroke="url(#highlight)" stroke-opacity=".5"/>'
+        for x in (26, 166, 334):
+            body += f'<circle cx="{x}" cy="{148 if x != 334 else 158}" r="3" fill="{p["accent"]}"/>'
+        body += text(24, 193, profile["direction"], 25, p["ink"], 600)
+        body += text(24, 225, profile["location"], 15, p["muted"])
+        body += '<rect x="24" y="246" width="312" height="66" rx="14" fill="url(#aura)" stroke="url(#rim)"/>'
+        body += text(40, 272, f"{public} public projects", 16, p["ink"], 600)
+        body += text(40, 296, f"{private} curated private summaries", 15, p["muted"])
+        body += text(24, 333, "PUBLIC EVIDENCE. CURATED SCOPE.", 10, p["muted"], 600)
+        return svg(width, height, profile["name"], f'{profile["role"]}. {profile["direction"]}. {public} public projects and {private} curated private summaries. Decorative nodes represent shared skills.', body, theme, background=False)
+    for x in range(790, 1150, 32):
+        for y in range(30, 300, 32):
+            body += f'<circle cx="{x}" cy="{y}" r="1.3" fill="{p["border"]}" opacity=".7"/>'
+    body += '<circle cx="1010" cy="167" r="130" fill="none" stroke="url(#rim)"/><circle cx="1010" cy="167" r="93" fill="none" stroke="url(#highlight)" stroke-opacity=".35" stroke-dasharray="4 8"/>'
+    body += '<path d="M916 83 L1010 167 L1123 166 M1010 167 L954 281" fill="none" stroke="url(#highlight)" stroke-opacity=".5" stroke-width="2"/>'
+    body += f'<circle cx="1010" cy="167" r="51" fill="{p["panel"]}" stroke="url(#rim)"/>'
+    body += text(976, 183, "AS", 43, p["ink"], 700)
+    for category, x, y in (("data", 916, 83), ("ai", 1123, 166), ("markets", 954, 281)):
+        color = category_color(category, theme)
+        body += f'<circle cx="{x}" cy="{y}" r="24" fill="{p["panel"]}" stroke="{color}" stroke-opacity=".6"/>'
+        body += icon(category, x - 12, y - 12, color, 24)
+    body += text(44, 49, "ENGINEERING / RESEARCH / PRACTICAL SYSTEMS", 14, p["accent"], 600)
+    body += text(44, 116, profile["name"], 49, p["ink"], 700)
+    body += text(46, 156, profile["role"], 22, p["muted"])
+    body += text(44, 226, profile["direction"], 32, p["ink"], 600)
+    body += text(46, 268, profile["location"], 17, p["muted"])
+    for x, chip_width, label in ((242, 172, f"{public} public projects"), (428, 259, f"{private} curated private summaries")):
+        body += f'<rect x="{x}" y="245" width="{chip_width}" height="34" rx="17" fill="url(#aura)" stroke="url(#rim)"/>'
+        body += text(x + 16, 267, label, 15, p["ink"])
+    body += '<rect x="44" y="321" width="1092" height="2" rx="1" fill="url(#highlight)"/>'
+    body += text(44, 354, "BUILD USEFUL SYSTEMS. MEASURE WHAT THEY DO.", 13, p["muted"], 600)
+    return svg(width, height, profile["name"], f'{profile["role"]}. {profile["direction"]}. Decorative nodes represent shared skills, not financial results or runtime dependencies.', body, theme, background=False)
+
+
+def card(project, record, theme, mobile=False):
+    p = palette(theme)
+    accent = category_color(project["category"], theme)
+    width, height = (360, 398) if mobile else (580, 326)
+    body = visual_defs(theme, accent)
+    body += f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="23" fill="url(#surface)" stroke="url(#rim)"/>'
+    body += f'<rect x="{width - 161}" y="3" width="158" height="168" rx="22" fill="url(#aura)"/>'
+    body += f'<path d="M25 2 H{width - 25}" stroke="url(#highlight)" stroke-width="2" stroke-opacity=".65"/>'
+    body += f'<rect x="{width - 61}" y="19" width="39" height="39" rx="12" fill="{p["panel"]}" stroke="{accent}" stroke-opacity=".45"/>'
+    body += icon(project["category"], width - 53, 27, accent, 23)
+    body += f'<circle cx="28" cy="39" r="3" fill="{accent}"/>'
+    body += text(40, 44, CATEGORIES[project["category"]].upper(), 12 if mobile else 14, p["muted"], 600)
+    lines = textwrap.wrap(project["name"], 23 if mobile else 32, break_long_words=True)
+    for i, line in enumerate(lines[:2]):
+        body += text(26, 84 + i * 29, line, 26, p["ink"], 700)
+    description_y = 121 if len(lines) == 1 else 145
+    all_summary_lines = textwrap.wrap(project["summary"], 35 if mobile else 54, break_long_words=True)
+    summary_lines = all_summary_lines[:4 if mobile else 3]
+    if len(summary_lines) < len(all_summary_lines):
+        summary_lines[-1] = summary_lines[-1].rstrip(" .") + "…"
+    for i, line in enumerate(summary_lines):
+        body += text(26, description_y + i * 24, line, 17 if mobile else 18, p["muted"])
+    stack = " · ".join(project["stack"])[:72] or record.get("language", "Public source")
+    for i, line in enumerate(textwrap.wrap(stack, 38 if mobile else 74, break_long_words=False, break_on_hyphens=False)[:2 if mobile else 1]):
+        body += text(26, (250 if mobile else 221) + i * 18, line, 14, p["muted"])
+    body += f'<path d="M26 {295 if mobile else 245} H{width - 28}" stroke="url(#rim)"/>'
+    if project["visibility"] == "summary-only":
+        label, detail = "PRIVATE / CURATED SUMMARY", "Published scope only · no private repository access"
+    elif record.get("status") == "current":
+        label = "ARCHIVED PUBLIC SOURCE" if record.get("archived") else "PUBLIC SOURCE / CHECKED " + record["checked_on"]
+        if record.get("release"):
+            detail = "Release: " + record["release"]["name"]
+        else:
+            detail = "Repository updated " + (record.get("updated_on") or "date unavailable")
+    elif record.get("status") == "stale":
+        label, detail = "CACHED / SOURCE CHECK FAILED", "Last verified " + (record.get("checked_on") or "date unavailable")
+    else:
+        label, detail = "SOURCE UNAVAILABLE", "Remote links and metrics withheld until verification"
+    body += text(26, 324 if mobile else 277, label, 13 if mobile else 16, accent, 600)
+    for i, line in enumerate(textwrap.wrap(plain(detail, 70), 40 if mobile else 74)[:2 if mobile else 1]):
+        body += text(26, (350 if mobile else 303) + i * 18, line, 14, p["muted"])
+    return svg(width, height + 12, project["name"], project["summary"] + " " + label + ". " + detail, body, theme, background=False)
+
+
+def project_map(projects, theme, mobile=False):
+    p = palette(theme)
+    body = visual_defs(theme)
+    body += text(24 if mobile else 36, 38 if mobile else 46, "ONE PORTFOLIO." if mobile else "ONE PORTFOLIO. FOUR CONNECTED THEMES.", 22, p["ink"], 700)
+    body += text(24 if mobile else 36, 69 if mobile else 77, "Four themes. Shared skills." if mobile else "A map of interests and shared skills", 16, p["muted"])
+    for i, (category, label) in enumerate(CATEGORIES.items()):
+        x, y = (24, 94 + i * 134) if mobile else (36 + i * 288, 105)
+        accent = category_color(category, theme)
+        members = [q for q in projects if q["category"] == category]
+        body += f'<rect x="{x}" y="{y}" width="{312 if mobile else 258}" height="{114 if mobile else 194}" rx="16" fill="url(#surface)" stroke="{accent}" stroke-opacity=".35"/>'
+        body += f'<path d="M{x + 17} {y + 1} H{x + (294 if mobile else 240)}" stroke="{accent}" stroke-opacity=".65"/>'
+        body += f'<rect x="{x + 16}" y="{y + 17}" width="36" height="36" rx="11" fill="{p["bg"]}" stroke="{accent}" stroke-opacity=".4"/>'
+        body += icon(category, x + 22, y + 23, accent, 24)
+        if not mobile:
+            body += text(x + 217, y + 41, f"0{i + 1}", 14, p["muted"], 600)
+        body += text(x + (64 if mobile else 17), y + (34 if mobile else 85), label, 16 if mobile else 17, p["ink"], 600)
+        body += text(x + (64 if mobile else 17), y + (61 if mobile else 115), f"{len(members)} projects", 14 if mobile else 15, accent, 600)
+        names = " + ".join(q["name"].split()[0] for q in members)
+        for j, line in enumerate(textwrap.wrap(names, 40 if mobile else 29)[:2]):
+            body += text(x + 17, y + (87 if mobile else 151) + j * 16, line, 13, p["muted"])
+    return svg(360 if mobile else 1200, 634 if mobile else 331, "Portfolio theme map", "; ".join(f'{label}: ' + ", ".join(q["name"] for q in projects if q["category"] == key) for key, label in CATEGORIES.items()) + ". Themes do not imply runtime dependencies. Category icons are decorative.", body, theme)
+
+
+def picture(name, alt, width="100%"):
+    escaped = html.escape(alt, quote=True)
+    return f'<picture>\n  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/{name}-mobile-dark.svg">\n  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/{name}-mobile-light.svg">\n  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/{name}-dark.svg">\n  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/{name}-light.svg">\n  <img src="assets/portfolio/{name}-light.svg" width="{width}" alt="{escaped}">\n</picture>'
+
 
 def escape_text(value):
     return html.escape(value).replace("|", "&#124;")
@@ -432,73 +487,29 @@ def source_note(record):
     return " · ".join(notes)
 
 
-def showcase_links(record, showcase):
-    if not showcase or not record.get("url"):
-        return []
-    return [link(record["url"] + "/" + ref["path"], ref["label"]) for ref in showcase["sources"]]
-
-
-def featured_section(project, record, showcase, outputs):
-    pid, name, summary = project["id"], project["name"], project["summary"]
-    if not record.get("url"):
-        return [f"<h3>{escape_text(name)}</h3>", "", f"<p>{escape_text(summary)}</p>", "", "<p>Source unavailable</p>", ""]
-    if pid in ILLUSTRATIONS and showcase:
-        for theme in INK_THEMES:
-            for mobile in (False, True):
-                suffix = "-mobile" if mobile else ""
-                outputs[f"assets/portfolio/{pid}{suffix}-{theme}.svg"] = project_row(project, theme, mobile)
-        parts = [picture(pid, f'{name}. {summary} {ILLUSTRATIONS[pid]}'), ""]
-    else:
-        parts = [f"<h3>{escape_text(name)}</h3>", "", f"<p>{escape_text(summary)}</p>", ""]
-    evidence_links = showcase_links(record, showcase)
-    actions = [link(record["url"], name + " repository")]
-    if not showcase or not showcase.get("image"):
-        actions.extend(evidence_links)
-    note = source_note(record)
-    if note:
-        actions.append(note)
-    parts += ["<p>" + " · ".join(actions) + "</p>", ""]
-    if showcase and showcase.get("image"):
+def showcase_details(project, record, showcase):
+    name = escape_text(project["name"])
+    source_url = record["url"]
+    links = [link(source_url, project["name"] + " repository")]
+    links.extend(link(source_url + "/" + ref["path"], ref["label"]) for ref in showcase["sources"])
+    has_image = bool(showcase["image"])
+    label = "preview and sources" if has_image else "sources"
+    parts = ["<details>", f"<summary>{name} {label}</summary>", ""]
+    if project.get("subtitle"):
+        parts += [f'<p><strong>{escape_text(project["subtitle"])}</strong></p>', ""]
+    if has_image:
         caption = escape_text(showcase["caption"])
-        image_name = showcase["image"]
-        width = showcase["image_width"]
-        image = f'<img src="assets/showcases/{image_name}" width="{width}" alt="{caption}">'
+        image = f'<img src="assets/showcases/{showcase["image"]}" width="{showcase["image_width"]}" alt="{caption}">'
         if showcase.get("mobile_image"):
-            mobile_name = showcase["mobile_image"]
-            image = f'<picture><source media="(max-width: 900px)" srcset="assets/showcases/{mobile_name}">{image}</picture>'
-        parts += ['<details>', f'<summary>{escape_text(name)} preview and sources</summary>', '',
-                  f'<p>{escape_text(summary)}</p>', '',
-                  f'<p>{image}</p>',
-                  '', f'<p><em>{caption}</em></p>', '',
-                  '<p>' + ' · '.join(evidence_links) + '</p>', '', '</details>', '']
+            image = f'<picture><source media="(max-width: 600px)" srcset="assets/showcases/{showcase["mobile_image"]}">{image}</picture>'
+        parts += [f"<p>{image}</p>", "", f"<p><em>{caption}</em></p>", ""]
+    if showcase["steps"]:
+        parts += ["<ul>"]
+        for step in showcase["steps"]:
+            parts += [f'<li><strong>{escape_text(step["label"])}</strong> · {escape_text(step["text"])}</li>']
+        parts += ["</ul>", ""]
+    parts += ["<p>" + " · ".join(links) + "</p>", "", "</details>", ""]
     return parts
-
-
-def project_entry(project, record):
-    label = link(record["url"], project["name"]) if record.get("url") else escape_text(project["name"])
-    note = source_note(record)
-    suffix = f" · {note}" if note else ""
-    return f'<li><strong>{label}</strong> — {escape_text(project["summary"])}{suffix}</li>'
-
-
-def source_entry(project, record):
-    label = escape_text(project["name"])
-    if not record.get("url"):
-        return f'<li><strong>{label}</strong> · Source unavailable</li>'
-    note = source_note(record)
-    if record["status"] == "current":
-        note = " · ".join(filter(None, ("Verified " + record["checked_on"], note)))
-    release = record["release"]
-    if release:
-        release_text = link(release["url"], release["name"]) + " · " + release["published_on"]
-    else:
-        release_text = "Could not verify the latest stable release" if record["release_status"] == "unavailable" else "No stable release reported"
-    workflow = record["workflow"]
-    if workflow:
-        workflow_text = link(workflow["url"], f'{workflow["name"]}: {workflow["conclusion"]}') + " · " + workflow["completed_on"]
-    else:
-        workflow_text = "Could not verify the latest workflow" if record["workflow_status"] == "unavailable" else "No completed workflow reported"
-    return f'<li><strong>{label}</strong> · {note}<br>{release_text} · {workflow_text}</li>'
 
 
 def render(registry, snapshot, readme, showcases=None):
@@ -510,44 +521,78 @@ def render(registry, snapshot, readme, showcases=None):
     cases = validate_showcases(showcases)
     if readme.count(START) != 1 or readme.count(END) != 1 or readme.index(START) >= readme.index(END):
         raise ValueError("README must contain one ordered generated block")
-    records = snapshot["projects"]
-    public = [p for p in registry["projects"] if p["visibility"] == "public"]
-    public += snapshot["discovered"]
-    private = [p for p in registry["projects"] if p["visibility"] == "summary-only"]
+    projects = registry["projects"] + snapshot["discovered"]
     outputs = {}
-    parts = ['<a name="selected-work"></a>', '', '## Selected work · أعمال مختارة', '']
+    for theme in ("dark", "light"):
+        outputs[f"assets/portfolio/banner-{theme}.svg"] = banner(registry, snapshot, theme)
+        outputs[f"assets/portfolio/map-{theme}.svg"] = project_map(projects, theme)
+        outputs[f"assets/portfolio/banner-mobile-{theme}.svg"] = banner(registry, snapshot, theme, mobile=True)
+        outputs[f"assets/portfolio/map-mobile-{theme}.svg"] = project_map(projects, theme, mobile=True)
+        for project in projects:
+            outputs[f'assets/portfolio/{project["id"]}-{theme}.svg'] = card(project, snapshot["projects"].get(project["id"], {}), theme)
+            outputs[f'assets/portfolio/{project["id"]}-mobile-{theme}.svg'] = card(project, snapshot["projects"].get(project["id"], {}), theme, mobile=True)
+    current = sum(r["status"] == "current" for r in snapshot["projects"].values())
+    public_count = len([p for p in projects if p["visibility"] == "public"])
+    check = snapshot["checked_on"] or "not yet checked"
+    profile = registry["profile"]
+    banner_alt = " · ".join(profile[key] for key in ("name", "role", "direction", "location"))
+    parts = [
+        picture("banner", banner_alt), "",
+        f'<p align="center">Public sources checked on <strong>{html.escape(check)} UTC</strong> · {current}/{public_count} source checks succeeded</p>', "",
+        '<p align="center"><a href="#selected-work">Selected work</a> · <a href="#research-and-community">Research</a></p>', "",
+        picture("map", "Project themes: data, AI, markets and engineering"), "",
+        '<a name="selected-work"></a>', "", '## Selected work · مشاريع مختارة', "", '<p align="center">',
+    ]
+    public = sorted([q for q in projects if q["visibility"] == "public"], key=lambda q: not q["featured"])
     for project in public:
-        if project["featured"]:
-            parts.extend(featured_section(project, records.get(project["id"], {}), cases.get(project["id"]), outputs))
-    others = [p for p in public if not p["featured"]]
-    if others:
-        parts += ['<details>', '<summary>More projects</summary>', '', '<ul>']
-        parts += [project_entry(p, records.get(p["id"], {})) for p in others]
-        parts += ['</ul>', '', '</details>', '']
-    if private:
-        parts += ['<details>', '<summary>Private work · Published summaries</summary>', '',
-                  '<p>These descriptions were previously published on this profile.</p>', '', '<ul>']
-        parts += [f'<li><strong>{escape_text(p["name"])}</strong> — {escape_text(p["summary"])}</li>' for p in private]
-        parts += ['</ul>', '', '</details>', '']
-    parts += ['<details>', '<summary>Sources, releases and workflow checks</summary>', '']
-    if snapshot["checked_on"]:
-        parts += [f'<p>Public sources checked on {snapshot["checked_on"]} UTC.</p>', '']
-    if public:
-        parts += ['<ul>']
-        parts += [source_entry(p, records.get(p["id"], {})) for p in public]
-        parts += ['</ul>', '']
-    discovery = ("Public repository discovery used the last successful list." if snapshot["discovery_status"] == "stale"
-                 else "Public repository discovery is current.")
-    parts += [f'<p>{discovery} Included repositories can opt in with the <code>{registry["discovery_topic"]}</code> topic.</p>',
-              '', '</details>']
+        record = snapshot["projects"].get(project["id"], {})
+        alt = " · ".join(filter(None, (project["name"], project["summary"], source_note(record))))
+        image = picture(project["id"], alt, "400")
+        if record.get("url"):
+            image = f'<a href="{html.escape(record["url"], quote=True)}">{image}</a>'
+        parts += [image]
+    parts += ['</p>', '']
+    for project in public:
+        record = snapshot["projects"].get(project["id"], {})
+        showcase = cases.get(project["id"])
+        if project["featured"] and showcase and record.get("url"):
+            parts.extend(showcase_details(project, record, showcase))
+    releases = [(project, snapshot["projects"].get(project["id"], {})) for project in public]
+    releases = [(q, r) for q, r in releases if r.get("release") and r["status"] == "current"]
+    releases.sort(key=lambda pair: pair[1]["release"]["published_on"] or "", reverse=True)
+    parts += ['### Published releases · آخر الإصدارات', ""]
+    if releases:
+        for project, record in releases[:4]:
+            release = record["release"]
+            parts += [f'- **{html.escape(project["name"])}** — {link(release["url"], release["name"])} · {release["published_on"]}', ""]
+    else:
+        parts += ["No published stable releases were verified in this snapshot. Repository activity remains visible on each source card.", ""]
+    parts += ['<details>', '<summary>Source evidence and synchronization status</summary>', '', '| Project | Source check | Latest stable release | Latest completed workflow on default branch |', '|:---|:---|:---|:---|']
+    for project in public:
+        record = snapshot["projects"].get(project["id"], {"status": "unavailable"})
+        workflow = record.get("workflow")
+        release = record.get("release")
+        release_evidence = link(release["url"], release["name"]) if release else ("Could not verify" if record.get("release_status") == "unavailable" else "No stable release reported")
+        evidence = link(workflow["url"], f'{workflow["name"]}: {workflow["conclusion"]}') + " · " + str(workflow["completed_on"]) if workflow else ("Could not verify" if record.get("workflow_status") == "unavailable" else "No completed run reported")
+        if record["status"] != "current":
+            evidence = "Cached: " + evidence if record["status"] == "stale" else "Source unavailable"
+            release_evidence = "Cached: " + release_evidence if record["status"] == "stale" else "Source unavailable"
+        project_label = link(record["url"], project["name"]) if record.get("url") else html.escape(project["name"]).replace("|", "&#124;")
+        parts.append(f'| {project_label} | {record["status"]} · {record.get("checked_on") or "unverified"} | {release_evidence} | {evidence} |')
+    parts += ['', "A workflow result describes that workflow only. Project scope, model calibration, production readiness and financial performance require their own evidence.", '', f'Discovery check: **{snapshot["discovery_status"]}**. Add the `{registry["discovery_topic"]}` topic to an eligible public repository to include it automatically.', '', '</details>', '', '## Private work · ملخصات الأعمال الخاصة', '', 'These curated summaries reuse scope already published in this profile. Private repositories are not queried.', '', '<p align="center">']
+    for project in projects:
+        if project["visibility"] == "summary-only":
+            parts += [picture(project["id"], project["name"] + ": " + project["summary"], "400")]
+    parts += ['</p>', '']
+    generated = START + "\n\n" + "\n".join(parts).rstrip() + "\n\n" + END
     before, remainder = readme.split(START)
     _, after = remainder.split(END)
-    outputs["README.md"] = before + START + "\n\n" + "\n".join(parts) + "\n\n" + END + after
+    outputs["README.md"] = before + generated + after
     outputs["portfolio/snapshot.json"] = json.dumps(snapshot, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    for path, content in outputs.items():
-        if path.endswith(".svg"):
-            document = ET.fromstring(content)
-            if any(el.tag.rsplit("}", 1)[-1] not in {"svg", "title", "desc", "rect", "circle", "path", "text", "g"} for el in document.iter()):
+    for name, content in outputs.items():
+        if name.endswith(".svg"):
+            root = ET.fromstring(content)
+            if any(el.tag.rsplit("}", 1)[-1] not in {"svg", "title", "desc", "rect", "circle", "path", "text", "g", "defs", "linearGradient", "radialGradient", "stop"} for el in root.iter()):
                 raise ValueError("Unexpected SVG content")
     return outputs
 

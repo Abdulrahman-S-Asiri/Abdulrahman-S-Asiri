@@ -1,22 +1,22 @@
 # Maintaining the living portfolio
 
-The profile opens with Abdulrahman's introduction and a figure from the ServeDoctorBench A100 experiment. Edit this research material directly in the README and keep its figures consistent with the case study and team poster. These links document the experimental setup, measurements and team contributions. [Case study](research/servedoctorbench-case-study.md) · [Poster](research/Tasaru_A0_ServeDoctorBench.pdf)
+The profile opens with a banner, a map of the four project themes and the project gallery. The research section records the A100 time to first token alongside the case study and team poster. When updating the measurement, check the hardware, request count, warm-up exclusions, range and mean against the case study. [Case study](research/servedoctorbench-case-study.md) · [Poster](research/Tasaru_A0_ServeDoctorBench.pdf)
 
 ## Where to make a change
 
 | Change | Source |
 | --- | --- |
-| Masthead, research, education, experience or contact details | Edit the README outside `<!-- portfolio:start -->` and `<!-- portfolio:end -->`. The [masthead and A100 figure files](../assets/blue-ink/) have separate light, dark and mobile versions. |
-| Project names, summaries, technology, order or featured status | Edit the ordered entries in [projects.json](../portfolio/projects.json). |
+| Banner details or project names, summaries, technology, order or featured status | Edit the profile or project entries in [projects.json](../portfolio/projects.json). |
+| Introduction, research, education, experience or contact details | Edit the README outside `<!-- portfolio:start -->` and `<!-- portfolio:end -->`. |
 | Project evidence or a Bidaya screenshot | Edit [showcases.json](../portfolio/showcases.json) and the corresponding file in [assets/showcases](../assets/showcases/). Use a repository-relative source path pinned to the full commit that supports the claim. |
 | Public check date, release or workflow result | Refresh [the public snapshot](../portfolio/snapshot.json) through the updater. |
-| Generated project illustrations or README layout | Edit [the renderer](../tools/update_portfolio.py) and regenerate. It removes obsolete SVGs from its own `assets/portfolio/` directory. |
+| Banner, theme map, card artwork or generated README layout | Edit [the renderer](../tools/update_portfolio.py) and regenerate. It maintains desktop and mobile SVGs for both themes in `assets/portfolio/` and removes obsolete SVGs from that directory. |
 
-The generated block presents featured public projects in registry order. Saudi Market Intelligence and Bidaya currently have illustrated features. Bidaya also has a disclosure with a screenshot from its interface. The **More projects** index starts with Data Science Basics, followed by the remaining public projects and eligible discoveries. Private summaries and public source records have separate disclosures.
+The public gallery puts featured projects first and preserves registry order within each group. Saudi Market Intelligence and Bidaya lead the gallery, followed by Data Science Basics. Readers can open the supporting sources for both featured projects and the interface screenshot for Bidaya. A separate gallery displays the approved private project summaries. Public release and workflow records appear with the gallery's source checks.
 
 ## Add a public project
 
-For automatic inclusion, add the **`portfolio-profile`** topic to a public repository owned by `Abdulrahman-S-Asiri`. The updater includes its GitHub description in the index. It excludes forks, archived discovery candidates and the profile repository. After a successful discovery check, removing the topic removes the automatic entry.
+For automatic inclusion, add the **`portfolio-profile`** topic to a public repository owned by `Abdulrahman-S-Asiri`. The updater uses its GitHub description for the new gallery card. It excludes forks, archived discovery candidates and the profile repository. After a successful discovery check, removing the topic removes the automatic entry.
 
 To control a project's copy, category or placement, register it explicitly. This takes precedence over topic discovery.
 
@@ -33,7 +33,7 @@ To control a project's copy, category or placement, register it explicitly. This
 }
 ```
 
-Choose `data`, `ai`, `markets` or `engineering` for the category. IDs use lowercase letters, digits and hyphens and must be unique. Set `featured` to `true` for a full project entry or `false` for an index entry. A featured entry can use `subtitle` for a brief description beneath its name. Curated implementation references use the form `blob/<40-character-commit-SHA>/<path>`. Match each reference to the file that backs its label.
+Choose `data`, `ai`, `markets` or `engineering` for the category. IDs use lowercase letters, digits and hyphens and must be unique. Set `featured` to `true` to place a project in the first group of public cards. A project with a showcase can use `subtitle` for a brief description in its supporting details. Curated implementation references use the form `blob/<40-character-commit-SHA>/<path>`. Match each reference to the file that backs its label.
 
 ## Private summaries
 
@@ -47,7 +47,7 @@ The hourly refresh requests repository metadata, the latest stable release and t
 | --- | --- |
 | Current | The last successful check and verified repository links. Registered archived projects retain an archive label. |
 | Cached | A temporary failure or rate limit preserves the last verified public record and its original date. |
-| Unavailable or unchecked | A manually registered project keeps its curated summary and an unavailable status. The updater removes its links, showcase evidence and feature illustrations. An automatically discovered project requires a verified or previously cached public source to appear. |
+| Unavailable or unchecked | A registered card keeps its curated summary and shows that its source is unavailable. The updater hides repository links, screenshots and supporting sources. Automatically discovered projects appear only while a verified or previously cached public record is available. |
 | No stable release or completed workflow | The source responded without a matching release or run. A failed optional check has its own verification message. |
 
 If repository discovery fails, the updater marks the list stale and rechecks previous candidates individually. A temporary outage preserves the last verified public description, link and check date. If an individual repository has become private, inaccessible or redirected, the updater removes its discovered entry, description and source record from the README and the newly generated snapshot. Rendering an older snapshot offline also omits any automatically discovered entry already recorded as unavailable.
