@@ -1,22 +1,24 @@
-# Living portfolio
+# Maintaining the living portfolio
 
-The public profile is a view of selected projects, source evidence and curated summaries. It does not establish model accuracy, financial profitability or production readiness.
+The profile opens with Abdulrahman's introduction and a figure from the ServeDoctorBench A100 experiment. Edit this research material directly in the README and keep its figures consistent with the case study and team poster. These links document the experimental setup, measurements and team contributions. [Case study](research/servedoctorbench-case-study.md) · [Poster](research/Tasaru_A0_ServeDoctorBench.pdf)
 
-## Data flow
+## Where to make a change
 
-1. `portfolio/projects.json` controls profile copy, project order and private summaries.
-2. The updater reads public repository metadata, the latest stable release and the latest completed workflow on each default branch.
-3. A public repository with the `portfolio-profile` topic is also discovered automatically. Forks, archived discovery candidates and this profile repository are excluded. Removing the topic removes an automatically discovered entry after a successful discovery check.
-4. `portfolio/snapshot.json` stores normalized public fields. Raw responses, tokens, commit messages, private metadata and release bodies are never stored.
-5. The same snapshot produces the managed README block and accessible light/dark SVGs in `assets/portfolio/`.
+| Change | Source |
+| --- | --- |
+| Masthead, research, education, experience or contact details | Edit the README outside `<!-- portfolio:start -->` and `<!-- portfolio:end -->`. The [masthead and A100 figure files](../assets/blue-ink/) have separate light, dark and mobile versions. |
+| Project names, summaries, technology, order or featured status | Edit the ordered entries in [projects.json](../portfolio/projects.json). |
+| Project evidence or a Bidaya screenshot | Edit [showcases.json](../portfolio/showcases.json) and the corresponding file in [assets/showcases](../assets/showcases/). Use a repository-relative source path pinned to the full commit that supports the claim. |
+| Public check date, release or workflow result | Refresh [the public snapshot](../portfolio/snapshot.json) through the updater. |
+| Generated project illustrations or README layout | Edit [the renderer](../tools/update_portfolio.py) and regenerate. It removes obsolete SVGs from its own `assets/portfolio/` directory. |
 
-The map groups portfolio themes and shared skills. It does not assert technical dependencies between projects. A completed workflow is evidence for that named workflow, not a blanket test or quality certification.
+The generated block presents featured public projects in registry order. Saudi Market Intelligence and Bidaya currently have illustrated features. Bidaya also has a disclosure with a screenshot from its interface. The **More projects** index starts with Data Science Basics, followed by the remaining public projects and eligible discoveries. Private summaries and public source records have separate disclosures.
 
 ## Add a public project
 
-For automatic inclusion, add the **`portfolio-profile`** repository topic on GitHub. The repository must be public and owned by `Abdulrahman-S-Asiri`. GitHub's description supplies its initial summary, and it appears in the engineering category.
+For automatic inclusion, add the **`portfolio-profile`** topic to a public repository owned by `Abdulrahman-S-Asiri`. The updater includes its GitHub description in the index. It excludes forks, archived discovery candidates and the profile repository. After a successful discovery check, removing the topic removes the automatic entry.
 
-For controlled copy, category, stack and order, add an entry to `portfolio/projects.json`:
+To control a project's copy, category or placement, register it explicitly. This takes precedence over topic discovery.
 
 ```json
 {
@@ -31,60 +33,50 @@ For controlled copy, category, stack and order, add an entry to `portfolio/proje
 }
 ```
 
-Categories: `data`, `ai`, `markets`, `engineering`. IDs must be unique lowercase letters, digits and hyphens. Registering a project manually takes precedence over topic discovery.
+Choose `data`, `ai`, `markets` or `engineering` for the category. IDs use lowercase letters, digits and hyphens and must be unique. Set `featured` to `true` for a full project entry or `false` for an index entry. A featured entry can use `subtitle` for a brief description beneath its name. Curated implementation references use the form `blob/<40-character-commit-SHA>/<path>`. Match each reference to the file that backs its label.
 
 ## Private summaries
 
-Use `visibility: "summary-only"`, omit `repository`, and supply a `publication_basis` documenting approval or previously public scope. The updater does not make API requests for these entries. This release reuses summaries already present in the public README at commit `5c0dddf46666c4f00a4a45c5836f08a2e8dc79ec`, including Stock Agents, CodeForge and Stock_101.
+Set `visibility` to `summary-only`, omit `repository`, and record the approval or previously public scope in `publication_basis`. Review the public wording with the registry change. The updater queries only public project entries. The snapshot and source disclosure contain only public checks. The current Stock Agents, CodeForge and Stock_101 summaries are based on descriptions already published in the profile. [Earlier public README](https://github.com/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/blob/5c0dddf46666c4f00a4a45c5836f08a2e8dc79ec/README.md)
 
-Changes to private summaries are reviewed in the same PR as the registry change. Never add client information, credentials, financial records or private operating metrics to this public registry.
+## Read the source and release records
 
-## Refresh behavior
+The hourly refresh requests repository metadata, the latest stable release and the latest completed workflow on the default branch. Each check date is in UTC. The snapshot stores selected public fields and source links. The run link identifies the specific workflow, conclusion and date.
 
-- The updater runs hourly, at minute 17 UTC, and after changes to portfolio configuration, renderer or README on `main`.
-- It can also be started manually with the **Refresh portfolio** workflow.
-- GitHub schedule timing can be delayed. Dates shown on cards are the actual successful check date in UTC, not a promise of real-time delivery.
-- A successful public metadata check produces `current`. A temporary failure preserves the last verified public snapshot as `stale` and visibly labels it cached.
-- A missing, private, deleted, redirected or inaccessible source returning 403/404/410 or a redirect loses cached remote metadata and links. A 403 specifically identified as rate limiting retains cached public data. Its curated description remains in the registry; remove the entry to withdraw that description too.
-- Release and workflow checks are independent. Missing releases and missing workflows are ordinary empty states; failed checks are explicitly marked in the evidence table.
-- Discovery failures retain previous discovered candidates with a visible stale discovery status. Each candidate's public visibility is still checked individually.
-- Commits happen only when public fields, source status or the UTC check date changes. Unchanged hourly runs do not create commits.
-- The default-branch guard and concurrency group prevent feature-branch publication and overlapping refresh writes. A push race fails visibly rather than force-pushing history.
+| Status | What readers see |
+| --- | --- |
+| Current | The last successful check and verified repository links. Registered archived projects retain an archive label. |
+| Cached | A temporary failure or rate limit preserves the last verified public record and its original date. |
+| Unavailable or unchecked | A manually registered project keeps its curated summary and an unavailable status. The updater removes its links, showcase evidence and feature illustrations. An automatically discovered project requires a verified or previously cached public source to appear. |
+| No stable release or completed workflow | The source responded without a matching release or run. A failed optional check has its own verification message. |
 
-## Optional immediate refresh from another repository
+If repository discovery fails, the updater marks the list stale and rechecks previous candidates individually. A temporary outage preserves the last verified public description, link and check date. If an individual repository has become private, inaccessible or redirected, the updater removes its discovered entry, description and source record from the README and the newly generated snapshot. Rendering an older snapshot offline also omits any automatically discovered entry already recorded as unavailable.
 
-The hourly path works without adding credentials to source repositories. For faster updates after a meaningful release, send `repository_dispatch` with event type `portfolio-update` to this profile repository. The updater treats the signal only as a refresh request; it ignores the payload and reads sources itself.
+The `Refresh portfolio` workflow runs at minute 17 of each UTC hour, on the configured pushes to `main`, or on manual dispatch. Scheduled runs can be delayed. Unchanged output produces no commit. [Refresh workflow](../.github/workflows/update-portfolio.yml)
+
+## Request an immediate refresh
+
+Run **Refresh portfolio** from the profile's Actions tab. A source repository can also send a `repository_dispatch` event to request a refresh after a release. The updater fetches the evidence from GitHub and ignores the event payload.
 
 ```text
 POST /repos/Abdulrahman-S-Asiri/Abdulrahman-S-Asiri/dispatches
 {"event_type":"portfolio-update"}
 ```
 
-Configure a narrowly scoped GitHub App or fine-grained token with **Contents: write** on this destination repository only, stored as a GitHub Actions secret. The source repository's built-in `GITHUB_TOKEN` is scoped to that source and cannot write this destination. No cross-repository credentials are created or required for the baseline implementation.
+For cross-repository dispatch, use a GitHub App or fine-grained token scoped to the destination with **Contents: write**, stored as an Actions secret. The hourly workflow needs no credential in the source repository. [Dispatch endpoint](https://docs.github.com/en/rest/repos/repos#create-a-repository-dispatch-event) · [GitHub token scope](https://docs.github.com/en/actions/concepts/security/github_token)
 
-References: [GitHub events and scheduling](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows), [repository discovery and dispatch API](https://docs.github.com/en/rest/repos/repos), [GITHUB_TOKEN scope](https://docs.github.com/en/actions/concepts/security/github_token).
+## Reproduce and review a change
 
-## Local checks
-
-Python 3.13+ is sufficient. There are no third-party runtime dependencies.
+From the repository root with Python 3.13 or later, run the following offline checks. The render command writes the managed files. The final command verifies that the checked-in README block, snapshot and generated SVGs match the inputs.
 
 ```text
 python -m unittest discover -s tests -v
-python tools/update_portfolio.py --check
 python tools/update_portfolio.py
-python tools/update_portfolio.py --refresh
+python tools/update_portfolio.py --check
 ```
 
-The first three commands work offline. Refresh uses GitHub's public API; `GITHUB_TOKEN` is optional locally and supplied automatically in the refresh workflow. A token never appears in logged output or checked-in data. API calls refuse redirects, cap response size, use timeouts and retry temporary network/server failures once.
+To request new public metadata, run `python tools/update_portfolio.py --refresh`. A local `GITHUB_TOKEN` is optional. GitHub Actions supplies its own token during the scheduled refresh. The updater limits response sizes, refuses redirects and suppresses remote payloads in its logs.
 
-Only the block between `<!-- portfolio:start -->` and `<!-- portfolio:end -->` is generated. Content outside it remains hand-authored. Broken or duplicated markers stop generation. Generated SVGs are self-contained, with titles, descriptions, escaped text, no scripts, no external resources and no motion.
+Review the complete README at desktop and phone widths in both GitHub themes. Check the native text, image alternatives, Bidaya screenshot, pinned links and closed disclosures. Verify that regenerated output preserved all hand-authored content outside the two markers. Broken or duplicated markers stop generation.
 
-The banner, four-theme map and project cards use cyan/violet gradients and category icons. Each has a light and dark version for desktop and for viewports up to 600px. Cards use a 400px display width so pairs fit in the desktop GitHub profile column. Public cards link to verified sources when available. Private cards contain only curated summaries. Open the source evidence disclosure to inspect the public checks.
-
-## Review and rollback
-
-Every registry/renderer change goes through the read-only **Portfolio checks** workflow on the pull request. The refresh workflow tests the updater before writing, validates output afterward and stages only generated paths. Both new workflows pin actions to verified immutable commit SHAs.
-
-Review the generated README, both image themes, the public snapshot and summary changes before merge. Revert the relevant commit to restore a previous renderer or snapshot. If manual repository protections prohibit bot pushes, switch publication to a bot-created PR instead of weakening protection.
-
-The initial automation becomes active after the implementation is merged to `main`. Scheduled workflows in inactive public repositories may be disabled by GitHub; see the linked scheduling documentation.
+Pull requests run the read-only **Portfolio checks** workflow. The refresh job tests before publication, verifies the render afterward and stages only generated paths. Its default-branch guard and concurrency group limit automatic writes. Revert the relevant commit to restore a previous version. [Portfolio checks](../.github/workflows/portfolio-ci.yml)

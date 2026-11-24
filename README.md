@@ -1,158 +1,119 @@
-<!-- The portfolio block is generated. Edit profile copy below or portfolio/projects.json. -->
+<h1><picture>
+  <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/blue-ink/masthead-mobile-dark.webp">
+  <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/blue-ink/masthead-mobile-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/blue-ink/masthead-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/blue-ink/masthead-light.webp">
+  <img src="assets/blue-ink/masthead-light.webp" width="100%" alt="Abdulrahman Saad Asiri · عبدالرحمن سعد عسيري">
+</picture></h1>
+
+**Data Engineer at stc · Riyadh**<br>
+I build data systems, Arabic AI applications and tools for market research.
+
+[Selected work](#selected-work) · [Research](#research-and-community)
+
+## ServeDoctorBench
+
+**A healthy vLLM run · تشغيل مرجعي**
+
+<p><picture>
+  <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/blue-ink/ttft-mobile-dark.svg">
+  <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/blue-ink/ttft-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/blue-ink/ttft-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/blue-ink/ttft-light.svg">
+  <img src="assets/blue-ink/ttft-light.svg" width="100%" alt="Time to first token in one healthy vLLM run. Minimum 19 ms, mean 34 ms, maximum 53 ms.">
+</picture></p>
+
+On an **A100-SXM4-80GB**, I measured **24 requests** after excluding **3 warm-ups**. Time to first token ranged from **19–53 ms**, with a mean of **34 ms**.
+
+[My role and measurement · دوري في البحث](docs/research/servedoctorbench-case-study.md) · [Team poster (PDF)](docs/research/Tasaru_A0_ServeDoctorBench.pdf)
+
 <!-- portfolio:start -->
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/banner-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/banner-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/banner-light.svg">
-  <img src="assets/portfolio/banner-light.svg" width="100%" alt="Abdulrahman Saad Asiri — Data to AI to Decisions">
-</picture>
+<a name="selected-work"></a>
 
-<p align="center">Public sources checked on <strong>2026-11-23 UTC</strong> · 7/7 source checks succeeded</p>
+## Selected work · أعمال مختارة
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/map-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/map-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/map-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/map-light.svg">
-  <img src="assets/portfolio/map-light.svg" width="100%" alt="Project themes: data, AI, markets and engineering">
-</picture>
-
-## Selected work · مشاريع مختارة
-
-<p align="center">
-<a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/saudi-market-intelligence-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-mobile-light.svg">
+<p><picture>
+  <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/saudi-market-intelligence-mobile-dark.svg">
+  <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/saudi-market-intelligence-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/saudi-market-intelligence-light.svg">
-  <img src="assets/portfolio/saudi-market-intelligence-light.svg" width="400" alt="Saudi Market Intelligence: Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/data-science-basics-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/data-science-basics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/data-science-basics-light.svg">
-  <img src="assets/portfolio/data-science-basics-light.svg" width="400" alt="Data Science Basics: A bilingual Arabic / English learning path from data fundamentals to applied notebooks.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-mobile-light.svg">
+  <img src="assets/portfolio/saudi-market-intelligence-light.svg" width="100%" alt="Saudi Market Intelligence. Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis. Three stages connect a market database, an analysis engine and a research report.">
+</picture></p>
+
+<p><a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">Saudi Market Intelligence repository</a> · <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence/blob/7a43abebfd509111ec2f8452c440a79576922be3/README.md">Architecture and API</a></p>
+
+<p><picture>
+  <source media="(max-width: 900px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-mobile-dark.svg">
+  <source media="(max-width: 900px) and (prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/bidaya-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/bidaya-light.svg">
-  <img src="assets/portfolio/bidaya-light.svg" width="400" alt="Bidaya: An Arabic / English interview coach exploring voice input, feedback and resume analysis.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/sentiment-insight-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/sentiment-insight-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/sentiment-insight-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/sentiment-insight-light.svg">
-  <img src="assets/portfolio/sentiment-insight-light.svg" width="400" alt="Sentiment Insight: Transformer-based sentiment analysis with an inference API and a branded web interface.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/mindmaps-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/mindmaps-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/mindmaps-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/mindmaps-light.svg">
-  <img src="assets/portfolio/mindmaps-light.svg" width="400" alt="Mindmaps Encyclopedia: Interactive technical knowledge maps with generated HTML references and a navigation portal.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/tasamuh-vr-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/tasamuh-vr-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/tasamuh-vr-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/tasamuh-vr-light.svg">
-  <img src="assets/portfolio/tasamuh-vr-light.svg" width="400" alt="Tasamuh VR: An Arabic-first web VR experience exploring tolerance, justice and revenge.">
-</picture></a>
-<a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/cyber-awareness-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/cyber-awareness-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/cyber-awareness-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/cyber-awareness-light.svg">
-  <img src="assets/portfolio/cyber-awareness-light.svg" width="400" alt="Cyber-Awareness: Arabic cybersecurity awareness training with interactive scenarios and incident-response guidance.">
-</picture></a>
-</p>
+  <img src="assets/portfolio/bidaya-light.svg" width="100%" alt="Bidaya. An Arabic / English interview coach exploring voice input, feedback and resume analysis. Overlapping Arabic and English speech bubbles illustrate bilingual interview practice.">
+</picture></p>
 
-### Published releases · آخر الإصدارات
-
-No published stable releases were verified in this snapshot. Repository activity remains visible on each source card.
+<p><a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2">Bidaya repository</a></p>
 
 <details>
-<summary>Source evidence and synchronization status</summary>
+<summary>Bidaya preview and sources</summary>
 
-| Project | Source check | Latest stable release | Latest completed workflow on default branch |
-|:---|:---|:---|:---|
-| <a href="https://github.com/Abdulrahman-S-Asiri/saudi-market-intelligence">Saudi Market Intelligence</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics">Data Science Basics</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2">Bidaya</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final">Sentiment Insight</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps">Mindmaps Encyclopedia</a> | current · 2026-11-23 | No stable release reported | <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-11-22 |
-| <a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr">Tasamuh VR</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
-| <a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">Cyber-Awareness</a> | current · 2026-11-23 | No stable release reported | No completed run reported |
+<p>An Arabic / English interview coach exploring voice input, feedback and resume analysis.</p>
 
-A workflow result describes that workflow only. Project scope, model calibration, production readiness and financial performance require their own evidence.
+<p><img src="assets/showcases/bidaya.png" width="380" alt="Interface preview · Configure a bilingual interview practice session."></p>
 
-Discovery check: **current**. Add the `portfolio-profile` topic to an eligible public repository to include it automatically.
+<p><em>Interface preview · Configure a bilingual interview practice session.</em></p>
+
+<p><a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2/blob/ded111aa503513051378a9f3e7c7e789516ba4bd/README.md">Project guide</a> · <a href="https://github.com/Abdulrahman-S-Asiri/Bidaya_v2/blob/ded111aa503513051378a9f3e7c7e789516ba4bd/frontend/src/pages/Home.jsx">Interface source</a></p>
 
 </details>
 
-## Private work · ملخصات الأعمال الخاصة
+<details>
+<summary>More projects</summary>
 
-These curated summaries reuse scope already published in this profile. Private repositories are not queried.
+<ul>
+<li><strong><a href="https://github.com/Abdulrahman-S-Asiri/Data_Science_Basics">Data Science Basics</a></strong> — A bilingual Arabic / English learning path from data fundamentals to applied notebooks.</li>
+<li><strong><a href="https://github.com/Abdulrahman-S-Asiri/sentiment-analysis-project-Final">Sentiment Insight</a></strong> — Transformer-based sentiment analysis with an inference API and a branded web interface.</li>
+<li><strong><a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps">Mindmaps Encyclopedia</a></strong> — Interactive technical knowledge maps with generated HTML references and a navigation portal.</li>
+<li><strong><a href="https://github.com/Abdulrahman-S-Asiri/tasamuh-vr">Tasamuh VR</a></strong> — An Arabic-first web VR experience exploring tolerance, justice and revenge.</li>
+<li><strong><a href="https://github.com/Abdulrahman-S-Asiri/Cyber-Awareness">Cyber-Awareness</a></strong> — Arabic cybersecurity awareness training with interactive scenarios and incident-response guidance.</li>
+</ul>
 
-<p align="center">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/stock-agents-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/stock-agents-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/stock-agents-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/stock-agents-light.svg">
-  <img src="assets/portfolio/stock-agents-light.svg" width="400" alt="Stock Agents: A private investment-analysis platform exploring specialized agents, market data and portfolio tools.">
-</picture>
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/codeforge-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/codeforge-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/codeforge-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/codeforge-light.svg">
-  <img src="assets/portfolio/codeforge-light.svg" width="400" alt="CodeForge: Private developer-workflow and platform tooling with infrastructure automation.">
-</picture>
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/portfolio/stock-101-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/portfolio/stock-101-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio/stock-101-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portfolio/stock-101-light.svg">
-  <img src="assets/portfolio/stock-101-light.svg" width="400" alt="Stock_101: A private Python workspace for stock-market research, technical review and organized observations.">
-</picture>
-</p>
+</details>
+
+<details>
+<summary>Private work · Published summaries</summary>
+
+<p>These descriptions were previously published on this profile.</p>
+
+<ul>
+<li><strong>Stock Agents</strong> — A private investment-analysis platform exploring specialized agents, market data and portfolio tools.</li>
+<li><strong>CodeForge</strong> — Private developer-workflow and platform tooling with infrastructure automation.</li>
+<li><strong>Stock_101</strong> — A private Python workspace for stock-market research, technical review and organized observations.</li>
+</ul>
+
+</details>
+
+<details>
+<summary>Sources, releases and workflow checks</summary>
+
+<p>Public sources checked on 2026-11-23 UTC.</p>
+
+<ul>
+<li><strong>Saudi Market Intelligence</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Data Science Basics</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Bidaya</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Sentiment Insight</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Mindmaps Encyclopedia</strong> · Verified 2026-11-23<br>No stable release reported · <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-11-22</li>
+<li><strong>Tasamuh VR</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Cyber-Awareness</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+</ul>
+
+<p>Public repository discovery is current. Included repositories can opt in with the <code>portfolio-profile</code> topic.</p>
+
+</details>
 
 <!-- portfolio:end -->
 
----
-
-## About · نبذة
-
-I'm **Abdulrahman Saad Asiri**, a **Data Engineer at stc**, AI engineer and learningholic based in **Riyadh, Saudi Arabia**.
-
-I build across data engineering, data science, Arabic AI and financial-market research. My direction is practical agents, market-intelligence tools and systems that turn messy data into useful decisions.
-
-**Currently learning:** production LLM architecture and the Chartered Market Technician program.
-
-[My role in ServeDoctorBench · دوري في البحث](docs/research/servedoctorbench-case-study.md)
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200">LinkedIn</a> ·
-  <a href="https://x.com/D7oomyStay">X</a> ·
-  <a href="https://huggingface.co/Abdulrahman-S-Asiri">Hugging Face</a> ·
-  <a href="mailto:abdulrahman.s.alasiri@gmail.com">Email</a>
-</p>
-
-## Explore by interest · استكشف حسب اهتمامك
-
-| Interest | Start here |
-|:---|:---|
-| Markets and decision tools | Saudi Market Intelligence; curated Stock Agents and Stock_101 summaries above |
-| Arabic AI and applications | Bidaya, Sentiment Insight and the research links below |
-| Data and learning | Data Science Basics and Mindmaps Encyclopedia |
-| Engineering and experiences | Cyber-Awareness, Tasamuh VR and the curated CodeForge summary |
+<a name="research-and-community"></a>
 
 ## Research and community · البحث والمجتمع
 
@@ -164,27 +125,12 @@ I build across data engineering, data science, Arabic AI and financial-market re
 
 Model-specific metrics, datasets and evaluation assumptions belong with their original sources.
 
-## Technical range
+## Education and experience · التعليم والخبرة
 
-| Layer | Tools and interests |
-|:---|:---|
-| Data | Python, SQL, pandas, NumPy, PostgreSQL, Redis, Jupyter, Tableau |
-| Models | PyTorch, TensorFlow, Transformers, scikit-learn, XGBoost, embeddings, RAG, LLM agents |
-| Services | FastAPI, Flask, REST APIs, WebSockets |
-| Interfaces | TypeScript, JavaScript, React, Next.js, Vite, Tailwind CSS |
-| Delivery | Git, Docker, Terraform, GitHub Actions |
-| Research | Tadawul, US equities, technical analysis, portfolio analytics |
+I work in data engineering at **stc** in Riyadh and hold a **B.Sc. in Computer Science** from Majmaah University.
 
-## Education and experience
-
-- **Data Engineer** — stc (Saudi Telecom Company).
-- **B.Sc. Computer Science** — Majmaah University.
-- **Data Science & AI Bootcamp** — Tuwaiq Academy, 2025. Exploratory analysis, model evaluation and NLP.
-- **Tasaru · AI Infrastructure Bootcamp** — Tuwaiq Academy, June–August 2026. GPU performance, LLM serving and agents.
-- **CMT candidate** — Chartered Market Technician program.
-- **Data Scientist Associate** — DataCamp.
-- **Deep Learning Fundamentals** — NVIDIA.
-- **Investment Club:** Head of Investment Committees and Head of Financial Analysis.
+- **Data Science & AI Bootcamp** · Tuwaiq Academy, 2025. Exploratory analysis, model evaluation and NLP.
+- **Tasaru · AI Infrastructure Bootcamp** · Tuwaiq Academy, June–August 2026. GPU performance, LLM serving and agents.
 
 <details>
 <summary>What I studied at Tuwaiq · ما درسته في طويق</summary>
@@ -202,24 +148,22 @@ In my loan-classification exercise, I dropped a score that could reveal the appr
 
 </details>
 
-## How I build
+<details>
+<summary>Skills, background and how I work · المهارات ومنهجي</summary>
 
-- Define the problem and choose the smallest useful implementation.
-- Keep data contracts explicit and model behavior measurable.
-- Verify the main workflow, failure cases and important assumptions.
-- Explain decisions, limitations and evidence in the repository.
-- Own the engineering decisions and disclose meaningful AI assistance.
+| Area | Tools and interests |
+|:---|:---|
+| Data engineering | Python, SQL, pandas, NumPy, PostgreSQL, Redis, Jupyter, Tableau |
+| Models and evaluation | PyTorch, TensorFlow, Transformers, scikit-learn, XGBoost, embeddings, RAG, LLM agents |
+| Applications and delivery | FastAPI, Flask, REST APIs, WebSockets, TypeScript, JavaScript, React, Next.js, Vite, Tailwind CSS, Git, Docker, Terraform, GitHub Actions |
+| Market research | Tadawul, US equities, technical analysis, portfolio analytics |
 
-[AI-assisted engineering method](docs/AI_ENGINEERING_METHOD.md) · [Repository launch playbook](docs/REPO_LAUNCH_PLAYBOOK.md)
+I start with a question, define what to measure and test the main workflow and its failure cases. I document the limits of the evidence and disclose meaningful AI assistance. [Engineering method](docs/AI_ENGINEERING_METHOD.md) · [Repository launch playbook](docs/REPO_LAUNCH_PLAYBOOK.md)
 
-## Keep this portfolio current
+My background includes DataCamp’s Data Scientist Associate, NVIDIA’s Deep Learning Fundamentals, and leading the Investment Committees and Financial Analysis at the Investment Club. I’m studying production LLM architecture and the Chartered Market Technician program as a CMT candidate.
 
-Public metadata is refreshed hourly and on portfolio configuration changes. Generated images are stored in this repository, with light and dark variants and text alternatives. A private project contributes only its curated public summary.
+</details>
 
-[Add a project, configure immediate refresh, or reproduce the portfolio locally](docs/LIVING_PORTFOLIO.md).
+## Connect · تواصل
 
-## Connect
-
-Open to focused conversations around AI engineering, data platforms, Arabic NLP and market-intelligence research.
-
-[LinkedIn](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200) · [Hugging Face](https://huggingface.co/Abdulrahman-S-Asiri) · [Email](mailto:abdulrahman.s.alasiri@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/abdulrahman-saad-asiri-573ba1200) · [Email](mailto:abdulrahman.s.alasiri@gmail.com) · [Hugging Face](https://huggingface.co/Abdulrahman-S-Asiri) · [X](https://x.com/D7oomyStay)
