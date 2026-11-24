@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="110" viewBox="0 0 320 110" role="img" aria-labelledby="title desc">
+  <title id="title">Time to first token in a healthy vLLM run</title>
+  <desc id="desc">24 measured requests after 3 warm-ups. Minimum 19 milliseconds, mean 34 milliseconds, maximum 53 milliseconds.</desc>
+  <rect width="320" height="110" fill="#101A30"/>
+  <g fill="none" stroke="#B1C3E8" stroke-width="1.5">
+    <path d="M32 54H288M32 45v18M288 45v18"/>
+    <path stroke="#9FBEFF" d="M144.94117647058823 29V44"/>
+  </g>
+  <circle cx="144.94117647058823" cy="54" r="5.5" fill="#9FBEFF"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="144.94117647058823" y="22" fill="#C2CFE6" font-size="17" font-weight="600">Mean time to first token</text>
+    <text x="32" y="87" fill="#F1F5FF" font-size="17" font-weight="550">19 ms</text>
+    <text x="144.94117647058823" y="87" fill="#9FBEFF" font-size="22" font-weight="700">34 ms</text>
+    <text x="288" y="87" fill="#F1F5FF" font-size="17" font-weight="550">53 ms</text>
+  </g>
+</svg>

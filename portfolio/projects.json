@@ -15,6 +15,7 @@
       "visibility": "public",
       "repository": "saudi-market-intelligence",
       "category": "markets",
+      "subtitle": "Market data to research tools",
       "summary": "Research tools for Tadawul: stock scanning, prediction workflows and portfolio analysis.",
       "stack": ["Python", "PyTorch", "FastAPI", "React"],
       "featured": true
@@ -27,7 +28,7 @@
       "category": "data",
       "summary": "A bilingual Arabic / English learning path from data fundamentals to applied notebooks.",
       "stack": ["Python", "Jupyter", "pandas", "scikit-learn"],
-      "featured": true
+      "featured": false
     },
     {
       "id": "bidaya",
@@ -35,6 +36,7 @@
       "visibility": "public",
       "repository": "Bidaya_v2",
       "category": "ai",
+      "subtitle": "Arabic and English interview practice",
       "summary": "An Arabic / English interview coach exploring voice input, feedback and resume analysis.",
       "stack": ["React", "Flask", "OpenAI APIs", "Vite"],
       "featured": true
