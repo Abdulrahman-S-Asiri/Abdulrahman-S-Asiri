@@ -47,10 +47,12 @@ The hourly refresh requests repository metadata, the latest stable release and t
 | --- | --- |
 | Current | The last successful check and verified repository links. Registered archived projects retain an archive label. |
 | Cached | A temporary failure or rate limit preserves the last verified public record and its original date. |
-| Unavailable or unchecked | The entry retains its curated summary. The updater suppresses repository links, showcase evidence and feature illustrations. Loss of access or a redirect clears cached remote fields. |
+| Unavailable or unchecked | A manually registered project keeps its curated summary and an unavailable status. The updater removes its links, showcase evidence and feature illustrations. An automatically discovered project requires a verified or previously cached public source to appear. |
 | No stable release or completed workflow | The source responded without a matching release or run. A failed optional check has its own verification message. |
 
-If discovery fails, the updater retains previous candidates, marks the discovery check stale and rechecks each candidate's visibility. The `Refresh portfolio` workflow runs at minute 17 of each UTC hour, on the configured pushes to `main`, or on manual dispatch. Scheduled runs can be delayed. Unchanged output produces no commit. [Refresh workflow](../.github/workflows/update-portfolio.yml)
+If repository discovery fails, the updater marks the list stale and rechecks previous candidates individually. A temporary outage preserves the last verified public description, link and check date. If an individual repository has become private, inaccessible or redirected, the updater removes its discovered entry, description and source record from the README and the newly generated snapshot. Rendering an older snapshot offline also omits any automatically discovered entry already recorded as unavailable.
+
+The `Refresh portfolio` workflow runs at minute 17 of each UTC hour, on the configured pushes to `main`, or on manual dispatch. Scheduled runs can be delayed. Unchanged output produces no commit. [Refresh workflow](../.github/workflows/update-portfolio.yml)
 
 ## Request an immediate refresh
 

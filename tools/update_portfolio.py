@@ -221,7 +221,18 @@ def refresh(registry, previous, api, today):
                 record = {"status": "unavailable", "checked_on": None}
         snapshot["projects"][project["id"]] = record
     validate_snapshot(registry, snapshot)
-    return snapshot
+    return remove_unavailable_discoveries(snapshot)
+
+
+def remove_unavailable_discoveries(snapshot):
+    # Registry summaries have standing publication approval. Discovered descriptions come from the source itself.
+    records = snapshot["projects"]
+    hidden = {p["id"] for p in snapshot["discovered"] if not records.get(p["id"], {}).get("url")}
+    return {
+        **snapshot,
+        "discovered": [p for p in snapshot["discovered"] if p["id"] not in hidden],
+        "projects": {pid: record for pid, record in records.items() if pid not in hidden},
+    }
 
 
 def validate_snapshot(registry, snapshot):
@@ -493,6 +504,7 @@ def source_entry(project, record):
 def render(registry, snapshot, readme, showcases=None):
     validate_registry(registry)
     validate_snapshot(registry, snapshot)
+    snapshot = remove_unavailable_discoveries(snapshot)
     if showcases is None:
         showcases = json.loads((MODULE_ROOT / "portfolio/showcases.json").read_text(encoding="utf-8"))
     cases = validate_showcases(showcases)
@@ -500,8 +512,7 @@ def render(registry, snapshot, readme, showcases=None):
         raise ValueError("README must contain one ordered generated block")
     records = snapshot["projects"]
     public = [p for p in registry["projects"] if p["visibility"] == "public"]
-    # Only registry summaries have standing approval when a source loses visibility.
-    public += [p for p in snapshot["discovered"] if records.get(p["id"], {}).get("url")]
+    public += snapshot["discovered"]
     private = [p for p in registry["projects"] if p["visibility"] == "summary-only"]
     outputs = {}
     parts = ['<a name="selected-work"></a>', '', '## Selected work · أعمال مختارة', '']

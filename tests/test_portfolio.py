@@ -337,13 +337,52 @@ class PortfolioTests(unittest.TestCase):
             self.assertEqual(manual.read_text(encoding="utf-8"), "keep me")
             p.write_outputs(root, indexed, check=True)
 
-    def test_failed_discovery_checks_previous_candidates_individually(self):
-        repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]])
-        previous = p.refresh(self.registry, empty(), FakeAPI(self.registry, discovery=[repo]), "2026-10-09")
+    def previously_discovered(self):
+        repo = metadata(self.registry["owner"], "new-repo", topics=[self.registry["discovery_topic"]],
+                        description="A previously public repository description.")
+        return p.refresh(self.registry, empty(), FakeAPI(self.registry, discovery=[repo]), "2026-10-09")
+
+    def test_failed_discovery_purges_candidate_that_individually_loses_access(self):
+        previous = self.previously_discovered()
         api = FakeAPI(self.registry, discovery=p.SourceError(503), metadata_error=p.SourceError(404))
         result = p.refresh(self.registry, previous, api, "2026-10-10")
+        self.assertIn(f'/repos/{self.registry["owner"]}/new-repo', api.calls)
         self.assertEqual(result["discovery_status"], "stale")
-        self.assertEqual(result["projects"]["auto-new-repo"]["status"], "unavailable")
+        self.assertEqual(result["discovered"], [])
+        self.assertNotIn("auto-new-repo", result["projects"])
+        self.assertEqual(result["projects"]["saudi-market-intelligence"], {"status": "unavailable", "checked_on": None})
+        outputs = p.render(self.registry, result, self.readme)
+        for path in ("README.md", "portfolio/snapshot.json"):
+            self.assertNotIn("new-repo", outputs[path])
+            self.assertNotIn(previous["discovered"][0]["summary"], outputs[path])
+
+    def test_failed_discovery_retains_last_verified_candidate_during_transient_outage(self):
+        previous = self.previously_discovered()
+        api = FakeAPI(self.registry, discovery=p.SourceError(503), metadata_error=p.SourceError(503))
+        result = p.refresh(self.registry, previous, api, "2026-10-10")
+        self.assertEqual(result["discovery_status"], "stale")
+        self.assertEqual(result["discovered"], previous["discovered"])
+        record = result["projects"]["auto-new-repo"]
+        self.assertEqual(record, {**previous["projects"]["auto-new-repo"], "status": "stale"})
+        readme = p.render(self.registry, result, self.readme)["README.md"]
+        index = self.disclosure(readme, "<summary>More projects</summary>")
+        self.assertIn(record["url"], index)
+        self.assertIn("cached", index.lower())
+        self.assertIn("2026-10-09", index)
+
+    def test_offline_render_scrubs_legacy_unavailable_discovery_without_mutating_input(self):
+        legacy = self.previously_discovered()
+        legacy["projects"]["auto-new-repo"] = {"status": "unavailable", "checked_on": None}
+        original = copy.deepcopy(legacy)
+        p.validate_snapshot(self.registry, legacy)
+        outputs = p.render(self.registry, legacy, self.readme)
+        self.assertEqual(legacy, original)
+        cleaned = json.loads(outputs["portfolio/snapshot.json"])
+        self.assertEqual(cleaned["discovered"], [])
+        self.assertNotIn("auto-new-repo", cleaned["projects"])
+        self.assertNotIn(legacy["discovered"][0]["summary"], outputs["README.md"])
+        self.assertNotIn("new-repo", outputs["README.md"])
+        self.assertEqual(outputs, p.render(self.registry, cleaned, outputs["README.md"]))
 
     def test_generation_is_deterministic_and_preserves_manual_copy(self):
         snapshot = self.current()
