@@ -95,16 +95,16 @@ On an **A100-SXM4-80GB**, I measured **24 requests** after excluding **3 warm-up
 <details>
 <summary>Sources, releases and workflow checks</summary>
 
-<p>Public sources checked on 2026-11-23 UTC.</p>
+<p>Public sources checked on 2026-11-24 UTC.</p>
 
 <ul>
-<li><strong>Saudi Market Intelligence</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
-<li><strong>Data Science Basics</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
-<li><strong>Bidaya</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
-<li><strong>Sentiment Insight</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
-<li><strong>Mindmaps Encyclopedia</strong> · Verified 2026-11-23<br>No stable release reported · <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-11-22</li>
-<li><strong>Tasamuh VR</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
-<li><strong>Cyber-Awareness</strong> · Verified 2026-11-23<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Saudi Market Intelligence</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Data Science Basics</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Bidaya</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Sentiment Insight</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Mindmaps Encyclopedia</strong> · Verified 2026-11-24<br>No stable release reported · <a href="https://github.com/Abdulrahman-S-Asiri/Mindmaps/actions/runs/22548619511">pages build and deployment: success</a> · 2026-11-22</li>
+<li><strong>Tasamuh VR</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
+<li><strong>Cyber-Awareness</strong> · Verified 2026-11-24<br>No stable release reported · No completed workflow reported</li>
 </ul>
 
 <p>Public repository discovery is current. Included repositories can opt in with the <code>portfolio-profile</code> topic.</p>
